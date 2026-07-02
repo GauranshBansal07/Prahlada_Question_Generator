@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PDFs (large, not source files)
+*.pdf
+
+# Local outputs / state (regeneratable)
+generated_questions.json
+coverage_state.json
+pipeline_output.json
+
+# macOS
+.DS_Store

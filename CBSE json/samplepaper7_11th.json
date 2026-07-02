@@ -1,0 +1,1551 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "subject": "Chemistry",
+    "version": "2.0",
+    "last_updated": "2026-06-26",
+    "scoring_version": "Exam_Spectrum_v1",
+    "concept_database_used": "NCERT_Chapters_1_to_25_2026",
+    "papers_included": [
+      {
+        "year": 2017,
+        "paper": "Sample Paper-01",
+        "question_count": 26,
+        "file_reference": "2017_11_sample_paper_chemistry_01_qp.pdf"
+      }
+    ]
+  },
+  "archetypes": {
+    "long_reaction_chains": {
+      "id": "ARC_001",
+      "name": "Long Reaction Chains",
+      "description": "Questions involving multiple sequential steps, reagents, or transformations.",
+      "indicators": {
+        "text_patterns": [
+          "reacts with",
+          "followed by",
+          "then treated with",
+          "on heating gives"
+        ],
+        "structural_patterns": [
+          "Multiple arrows in sequence",
+          "Product of one step becomes reactant of next"
+        ],
+        "concepts_involved": [
+          "Reaction mechanism understanding",
+          "Functional group transformations",
+          "Regioselectivity/Stereoselectivity",
+          "Intermediate stability"
+        ]
+      }
+    },
+    "counting_enumeration": {
+      "id": "ARC_002",
+      "name": "Counting/Enumeration",
+      "description": "Questions requiring counting of molecules, ions, bonds, or specific numerical calculations.",
+      "indicators": {
+        "text_patterns": [
+          "how many",
+          "number of",
+          "count the",
+          "which of the following"
+        ],
+        "structural_patterns": [
+          "List of compounds given",
+          "Multiple conditions to check"
+        ],
+        "concepts_involved": [
+          "Isomer counting",
+          "Optical activity criteria",
+          "Chemical test outcomes",
+          "Group classification",
+          "Property enumeration"
+        ]
+      }
+    },
+    "deep_mechanistic_reasoning": {
+      "id": "ARC_003",
+      "name": "Deep Mechanistic Reasoning",
+      "description": "Questions requiring understanding of reaction mechanisms, intermediates, or transition states.",
+      "indicators": {
+        "text_patterns": [
+          "mechanism",
+          "intermediate",
+          "transition state",
+          "electron density"
+        ],
+        "structural_patterns": [
+          "Curved arrow notation",
+          "Intermediate structures",
+          "Energy profile diagrams",
+          "Electron pushing"
+        ],
+        "concepts_involved": [
+          "Reaction kinetics",
+          "Thermodynamic vs kinetic control",
+          "Intermediate stability",
+          "Transition state theory",
+          "Electron delocalization",
+          "Orbital interactions"
+        ]
+      }
+    },
+    "comparative_ranking": {
+      "id": "ARC_004",
+      "name": "Comparative Ranking",
+      "description": "Questions requiring comparison of properties (acidity, basicity, reactivity, etc.) and arranging in orders.",
+      "indicators": {
+        "text_patterns": [
+          "most acidic",
+          "most basic",
+          "correct order of",
+          "arrange in increasing"
+        ],
+        "structural_patterns": [
+          "List of compounds to compare",
+          "Property to compare"
+        ],
+        "concepts_involved": [
+          "Inductive effect",
+          "Resonance effect",
+          "Hyperconjugation",
+          "Steric effect",
+          "Solvent effect",
+          "Aromaticity",
+          "Electronegativity",
+          "Polarizability"
+        ]
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "2017CBSE_Sample_Q1",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 1,
+      "question_text": "\"BeH2 molecule has zero dipole moment although the Be-H bonds are polar\" Explain.",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Chemical Bonding",
+      "sub_topic": "Dipole Moment",
+      "correct_answer": "BeH2 is a linear molecule with H-Be-H bond angle 180°. Although Be-H bonds are polar, the bond polarities cancel each other due to symmetrical linear structure, resulting in zero net dipole moment.",
+      "solution_summary": "Linear symmetrical structure cancels bond dipoles.",
+      "concepts_required": [
+        "CB_17"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of dipole moment cancellation in linear molecules."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q2",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 2,
+      "question_text": "Give water gas shift reaction.",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Thermodynamics / Industrial Chemistry",
+      "sub_topic": "Water Gas Shift Reaction",
+      "correct_answer": "CO + H2O (steam) → CO2 + H2 (with catalyst, high temperature).",
+      "solution_summary": "Water gas shift reaction: CO(g) + H2O(g) → CO2(g) + H2(g).",
+      "concepts_required": [
+        "TH_13"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of water gas shift reaction."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q3",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 3,
+      "question_text": "Arrange the following metals in the order in which they displace each other from the solution of their salts. Al, Cu, Fe, Mg and Zn.",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Redox Reactions",
+      "sub_topic": "Reactivity Series",
+      "correct_answer": "Mg > Al > Zn > Fe > Cu (in decreasing order of reactivity).",
+      "solution_summary": "Reactivity series: Mg > Al > Zn > Fe > Cu.",
+      "concepts_required": [
+        "RD_05"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 1.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of metal reactivity series."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q4",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 4,
+      "question_text": "What is the maximum number of electrons in f subshell with same spin?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Quantum Numbers - f Subshell",
+      "correct_answer": "f subshell has 7 orbitals, each can hold one electron with same spin (according to Hund's rule), so maximum 7 electrons with same spin.",
+      "solution_summary": "f subshell has 7 orbitals, so 7 electrons can have same spin.",
+      "concepts_required": [
+        "SA_36",
+        "SA_29"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Counting orbitals in f subshell and Hund's rule."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q5",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 5,
+      "question_text": "Two litres of an ideal gas at a pressure of 10 atm expands isothermally into a vacuum until its total volume is 10 litres. How much heat is absorbed and how much work is done in the expansion?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Work Done in Vacuum Expansion",
+      "correct_answer": "Work done = 0 (expansion into vacuum, pext = 0). Heat absorbed = 0 (isothermal, no work, no change in internal energy).",
+      "solution_summary": "In vacuum expansion, w = 0, q = 0 (free expansion).",
+      "concepts_required": [
+        "TH_07",
+        "TH_05"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.3,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of first law for free expansion."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q6",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 6,
+      "question_text": "Why the symbols of ⁷⁹₃₅Br and ³⁵₃₄Ba are not acceptable?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Atomic Symbols",
+      "correct_answer": "⁷⁹₃₅Br: 79 is mass number (A), 35 is atomic number (Z) - acceptable. Actually the question seems to have a typo. ³⁵₃₄Ba: Ba has Z=56, so ³⁵₃₄Ba is wrong because atomic number of Ba is 56, not 34. The symbol should have A as superscript and Z as subscript. For Br, Z=35, A≈80, so ⁸⁰₃₅Br is correct. ³⁵₃₄Ba is wrong because Ba has Z=56.",
+      "solution_summary": "The symbol should be written as ^A_Z X. For Br, Z=35, not 79. For Ba, Z=56, not 34.",
+      "concepts_required": [
+        "SA_08"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of atomic symbol notation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q7",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 7,
+      "question_text": "Why alkali and alkaline earth metals cannot be obtained by chemical reduction methods?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Inorganic Chemistry - s-Block Elements",
+      "sub_topic": "Extraction of Metals",
+      "correct_answer": "Alkali and alkaline earth metals are themselves strong reducing agents. They have very negative E° values, so they cannot be reduced by chemical reducing agents; they are obtained by electrolysis of their molten salts.",
+      "solution_summary": "Alkali metals are strong reducing agents, so they cannot be reduced chemically; electrolysis is used.",
+      "concepts_required": [
+        "SB_13",
+        "SB_35"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of extraction methods based on electrode potentials."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q8",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 8,
+      "question_text": "Give reason: (a) F has lower electron gain enthalpy than Cl. (b) Ionization enthalpy of N is higher than O.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Inorganic Chemistry - Periodic Properties",
+      "sub_topic": "Electron Gain Enthalpy and Ionisation Enthalpy",
+      "correct_answer": "(a) F has smaller size, strong inter-electronic repulsions in compact 2p subshell, so electron gain enthalpy is less negative than Cl. (b) N has half-filled 2p³ configuration (extra stable), so ionisation enthalpy is higher than O.",
+      "solution_summary": "Reasons for anomalous trends.",
+      "concepts_required": [
+        "CEP_15",
+        "CEP_16"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of periodic trends and exceptions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q9",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 9,
+      "question_text": "Arrange benzene, hexane and ethyne in decreasing order of acidic behaviour by giving reasons.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Acidity of Hydrocarbons",
+      "correct_answer": "Ethyne > Benzene > Hexane (n-pentane). Reason: Greater s-character of C-H bond makes carbon more electronegative, increasing acidity. sp (50%) > sp² (33%) > sp³ (25%).",
+      "solution_summary": "Acidity increases with s-character of C-H bond: ethyne (sp) > benzene (sp²) > hexane (sp³).",
+      "concepts_required": [
+        "HC_38",
+        "HC_21",
+        "OC_26"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Correlation of acidity with s-character."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q10",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 10,
+      "question_text": "How domestic waste can be used as manure? OR (a) Give reasons: \"Extra-ordinary stability of benzene though it contains three double bonds\". (b) Give the balanced ionic reaction of Mn³⁺ on disproportionation.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Environmental Chemistry / Organic Chemistry - Aromaticity / Inorganic - Redox",
+      "sub_topic": "Waste Management, Benzene Stability, Disproportionation",
+      "correct_answer": "Domestic waste: separate biodegradable (organic matter) from non-biodegradable (plastic, glass). Biodegradable portion can be converted into manure by composting. OR (a) Benzene has delocalised π electrons (resonance), making it extra stable. (b) 2Mn³⁺ + 2H₂O → Mn²⁺ + MnO₂ + 4H⁺.",
+      "solution_summary": "Composting of organic waste. Benzene stability due to resonance. Disproportionation of Mn³⁺.",
+      "concepts_required": [
+        "HC_49",
+        "RD_14",
+        "TH_32"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of resonance stability and disproportionation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q11",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 11,
+      "question_text": "Give reasons: \"The reaction 2Na(s) + H₂(g) → 2NaH(s) is a redox change\".",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Redox Reactions",
+      "sub_topic": "Redox Reactions",
+      "correct_answer": "Na is oxidised (0 to +1), H is reduced (0 to -1). Both oxidation and reduction occur, so it is a redox reaction.",
+      "solution_summary": "Na: 0 → +1 (oxidation); H: 0 → -1 (reduction).",
+      "concepts_required": [
+        "RD_03",
+        "RD_09"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Identification of oxidation and reduction in a reaction."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q12",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 12,
+      "question_text": "Give reason: (i) Graphite is used as lubricant. (ii) Diamond is used as an abrasive. (iii) Aluminium alloys are used to make aircraft body.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - p-Block Elements / s-Block",
+      "sub_topic": "Allotropes of Carbon, Aluminium Alloys",
+      "correct_answer": "(i) Graphite has layered structure with weak van der Waals forces between layers, allowing them to slip over each other. (ii) Diamond is extremely hard due to strong covalent 3D network. (iii) Aluminium alloys are light, strong, and corrosion resistant.",
+      "solution_summary": "Properties of graphite, diamond, and aluminium alloys.",
+      "concepts_required": [
+        "PB_32",
+        "PB_33",
+        "SB_04"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of structure-property relationships."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q13",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 13,
+      "question_text": "An alkyl halide compound 'A' (C₅H₁₁Br) reacts with ethanolic KOH to give compound 'B', an alkene. 'B' on reaction with bromine gives compound 'C'. 'C' on further dehydrobromination gives compound 'D'. When one mole of 'D' is treated with sodium metal in liquid ammonia, it gives one mole of sodium salt of 'D' and half a mole of hydrogen gas. On complete hydrogenation, 'D' gives a straight chain alkane. Identify A, B, C, D and write reactions involved.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Hydrocarbons / Haloalkanes",
+      "sub_topic": "Reaction Sequences and Identification",
+      "correct_answer": "A = CH₃CH₂CH₂CH₂CH₂Br (1-bromopentane). B = CH₃CH₂CH₂CH=CH₂ (pent-1-ene). C = CH₃CH₂CH₂CH(Br)CH₂Br (1,2-dibromopentane). D = CH₃CH₂CH₂C≡CH (pent-1-yne). Reactions: (i) CH₃CH₂CH₂CH₂CH₂Br + alc.KOH → CH₃CH₂CH₂CH=CH₂ + KBr + H₂O. (ii) CH₃CH₂CH₂CH=CH₂ + Br₂ → CH₃CH₂CH₂CH(Br)CH₂Br. (iii) CH₃CH₂CH₂CH(Br)CH₂Br + 2alc.KOH → CH₃CH₂CH₂C≡CH + 2KBr + 2H₂O. (iv) CH₃CH₂CH₂C≡CH + NaNH₂ → CH₃CH₂CH₂C≡CNa + NH₃. (v) CH₃CH₂CH₂C≡CH + 2H₂ → CH₃CH₂CH₂CH₂CH₃.",
+      "solution_summary": "Stepwise identification: alkyl halide to alkene, bromination, dehydrohalogenation to alkyne, sodium salt formation.",
+      "concepts_required": [
+        "HH_24",
+        "HC_25",
+        "HC_42",
+        "HH_27"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.9,
+          "counting_enumeration": 0.1,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 5,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Connecting multiple reactions to identify compounds."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q14",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 14,
+      "question_text": "Calculate the amount of ammonia formed when 50 kg of N₂(g) and 10.0 kg H₂(g) are mixed to produce NH₃(g). Identify the limiting reagent.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Stoichiometry and Limiting Reagent",
+      "correct_answer": "Limiting reagent: H₂. Amount of NH₃ formed = 56.1 kg.",
+      "solution_summary": "N₂ + 3H₂ → 2NH₃. Moles N₂ = 50000/28 = 1785.7 mol. Moles H₂ = 10000/2 = 5000 mol. H₂ is limiting. Moles NH₃ = 2/3 × 5000 = 3333.3 mol. Mass = 3333.3 × 17 = 56666.6 g = 56.67 kg ≈ 56.1 kg.",
+      "concepts_required": [
+        "SBC_26",
+        "SBC_22"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Stoichiometric calculation with limiting reagent identification."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q15",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 15,
+      "question_text": "Give reasons: (i) Evaporation causes cooling. (ii) Falling liquids drops are spherical. (iii) Vapour pressure of acetone is less than that of ether at same temperature.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - States of Matter",
+      "sub_topic": "Intermolecular Forces, Surface Tension, Vapour Pressure",
+      "correct_answer": "(i) Evaporation removes high energy molecules, lowering average kinetic energy and temperature. (ii) Surface tension minimises surface area; sphere has minimum surface area for given volume. (iii) Acetone has stronger intermolecular forces (dipole-dipole) than ether, so lower vapour pressure.",
+      "solution_summary": "Evaporation cooling, surface tension, and vapour pressure comparison.",
+      "concepts_required": [
+        "CB_17",
+        "TH_19"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.6,
+          "comparative_ranking": 0.4
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of intermolecular forces and their effects."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q16",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 16,
+      "question_text": "What happens when alkali metals reacts in air?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - s-Block Elements",
+      "sub_topic": "Reaction of Alkali Metals with Air",
+      "correct_answer": "Alkali metals tarnish in dry air forming oxides, which react with moisture to form hydroxides. Li forms Li₂O, Na forms Na₂O₂, K/Rb/Cs form superoxides (MO₂).",
+      "solution_summary": "Oxide formation: Li→Li₂O, Na→Na₂O₂, K→KO₂ (superoxide).",
+      "concepts_required": [
+        "SB_10"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.4,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of alkali metal reactions with oxygen."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q17",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 17,
+      "question_text": "Give the Lewis representation of: (i) Nitric acid (ii) Ammonia (iii) Ozone molecule",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Chemical Bonding",
+      "sub_topic": "Lewis Structures",
+      "correct_answer": "Lewis structures as per standard representations.",
+      "solution_summary": "HNO₃: O=N-O-H with lone pairs. NH₃: N with three H and one lone pair. O₃: resonance structures with O-O-O.",
+      "concepts_required": [
+        "CB_06",
+        "CB_16"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Drawing Lewis structures."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q18",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 18,
+      "question_text": "In the reaction: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) + 189.4 kJ. Indicate the direction in which the equilibrium will shift when: (i) Concentration of SO₂ is increased. (ii) Concentration of SO₃ is increased. (iii) Temperature is increased.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Equilibrium",
+      "sub_topic": "Le Chatelier's Principle",
+      "correct_answer": "(i) Forward direction (to consume SO₂). (ii) Backward direction (to consume SO₃). (iii) Backward direction (endothermic reverse reaction absorbs heat).",
+      "solution_summary": "Le Chatelier's principle applications.",
+      "concepts_required": [
+        "EQ_18",
+        "EQ_19",
+        "EQ_20"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Le Chatelier's principle."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q19",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 19,
+      "question_text": "Calculate the wavelength in nm, of visible light having a frequency of 4.37 × 10⁻¹⁴ / s.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Electromagnetic Radiation",
+      "correct_answer": "λ = c/ν = 3×10⁸ / 4.37×10¹⁴ = 6.86 × 10⁻⁷ m = 686 nm.",
+      "solution_summary": "Using c = νλ, λ = c/ν.",
+      "concepts_required": [
+        "SA_11"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of wave equation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q20",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 20,
+      "question_text": "Comment on each of the following observations: (i) Lithium forms a nitride directly like magnesium. Give equation involved. (ii) BaO is soluble but BaSO₄ is insoluble in water.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - s-Block Elements",
+      "sub_topic": "Diagonal Relationship, Solubility",
+      "correct_answer": "(i) Li and Mg follow diagonal relationship; both form nitrides: 6Li + N₂ → 2Li₃N; 3Mg + N₂ → Mg₃N₂. (ii) BaO has lower lattice enthalpy than BaSO₄; hydration energy of BaO exceeds lattice energy, so soluble. BaSO₄ has high lattice energy, insoluble.",
+      "solution_summary": "Diagonal relationship: Li-Mg both form nitrides. BaO soluble due to lower lattice enthalpy.",
+      "concepts_required": [
+        "SB_04",
+        "SB_38",
+        "SB_41"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.6,
+          "comparative_ranking": 0.4
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of diagonal relationship and solubility trends."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q21",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 21,
+      "question_text": "Give a note on: (i) Mist (ii) Smoke (iii) Fumes (iv) Dust",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Environmental Chemistry / Surface Chemistry",
+      "sub_topic": "Colloids - Types",
+      "correct_answer": "(i) Mist: liquid droplets dispersed in gas (aerosol). (ii) Smoke: solid particles dispersed in gas. (iii) Fumes: solid particles from condensation of vapours (metallurgical operations). (iv) Dust: solid particles from grinding/combustion.",
+      "solution_summary": "Definitions of different types of colloidal dispersions.",
+      "concepts_required": [
+        "SC_12"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of colloidal dispersion types."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q22",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 22,
+      "question_text": "Calculate the enthalpy change when 2.38 g of CO vaporizes at its normal boiling point, if the enthalpy of vaporization of CO is 6.04 kJ/mol.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Enthalpy of Vaporisation",
+      "correct_answer": "Molar mass of CO = 28 g/mol. Moles = 2.38/28 = 0.085 mol. Enthalpy change = 0.085 × 6.04 = 0.513 kJ = 513 J.",
+      "solution_summary": "Using ΔH_vap = n × ΔH_vap°.",
+      "concepts_required": [
+        "TH_19",
+        "SBC_23"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.6,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Calculation using enthalpy of vaporisation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q23",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 23,
+      "question_text": "John takes snacks every day to school, but Mala takes vegetables, chapattis and curd. Chips and snacks packet are filled with nitrogen gas. If they are filled with oxygen, they will get rancid. (a) What is meant by rancidity? (b) How do you preserve butter? (c) Why chips are packed with nitrogen gas?",
+      "question_type": "Subjective",
+      "marks": 4,
+      "topic": "Chemistry in Everyday Life",
+      "sub_topic": "Rancidity and Food Preservation",
+      "correct_answer": "(a) Rancidity: spoilage of food due to oxidation of fats and oils. (b) Butter is preserved by refrigeration, adding salt, and antioxidants. (c) Nitrogen is inert and prevents oxidation (rancidity) of chips.",
+      "solution_summary": "Definition of rancidity, preservation methods, role of nitrogen.",
+      "concepts_required": [
+        "CEL_01"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of rancidity and food preservation concepts."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q24",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 24,
+      "question_text": "Differentiate valency and oxidation number. [Any five points] OR For the reaction: CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g) at 800 K, Kc = 4.24. If only CO and H₂O are present initially at concentrations of 0.1 M each, calculate equilibrium concentrations.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Redox Reactions / Equilibrium",
+      "sub_topic": "Valency vs Oxidation Number, Equilibrium Calculations",
+      "correct_answer": "OR: Initial: [CO]=0.1, [H₂O]=0.1, [CO₂]=0, [H₂]=0. Let x be change. At equilibrium: [CO]=0.1-x, [H₂O]=0.1-x, [CO₂]=x, [H₂]=x. Kc = x²/(0.1-x)² = 4.24. x/(0.1-x) = √4.24 = 2.06. x = 0.067 M. Equilibrium: [CO]=[H₂O]=0.033 M, [CO₂]=[H₂]=0.067 M.",
+      "solution_summary": "Equilibrium calculations using ICE table.",
+      "concepts_required": [
+        "RD_06",
+        "EQ_16"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of equilibrium constant and ICE table."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q25",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 25,
+      "question_text": "Explain the rules for calculating oxidation number. OR (i) Write the chemical reactions when borax solution is acidified. (ii) Explain why BF₃ exists whereas BH₃ does not? (iii) SiO₂ is solid but CO₂ is a gas at room temperature.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Redox Reactions / Inorganic Chemistry",
+      "sub_topic": "Oxidation Number Rules, Borax, BF₃ vs BH₃, SiO₂ vs CO₂",
+      "correct_answer": "Rules for oxidation number: (1) Free elements have ON 0. (2) Monoatomic ions have ON equal to charge. (3) Oxygen is -2 (except peroxides -1, superoxides -1/2, OF₂ +2). (4) Hydrogen is +1 (except metal hydrides -1). (5) Fluorine is -1. (6) Sum of ON in compound is zero; in ion equals charge. OR (i) Na₂B₄O₇ + 2HCl + 5H₂O → 2NaCl + 4H₃BO₃. (ii) BF₃ has pπ-pπ back bonding from F to B, reducing electron deficiency; BH₃ has no back bonding, so dimerises to B₂H₆. (iii) CO₂ is linear non-polar gas (weak intermolecular forces); SiO₂ has 3D network structure (strong covalent bonds), so solid.",
+      "solution_summary": "Rules for oxidation numbers; explanations for chemical properties.",
+      "concepts_required": [
+        "RD_07",
+        "PB_14",
+        "PB_18",
+        "PB_42"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.2,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Multiple concepts: oxidation number rules, back bonding, structure-property relationships."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample_Q26",
+      "year": 2017,
+      "paper": "Sample Paper-01",
+      "question_number": 26,
+      "question_text": "(a) In which C-C bond of CH₃CH₂CH₂Br, the inductive effect is expected to be least? (b) Which of the following compound shows geometrical isomerism? (i) Pent-1-ene (ii) Pent-2-ene (iii) 2-Methylbut-2-ene (c) What type of isomerism is present in the following pairs? (i) CH₃CH₂CH₂OH and CH₃CH(OH)CH₃ (ii) CH₃CH₂COCH₂CH₃ and CH₃COCH₂CH₂CH₃ (iii) CH₃CH₂OH and CH₃OCH₃ OR (a) How will you convert ethanoic acid into benzene? (b) \"Branched chain hydrocarbons have lower boiling point than straight chain hydrocarbon\". Why?",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Organic Chemistry - Basic Concepts / Hydrocarbons",
+      "sub_topic": "Inductive Effect, Geometrical Isomerism, Isomerism, Conversions",
+      "correct_answer": "(a) Least inductive effect in C2-C3 bond (farthest from Br). (b) Pent-2-ene shows geometrical isomerism (cis-trans). (c) (i) Position isomerism. (ii) Metamerism. (iii) Functional isomerism. OR (a) CH₃COOH → CH₃COONa → CH₄ (decarboxylation) → CH₃Cl → C₂H₆ → C₂H₅Cl → C₂H₄ → C₂H₄Br₂ → C₂HBr → C₂H₂ → benzene (cyclic polymerisation). (b) Branched chains have smaller surface area, weaker van der Waals forces, lower boiling point.",
+      "solution_summary": "Inductive effect, geometrical isomerism, isomerism types, conversions.",
+      "concepts_required": [
+        "OC_26",
+        "HC_24",
+        "OC_17",
+        "OC_18",
+        "OC_19",
+        "HC_47",
+        "HH_14"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "comparative_ranking",
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.4,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 1,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Multiple organic chemistry concepts: inductive effect, isomerism, and conversions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    }
+  ]
+}

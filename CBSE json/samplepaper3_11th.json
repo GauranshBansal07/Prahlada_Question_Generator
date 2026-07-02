@@ -1,0 +1,1895 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "subject": "Chemistry",
+    "version": "2.0",
+    "last_updated": "2026-06-26",
+    "scoring_version": "Exam_Spectrum_v1",
+    "concept_database_used": "NCERT_Chapters_1_to_25_2026",
+    "papers_included": [
+      {
+        "year": 2025,
+        "paper": "Set-02",
+        "question_count": 33,
+        "file_reference": "b0eee211-9f23-40b0-abb2-fc9fd6253850.pdf"
+      }
+    ]
+  },
+  "archetypes": {
+    "long_reaction_chains": {
+      "id": "ARC_001",
+      "name": "Long Reaction Chains",
+      "description": "Questions involving multiple sequential steps, reagents, or transformations.",
+      "indicators": {
+        "text_patterns": [
+          "reacts with",
+          "followed by",
+          "then treated with",
+          "on heating gives"
+        ],
+        "structural_patterns": [
+          "Multiple arrows in sequence",
+          "Product of one step becomes reactant of next"
+        ],
+        "concepts_involved": [
+          "Reaction mechanism understanding",
+          "Functional group transformations",
+          "Regioselectivity/Stereoselectivity",
+          "Intermediate stability"
+        ]
+      }
+    },
+    "counting_enumeration": {
+      "id": "ARC_002",
+      "name": "Counting/Enumeration",
+      "description": "Questions requiring counting of molecules, ions, bonds, or specific numerical calculations.",
+      "indicators": {
+        "text_patterns": [
+          "how many",
+          "number of",
+          "count the",
+          "which of the following"
+        ],
+        "structural_patterns": [
+          "List of compounds given",
+          "Multiple conditions to check"
+        ],
+        "concepts_involved": [
+          "Isomer counting",
+          "Optical activity criteria",
+          "Chemical test outcomes",
+          "Group classification",
+          "Property enumeration"
+        ]
+      }
+    },
+    "deep_mechanistic_reasoning": {
+      "id": "ARC_003",
+      "name": "Deep Mechanistic Reasoning",
+      "description": "Questions requiring understanding of reaction mechanisms, intermediates, or transition states.",
+      "indicators": {
+        "text_patterns": [
+          "mechanism",
+          "intermediate",
+          "transition state",
+          "electron density"
+        ],
+        "structural_patterns": [
+          "Curved arrow notation",
+          "Intermediate structures",
+          "Energy profile diagrams",
+          "Electron pushing"
+        ],
+        "concepts_involved": [
+          "Reaction kinetics",
+          "Thermodynamic vs kinetic control",
+          "Intermediate stability",
+          "Transition state theory",
+          "Electron delocalization",
+          "Orbital interactions"
+        ]
+      }
+    },
+    "comparative_ranking": {
+      "id": "ARC_004",
+      "name": "Comparative Ranking",
+      "description": "Questions requiring comparison of properties (acidity, basicity, reactivity, etc.) and arranging in orders.",
+      "indicators": {
+        "text_patterns": [
+          "most acidic",
+          "most basic",
+          "correct order of",
+          "arrange in increasing"
+        ],
+        "structural_patterns": [
+          "List of compounds to compare",
+          "Property to compare"
+        ],
+        "concepts_involved": [
+          "Inductive effect",
+          "Resonance effect",
+          "Hyperconjugation",
+          "Steric effect",
+          "Solvent effect",
+          "Aromaticity",
+          "Electronegativity",
+          "Polarizability"
+        ]
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "2025CBSE_Class11_Set02_Q1",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 1,
+      "question_text": "In the given reaction, CH2=CH2(g) + H2(g) → CH3-CH3(g), ethene undergoes (A) reduction process (B) oxidation process (C) substitution process (D) All of these",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Addition of Hydrogen - Reduction",
+      "correct_answer": "A",
+      "solution_summary": "Addition of hydrogen to an alkene is reduction (hydrogenation).",
+      "concepts_required": [
+        "HC_06"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of hydrogenation as reduction."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q2",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 2,
+      "question_text": "To which the terms stationary phase and mobile phase are associated? (A) Chromatography (B) Spectroscopy (C) Differential Extraction (D) Distillation under reduced pressure",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Purification Methods",
+      "sub_topic": "Chromatography",
+      "correct_answer": "A",
+      "solution_summary": "Stationary phase and mobile phase are associated with chromatography.",
+      "concepts_required": [
+        "OC_41"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 1.0,
+          "distractor_plausibility": 0.4,
+          "matching_risk": false
+        },
+        "reasoning": "Definition of chromatography terms."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 1.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q3",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 3,
+      "question_text": "What will be the value of logarithm of equilibrium constant Kp if the standard free energy change of a reaction is ΔG° = -115 kJ at 298 K will be (A) 13.83 (B) 2.015 (C) 20.15 (D) 2.303",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Gibbs Free Energy and Equilibrium Constant",
+      "correct_answer": "C",
+      "solution_summary": "ΔG° = -2.303RT log Kp. log Kp = -ΔG°/(2.303RT) = 115000/(2.303 × 8.314 × 298) = 20.15.",
+      "concepts_required": [
+        "TH_37"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Application of ΔG° = -RT ln K."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q4",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 4,
+      "question_text": "The elements characterised by the filling of 4f orbitals are: (A) Alkali metals (B) Alkaline earth metals (C) Lanthanoids (D) Transition elements",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - Classification of Elements",
+      "sub_topic": "f-Block Elements",
+      "correct_answer": "C",
+      "solution_summary": "Lanthanoids are characterised by the filling of 4f orbitals (Ce to Lu).",
+      "concepts_required": [
+        "CEP_11"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of f-block elements."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q5",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 5,
+      "question_text": "Acetylene is prepared by the action of water on: (A) Al4C3 (B) CaC2 (C) Silicon carbide (D) All of these",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Preparation of Acetylene",
+      "correct_answer": "B",
+      "solution_summary": "Acetylene (C2H2) is prepared by the action of water on calcium carbide (CaC2).",
+      "concepts_required": [
+        "HC_41"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of preparation of acetylene."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q6",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 6,
+      "question_text": "The effective distance between the centre of the nucleus of an ion and the point up to which the nucleus has an influence on its electron cloud is called (A) ionic radius (B) cationic radius (C) covalent radius (D) anionic radius",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - Periodic Properties",
+      "sub_topic": "Ionic Radius",
+      "correct_answer": "A",
+      "solution_summary": "Ionic radius is the effective distance from nucleus to the outermost electron cloud of an ion.",
+      "concepts_required": [
+        "CEP_14"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Definition of ionic radius."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q7",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 7,
+      "question_text": "Presence of a nitro group in a benzene ring: (A) deactivates the ring towards electrophilic substitution. (B) activates the ring towards electrophilic substitution. (C) renders the ring basic. (D) deactivates the ring towards nucleophilic substitution.",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Directing Effect of Substituents",
+      "correct_answer": "A",
+      "solution_summary": "Nitro group is electron withdrawing and deactivates the benzene ring towards electrophilic substitution.",
+      "concepts_required": [
+        "HC_61"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.7
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of effect of nitro group on electrophilic substitution."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q8",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 8,
+      "question_text": "On passing vapours of phenol over heated zinc dust it gets reduced to (A) benzene (B) toluene (C) C6H5OH (D) aniline",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Reduction of Phenol",
+      "correct_answer": "A",
+      "solution_summary": "Phenol is reduced to benzene when vapours are passed over heated zinc dust.",
+      "concepts_required": [
+        "APE_31"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of reduction of phenol."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q9",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 9,
+      "question_text": "Calculate the wavelength (in nanometer) associated with a proton moving at 1.0 × 10^3 ms^-1 (Mass of proton = 1.67 × 10^-27 kg and h = 6.63 × 10^-34 Js) (A) 0.40 nm (B) 0.032 nm (C) 14.0 nm (D) 2.5 nm",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "de Broglie Wavelength",
+      "correct_answer": "A",
+      "solution_summary": "λ = h/(mv) = 6.63×10^-34 / (1.67×10^-27 × 1.0×10^3) = 3.97×10^-10 m = 0.397 nm ≈ 0.40 nm.",
+      "concepts_required": [
+        "SA_25"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.7,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Application of de Broglie equation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q10",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 10,
+      "question_text": "Zn^2+/Zn represents: (A) the oxidation number of +2 of Zinc (B) the oxidised form of Zinc (C) redox couple (D) the reduced form of Zinc",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Redox Couples",
+      "correct_answer": "C",
+      "solution_summary": "Zn^2+/Zn represents a redox couple, showing both oxidised (Zn^2+) and reduced (Zn) forms.",
+      "concepts_required": [
+        "RD_19"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.6
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Definition of redox couple."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q11",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 11,
+      "question_text": "Consider the ground state of Cr atom (Z=24). The numbers of electrons with the azimuthal quantum numbers, l=1 and 2 are, respectively: (A) 12 and 4 (B) 16 and 4 (C) 12 and 5 (D) 16 and 5",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Electronic Configuration and Quantum Numbers",
+      "correct_answer": "C",
+      "solution_summary": "Cr: [Ar]3d5 4s1. l=1 (p) electrons: 2+6+6 = 12 (1s, 2s, 3s? Wait: p electrons in 2p, 3p, 4p? Actually for Cr: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^5 4s^1. l=1: 2p^6 + 3p^6 = 12. l=2: 3d^5 = 5.",
+      "concepts_required": [
+        "SA_30"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.4,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Counting electrons based on quantum numbers from electronic configuration."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q12",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 12,
+      "question_text": "Consider the elements: Cs, Ne, I and F. Identify the element(s) which exhibits neither the negative nor does the positive oxidation state. (A) Ne (B) Cs (C) Ne and F (D) I",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - Periodic Properties",
+      "sub_topic": "Oxidation States",
+      "correct_answer": "A",
+      "solution_summary": "Neon (Ne) is a noble gas with stable octet, so it does not show any oxidation state (neither positive nor negative).",
+      "concepts_required": [
+        "CEP_09"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.8
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of noble gas properties."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q13",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 13,
+      "question_text": "Assertion: Line emission spectra help in the study of electronic configuration. Reason: Each element has a unique line emission spectrum. (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion. (B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion. (C) Assertion is true but Reason is false. (D) Assertion is false but Reason is true.",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Line Emission Spectra",
+      "correct_answer": "A",
+      "solution_summary": "Assertion is true: line emission spectra reveal electronic configuration. Reason is true and explains it: each element has unique spectrum.",
+      "concepts_required": [
+        "SA_15"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of spectroscopy and electronic transitions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q14",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 14,
+      "question_text": "Assertion: 1 g O2 and 1 g O3 have an equal number of atoms. Reason: Mass of 1 mole atom is equal to its gram atomic mass. (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion. (B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion. (C) Assertion is true but Reason is false. (D) Assertion is false but Reason is true.",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Mole Concept",
+      "correct_answer": "B",
+      "solution_summary": "Assertion is true: 1g O2 has (1/32)×2×NA = NA/16 atoms; 1g O3 has (1/48)×3×NA = NA/16 atoms. Reason is also true but explains the method, not the assertion directly.",
+      "concepts_required": [
+        "SBC_22",
+        "SBC_23"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.4,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Comparison of number of atoms in equal masses of different molecules."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q15",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 15,
+      "question_text": "Assertion: Electronic configuration of an element is 1s² 2s¹. Reason: In 2s, 2 signifies the maximum capacity of s-subshell. (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion. (B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion. (C) Assertion is true but Reason is false. (D) Assertion is false but Reason is true.",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Electronic Configuration",
+      "correct_answer": "C",
+      "solution_summary": "Assertion: 1s² 2s¹ is the electronic configuration of lithium (Z=3) - true. Reason is false: in 2s, '2' signifies the principal quantum number (shell), not the maximum capacity. The maximum capacity of s-subshell is 2.",
+      "concepts_required": [
+        "SA_37",
+        "SA_29"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.7
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of quantum numbers and electronic configuration notation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q16",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 16,
+      "question_text": "Assertion: 22.4 L of N2 at NTP and 5.6 L O2 at NTP contain equal number of molecules. Reason: Under similar conditions of temperature and pressure all gases contain equal number of molecules. (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion. (B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion. (C) Assertion is true but Reason is false. (D) Assertion is false but Reason is true.",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Avogadro's Law",
+      "correct_answer": "D",
+      "solution_summary": "Assertion is false: 22.4 L N2 has NA molecules, 5.6 L O2 has NA/4 molecules. Reason is true (Avogadro's law) but does not support the assertion.",
+      "concepts_required": [
+        "SBC_19"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.7
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Avogadro's law."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q17",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 17,
+      "question_text": "The electron gain enthalpy of bromine is 3.36 eV. How much energy in kcal is released when 8 g of bromine is completely converted to Br- ions in the gaseous state? (1 eV = 23.06 kcal mol^-1)",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Periodic Properties",
+      "sub_topic": "Electron Gain Enthalpy",
+      "correct_answer": "7.748 kcal",
+      "solution_summary": "8 g Br = 8/80 = 0.1 mol. Energy = 0.1 × 3.36 × 23.06 = 7.748 kcal.",
+      "concepts_required": [
+        "CEP_16"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.6,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of electron gain enthalpy with unit conversion."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q18",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 18,
+      "question_text": "Determine the molecular formula of an oxide of iron in which the mass per cent of iron and oxygen are 69.9 and 30.1 respectively.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Empirical and Molecular Formula",
+      "correct_answer": "Fe2O3",
+      "solution_summary": "Moles Fe = 69.9/55.85 = 1.25; Moles O = 30.1/16 = 1.88. Ratio = 1.25:1.88 = 1:1.5 = 2:3. Empirical formula = Fe2O3. Molecular mass = 159.7 ≈ empirical mass, so molecular formula = Fe2O3.",
+      "concepts_required": [
+        "SBC_25"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.7,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Determination of empirical formula from percentage composition."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q19",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 19,
+      "question_text": "Why does electronegativity value increases across a period and decreases down group?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Inorganic Chemistry - Periodic Properties",
+      "sub_topic": "Electronegativity Trends",
+      "correct_answer": "Across a period: atomic size decreases, nuclear charge increases → higher attraction for electrons. Down group: atomic size increases, shielding increases → lower attraction for electrons.",
+      "solution_summary": "Trends in electronegativity explained by atomic size and effective nuclear charge.",
+      "concepts_required": [
+        "CEP_17"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.6
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Explanation of periodic trends."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q20",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 20,
+      "question_text": "Predict if the solutions of the following salts are neutral, acidic or basic: NaCl, KBr, NaCN, NH4NO3, NaNO2 and KF",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Ionic Equilibrium",
+      "sub_topic": "Salt Hydrolysis",
+      "correct_answer": "NaCl: neutral; KBr: neutral; NaCN: basic; NH4NO3: acidic; NaNO2: basic; KF: basic.",
+      "solution_summary": "Salts of strong acid + strong base = neutral; strong acid + weak base = acidic; weak acid + strong base = basic.",
+      "concepts_required": [
+        "EQ_33"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of salt hydrolysis concepts."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q21",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 21,
+      "question_text": "What will be the mass of one ^12C atom in g?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Avogadro's Number and Atomic Mass",
+      "correct_answer": "1.9927 × 10^-23 g",
+      "solution_summary": "1 mole of ^12C = 12 g = 6.022 × 10^23 atoms. Mass of 1 atom = 12/(6.022×10^23) = 1.9927 × 10^-23 g.",
+      "concepts_required": [
+        "SBC_22"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Calculation of mass of a single atom using Avogadro's number."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q22",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 22,
+      "question_text": "How do atomic radius vary in a period and in a group? How do you explain the variation?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - Periodic Properties",
+      "sub_topic": "Atomic Radius Trends",
+      "correct_answer": "Across period: decreases (increased nuclear charge, same shell). Down group: increases (new shells added, increased shielding).",
+      "solution_summary": "Trends in atomic radius explained by effective nuclear charge and number of shells.",
+      "concepts_required": [
+        "CEP_13"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.7
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of periodic trends."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q23",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 23,
+      "question_text": "Give the relationship between ΔU and ΔH for gases.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Enthalpy and Internal Energy",
+      "correct_answer": "ΔH = ΔU + Δn_g RT. For gases, Δn_g is the change in number of moles of gaseous products minus reactants.",
+      "solution_summary": "Relationship derived from ΔH = ΔU + PΔV.",
+      "concepts_required": [
+        "TH_10"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of thermodynamic relation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q24",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 24,
+      "question_text": "Calculate the amount of KClO3 needed to supply sufficient oxygen for burning 112 L of CO gas at NTP.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Stoichiometry",
+      "correct_answer": "204.17 g",
+      "solution_summary": "CO + 1/2 O2 → CO2. 112 L CO = 5 mol CO requires 2.5 mol O2. 2KClO3 → 2KCl + 3O2. 3 mol O2 from 245 g KClO3. 2.5 mol O2 from 245 × 2.5 / 3 = 204.17 g.",
+      "concepts_required": [
+        "SBC_26",
+        "SBC_23"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.4,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Multi-step stoichiometric calculation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q25",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 25,
+      "question_text": "What is the number of photons of light with wavelength 4000 pm which provides 1 J of energy?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Photon Energy",
+      "correct_answer": "2.012 × 10^16 photons",
+      "solution_summary": "E = hc/λ = 6.626×10^-34 × 3×10^8 / (4000×10^-12) = 4.969×10^-17 J. Number of photons = 1 / 4.969×10^-17 = 2.012×10^16.",
+      "concepts_required": [
+        "SA_12"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.7,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of photon energy formula."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q26",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 26,
+      "question_text": "Balance the following equation, Fe + H2O → Fe3O4 + H2",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Redox Reactions",
+      "sub_topic": "Balancing Chemical Equations",
+      "correct_answer": "3Fe + 4H2O → Fe3O4 + 4H2",
+      "solution_summary": "Balancing by trial and error: Fe: 3 each side; O: 4 each side; H: 8 each side.",
+      "concepts_required": [
+        "SBC_32"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.3,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Balancing chemical equations by adjusting coefficients."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q27",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 27,
+      "question_text": "What is screening or shielding effect? How does it influence the ionization enthalpy?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Screening Effect and Ionisation Enthalpy",
+      "correct_answer": "Screening effect: inner shell electrons reduce attraction of nucleus for outer electrons. Higher screening decreases effective nuclear charge, lowering ionisation enthalpy.",
+      "solution_summary": "Definition and effect on ionisation enthalpy.",
+      "concepts_required": [
+        "SA_26",
+        "CEP_15"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Conceptual understanding of shielding and its effect on ionisation enthalpy."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q28",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 28,
+      "question_text": "What is the difference between molality and molality?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Molarity vs Molality",
+      "correct_answer": "Molarity = moles solute / volume of solution (L). Molality = moles solute / mass of solvent (kg). Molarity depends on temperature; molality does not.",
+      "solution_summary": "Definition and comparison.",
+      "concepts_required": [
+        "SBC_30",
+        "SBC_31"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.8
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Comparison of concentration units."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q29",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 29,
+      "question_text": "Case: IUPAC Nomenclature. (a) Draw the structure of 3-Ethyl-4,4-dimethylheptane. (b) How is the numbering in branched chain hydrocarbon done? (c) Derive the structure of 2-Chlorohexane. OR Why CH4 after becoming -CH3 called a methyl group?",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Organic Chemistry - Nomenclature",
+      "sub_topic": "IUPAC Nomenclature of Alkanes",
+      "correct_answer": "(a) Heptane chain with ethyl at C3, two methyl at C4. (b) Numbering is done to give lowest possible numbers to substituents (lowest set of locants). (c) CH3-CH2-CH2-CH2-CH(Cl)-CH3. OR: Methyl group is derived from methane by removing one H.",
+      "solution_summary": "Application of IUPAC rules.",
+      "concepts_required": [
+        "OC_13"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of IUPAC nomenclature rules."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q30",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 30,
+      "question_text": "Case: Polarization. (a) Out of AlCl3 and AlI3 which halides show maximum polarization? (b) Out of AlCl3 and CaCl2 which one is more covalent in nature? (c) The non-aqueous solvent like ether is added to the mixture of LiCl, NaCl and KCl. Which will be extracted into the ether? OR Out of CaF2 and CaI2 which one has a minimum melting point?",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Inorganic Chemistry - Chemical Bonding",
+      "sub_topic": "Fajan's Rules - Polarisation",
+      "correct_answer": "(a) AlI3 (larger anion, more polarisable). (b) AlCl3 (smaller cation, higher charge density). (c) LiCl (more covalent, soluble in non-polar solvents). OR: CaI2 (larger anion, more covalent, lower melting).",
+      "solution_summary": "Application of Fajan's rules.",
+      "concepts_required": [
+        "CB_04",
+        "CB_17"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.6
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Fajan's rules to predict covalent character."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q31",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 31,
+      "question_text": "On the basis of Le Chatelier principle explain how temperature and pressure can be adjusted to increase the yield of ammonia in the following reaction: N2(g) + 3H2(g) ⇌ 2NH3(g), ΔH = -92.38 kJ mol^-1. What will be the effect of the addition of argon to the above reaction mixture at constant volume? OR Determine the degree of ionization and pH of a 0.05 M of ammonia solution. The ionization constant of ammonia Kb = 1.77 × 10^-5. Also, calculate the ionization constant of the conjugate acid of ammonia.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Equilibrium",
+      "sub_topic": "Le Chatelier's Principle and pH Calculations",
+      "correct_answer": "OR: α = 0.018; pH = 10.97; Ka of NH4+ = 5.64 × 10^-10.",
+      "solution_summary": "Le Chatelier's principle application and equilibrium calculations.",
+      "concepts_required": [
+        "EQ_19",
+        "EQ_20",
+        "EQ_29",
+        "EQ_30"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.3,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Le Chatelier's principle and acid-base equilibrium."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q32",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 32,
+      "question_text": "Attempt any five: (a) What happens when benzene is treated with acetyl chloride in presence of AlCl3? (b) Write IUPAC name: CH3-CH=CH-CH2-CH=CH-CH(CH2CH3)-CH2-CH=CH2. (c) Classify the hydrocarbons according to the carbon-carbon bond. (d) Arrange the following: HCl, HBr, HI, HF in order of decreasing reactivity towards alkenes. (e) Why is CH2=CH-CH2-Cl more easily hydrolysed than CH3-CH2-CH2-Cl? (f) Which of the two trans-but-2-ene or trans-pent-2-ene is non-polar? (g) What are benzenoids?",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Reactions, Nomenclature, Classification",
+      "correct_answer": "(a) Acetophenone (Friedel-Crafts acylation). (b) 4-Ethyl-1,5,8-decatriene. (c) Saturated, unsaturated, aromatic. (d) HI > HBr > HCl > HF (based on acidic strength/reactivity). (e) Allylic chloride gives stable allylic carbocation. (f) trans-2-butene is non-polar (dipoles cancel). (g) Benzenoids: aromatic compounds containing benzene ring.",
+      "solution_summary": "Multi-part organic chemistry questions.",
+      "concepts_required": [
+        "HC_57",
+        "OC_14",
+        "HC_01",
+        "HC_31",
+        "HH_03",
+        "CB_17",
+        "HC_48"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.4,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of multiple organic chemistry concepts."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Class11_Set02_Q33",
+      "year": 2025,
+      "paper": "Set-02",
+      "question_number": 33,
+      "question_text": "Determine the solubilities of silver chromate, barium chromate, ferric hydroxide, lead chloride and mercurous iodide at 298 K from their solubility product constants. Ksp(Ag2CrO4) = 1.1×10^-12, Ksp(BaCrO4) = 1.2×10^-10, Ksp[Fe(OH)3] = 1.0×10^-38. Determine also the molarities of individual ions. OR The ionization constant of benzoic acid is 6.46 × 10^-5 and Ksp for silver benzoate is 2.5 × 10^-13. How many times is silver benzoate more soluble in a buffer of pH 3.19 compared to its solubility in pure water?",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Ionic Equilibrium",
+      "sub_topic": "Solubility Product",
+      "correct_answer": "OR: Silver benzoate is 3.32 times more soluble in pH 3.19 buffer than in pure water.",
+      "solution_summary": "Ksp calculations for various salts and solubility in buffer.",
+      "concepts_required": [
+        "EQ_36",
+        "EQ_37",
+        "EQ_40"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Ksp and effect of pH on solubility."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    }
+  ]
+}

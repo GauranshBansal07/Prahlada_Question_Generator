@@ -1,0 +1,1954 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "subject": "Chemistry",
+    "version": "2.0",
+    "last_updated": "2026-06-26",
+    "scoring_version": "Exam_Spectrum_v1",
+    "concept_database_used": "NCERT_Chapters_1_to_25_2026",
+    "papers_included": [
+      {
+        "year": 2024,
+        "question_count": 33,
+        "file_reference": "56-1-2 Chemistry 2024 PYP.pdf",
+        "paper": "Set-2"
+      }
+    ]
+  },
+  "archetypes": {
+    "long_reaction_chains": {
+      "id": "ARC_001",
+      "name": "Long Reaction Chains",
+      "description": "Questions involving multiple sequential steps, reagents, or transformations.",
+      "indicators": {
+        "text_patterns": [
+          "reacts with",
+          "followed by",
+          "then treated with",
+          "on heating gives"
+        ],
+        "structural_patterns": [
+          "Multiple arrows in sequence",
+          "Product of one step becomes reactant of next"
+        ],
+        "concepts_involved": [
+          "Reaction mechanism understanding",
+          "Functional group transformations",
+          "Regioselectivity/Stereoselectivity",
+          "Intermediate stability"
+        ]
+      }
+    },
+    "counting_enumeration": {
+      "id": "ARC_002",
+      "name": "Counting/Enumeration",
+      "description": "Questions requiring counting of molecules, ions, bonds, or specific numerical calculations.",
+      "indicators": {
+        "text_patterns": [
+          "how many",
+          "number of",
+          "count the",
+          "which of the following"
+        ],
+        "structural_patterns": [
+          "List of compounds given",
+          "Multiple conditions to check"
+        ],
+        "concepts_involved": [
+          "Isomer counting",
+          "Optical activity criteria",
+          "Chemical test outcomes",
+          "Group classification",
+          "Property enumeration"
+        ]
+      }
+    },
+    "deep_mechanistic_reasoning": {
+      "id": "ARC_003",
+      "name": "Deep Mechanistic Reasoning",
+      "description": "Questions requiring understanding of reaction mechanisms, intermediates, or transition states.",
+      "indicators": {
+        "text_patterns": [
+          "mechanism",
+          "intermediate",
+          "transition state",
+          "electron density"
+        ],
+        "structural_patterns": [
+          "Curved arrow notation",
+          "Intermediate structures",
+          "Energy profile diagrams",
+          "Electron pushing"
+        ],
+        "concepts_involved": [
+          "Reaction kinetics",
+          "Thermodynamic vs kinetic control",
+          "Intermediate stability",
+          "Transition state theory",
+          "Electron delocalization",
+          "Orbital interactions"
+        ]
+      }
+    },
+    "comparative_ranking": {
+      "id": "ARC_004",
+      "name": "Comparative Ranking",
+      "description": "Questions requiring comparison of properties (acidity, basicity, reactivity, etc.) and arranging in orders.",
+      "indicators": {
+        "text_patterns": [
+          "most acidic",
+          "most basic",
+          "correct order of",
+          "arrange in increasing"
+        ],
+        "structural_patterns": [
+          "List of compounds to compare",
+          "Property to compare"
+        ],
+        "concepts_involved": [
+          "Inductive effect",
+          "Resonance effect",
+          "Hyperconjugation",
+          "Steric effect",
+          "Solvent effect",
+          "Aromaticity",
+          "Electronegativity",
+          "Polarizability"
+        ]
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "2024CBSE_Set2_Q1",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 1,
+      "question_text": "The most stable oxidation state of Iron is: (A) +2 (B) +3 (C) +4 (D) -2",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - d-Block Elements",
+      "sub_topic": "Oxidation States",
+      "correct_answer": "B",
+      "solution_summary": "Fe has electronic configuration [Ar]3d6 4s2. The +3 oxidation state (Fe3+, d5) is highly stable due to the half-filled d5 configuration.",
+      "concepts_required": [
+        "DF_08"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of stability of half-filled d5 configuration in Fe3+."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q2",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 2,
+      "question_text": "The product formed as a result of reaction of CH3MgBr and CO2 followed by hydrolysis is: (A) CH3CHO (B) CH3COCH3 (C) HCOOH (D) CH3COOH",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Grignard Reagents - Reaction with CO2",
+      "correct_answer": "D",
+      "solution_summary": "CH3MgBr reacts with CO2 to form CH3COOMgBr, which on hydrolysis gives acetic acid (CH3COOH).",
+      "concepts_required": [
+        "AC_40"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.7,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of Grignard reaction with CO2 to form carboxylic acids."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q3",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 3,
+      "question_text": "Nucleotides are composed of a: (A) pentose sugar and phosphoric acid (B) nitrogenous base, pentose sugar and phosphoric acid (C) nitrogenous base and phosphoric acid (D) pentose sugar and nitrogenous base",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Nucleic Acids - Nucleotides",
+      "correct_answer": "B",
+      "solution_summary": "A nucleotide is composed of three components: a nitrogenous base, a pentose sugar (ribose or deoxyribose), and a phosphoric acid group.",
+      "concepts_required": [
+        "BM_36"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Pure recall of the components of a nucleotide."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q4",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 4,
+      "question_text": "Which of the following alkyl halides will undergo SN1 reaction most readily? (A) (CH3)3-I (B) (CH3)3-Cl (C) (CH3)3-Br (D) (CH3)3-F",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Haloalkanes and Haloarenes",
+      "sub_topic": "SN1 Reactivity",
+      "correct_answer": "A",
+      "solution_summary": "All are tertiary halides. SN1 reactivity depends on the leaving group ability: I- > Br- > Cl- > F-. So, (CH3)3-I reacts most readily.",
+      "concepts_required": [
+        "HH_18",
+        "HH_19"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires comparing leaving group abilities in SN1 reactions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q5",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 5,
+      "question_text": "Phenol dimerises in benzene having van't Hoff factor 0.54. Its degree of association is: (A) 0.54 (B) 0.46 (C) 0.92 (D) 0.27",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Van't Hoff Factor and Association",
+      "correct_answer": "C",
+      "solution_summary": "For dimerisation: i = 1 - α/2. Given i = 0.54. 0.54 = 1 - α/2 → α/2 = 0.46 → α = 0.92.",
+      "concepts_required": [
+        "SOL_31",
+        "SOL_32"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires applying the relationship between van't Hoff factor and degree of association."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q6",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 6,
+      "question_text": "A reaction A2 + B2 → 2AB occurs by the following mechanism: A2 → A + A (slow), A + B2 → AB + B (fast), A + B → AB (fast). Its order would be: (A) 1 (B) 2 (C) Zero (D) 1/2",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Order from Mechanism",
+      "correct_answer": "A",
+      "solution_summary": "The slow step is A2 → 2A, so rate = k[A2]. Thus, the reaction is first order.",
+      "concepts_required": [
+        "CK_07",
+        "CK_08"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires determining the rate law from the slow step of the mechanism."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q7",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 7,
+      "question_text": "Decarboxylation of sodium benzoate on heating with soda lime gives: (A) benzene (B) benzoic acid (C) benzaldehyde (D) toluene",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Decarboxylation",
+      "correct_answer": "A",
+      "solution_summary": "Sodium benzoate (C6H5COONa) on heating with soda lime undergoes decarboxylation to give benzene (C6H6).",
+      "concepts_required": [
+        "HC_09"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 1,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recall of the decarboxylation reaction of sodium benzoate."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q8",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 8,
+      "question_text": "The IUPAC name of CH3-CO-CH2-CHO is: (A) 1-oxobutanal-3-one (B) 1-oxobutanal (C) 3-oxobutanal (D) 3-oxobutanone",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "IUPAC Nomenclature",
+      "correct_answer": "C",
+      "solution_summary": "The longest chain containing both functional groups is butanal. Numbering from the aldehyde carbon (C1), the ketone is at C3. So, 3-oxobutanal.",
+      "concepts_required": [
+        "AC_02",
+        "AC_03"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires applying IUPAC nomenclature rules for compounds with multiple functional groups."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q9",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 9,
+      "question_text": "Dehydration of tertiary alcohols with Cu at 573 K gives: (A) Alkyne (B) Alkene (C) Aldehyde (D) Ketone",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Dehydration of Alcohols",
+      "correct_answer": "B",
+      "solution_summary": "Dehydration of alcohols (including tertiary alcohols) gives alkenes. Cu at 573 K is used for dehydrogenation of primary/secondary alcohols to aldehydes/ketones, but tertiary alcohols give alkenes.",
+      "concepts_required": [
+        "APE_24"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of the product of dehydration of tertiary alcohols."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q10",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 10,
+      "question_text": "In the Arrhenius equation, when log k is plotted against 1/T, a straight line is obtained whose: (A) slope is A/R and intercept is Ea (B) slope is A and intercept is -Ea/R (C) slope is -Ea/RT and intercept is log A (D) slope is -Ea/2.303R and intercept is log A",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Arrhenius Equation",
+      "correct_answer": "D",
+      "solution_summary": "Arrhenius equation in logarithmic form: log k = log A - (Ea/2.303R)(1/T). So, slope = -Ea/2.303R and intercept = log A.",
+      "concepts_required": [
+        "CK_13"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recalling the logarithmic form of the Arrhenius equation and the slope/intercept relationship."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q11",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 11,
+      "question_text": "Phenol on reaction with aqueous bromine at room temperature gives: (A) 2-bromophenol (B) 3-bromophenol (C) 4-bromophenol (D) 2,4,6-tribromophenol",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Electrophilic Substitution in Phenols",
+      "correct_answer": "D",
+      "solution_summary": "Phenol reacts with aqueous bromine at room temperature to give 2,4,6-tribromophenol (white precipitate) due to the highly activating nature of the -OH group.",
+      "concepts_required": [
+        "APE_28"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.5,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of the bromination of phenol in aqueous medium."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q12",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 12,
+      "question_text": "The specific sequence in which amino acids are arranged in a protein is called: (A) Secondary structure (B) Primary structure (C) Tertiary structure (D) Quaternary structure",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Protein Structure",
+      "correct_answer": "B",
+      "solution_summary": "The primary structure of a protein is the specific sequence of amino acids in the polypeptide chain.",
+      "concepts_required": [
+        "BM_26"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Pure recall of the levels of protein structure."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q13",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 13,
+      "question_text": "Assertion (A): Aniline is a stronger base than ammonia. Reason (R): The unshared electron pair on nitrogen atom in aniline becomes less available for protonation due to resonance.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Organic Chemistry - Amines",
+      "sub_topic": "Basicity of Amines",
+      "correct_answer": "D",
+      "solution_summary": "Assertion is false: aniline is weaker base than ammonia. Reason is true: the lone pair on nitrogen in aniline is delocalised into the benzene ring via resonance, making it less available for protonation.",
+      "concepts_required": [
+        "AM_13"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of resonance effect on basicity of aromatic amines."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q14",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 14,
+      "question_text": "Assertion (A): The pKa of O2N-CH2-COOH is lower than that of CH3-COOH. Reason (R): -NO2 group shows electron withdrawing effect which increases the acidic character of O2N-CH2-COOH.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Acidity of Carboxylic Acids",
+      "correct_answer": "A",
+      "solution_summary": "Assertion is true: O2N-CH2-COOH is stronger acid (lower pKa) than CH3-COOH. Reason is true and explains it: -NO2 is electron withdrawing, stabilising the carboxylate ion and increasing acidity.",
+      "concepts_required": [
+        "AC_43"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of substituent effects on acidity of carboxylic acids."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q15",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 15,
+      "question_text": "Assertion (A): Transition metals have high enthalpy of atomization. Reason (R): This is because transition metals have low melting points.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - d-Block Elements",
+      "sub_topic": "Enthalpy of Atomisation",
+      "correct_answer": "C",
+      "solution_summary": "Assertion is true: transition metals have high enthalpy of atomisation due to strong metallic bonding. Reason is false: transition metals have high (not low) melting points due to strong metallic bonding.",
+      "concepts_required": [
+        "DF_04"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of metallic bonding in transition metals."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q16",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 16,
+      "question_text": "Assertion (A): When NaCl is added in water, elevation in boiling point is observed. Reason (R): Elevation in boiling point is a colligative property.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Colligative Properties - Elevation of Boiling Point",
+      "correct_answer": "A",
+      "solution_summary": "Assertion is true: NaCl elevates the boiling point of water. Reason is true and explains it: elevation in boiling point is a colligative property that depends on the number of solute particles.",
+      "concepts_required": [
+        "SOL_24",
+        "SOL_22"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.6,
+          "comparative_ranking": 0.4
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of colligative properties and their dependence on solute particles."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q17",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 17,
+      "question_text": "(a) Draw the structures of major monohalo products in each of the following reactions: [Image: (i) CH=CH2 + HBr, (ii) UV light halogenation]. OR (b) Give reasons for the following: (i) Grignard reagent should be prepared under anhydrous conditions. (ii) Alkyl halides give alcohol with aqueous KOH whereas in the presence of alcoholic KOH, alkenes are formed.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Haloalkanes and Haloarenes",
+      "sub_topic": "Reactions and Reasons",
+      "correct_answer": "(a)(i) Markovnikov addition of HBr to alkene gives the more substituted alkyl bromide. (ii) Free radical halogenation gives the most stable radical product. OR (b)(i) Grignard reagents react with water to form alkanes. (ii) Aqueous KOH gives substitution; alcoholic KOH gives elimination.",
+      "solution_summary": "Products of halogenation and reasons for anhydrous conditions and different products with KOH.",
+      "concepts_required": [
+        "HC_31",
+        "HC_12",
+        "HH_27",
+        "HH_24",
+        "HH_15"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 1,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires drawing products and understanding mechanistic reasons for reactivity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q18",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 18,
+      "question_text": "What happens when D-glucose is treated with the following reagents? (a) Br2 water (b) HCN",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Reactions of Glucose",
+      "correct_answer": "(a) Glucose + Br2 water → Gluconic acid. (b) Glucose + HCN → Glucose cyanohydrin.",
+      "solution_summary": "Oxidation with Br2 water and nucleophilic addition of HCN to glucose.",
+      "concepts_required": [
+        "BM_06"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.7,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recall of specific reactions of glucose with Br2 water and HCN."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q19",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 19,
+      "question_text": "Write the chemical equations when: (a) Pentan-3-one is treated with H2N-NH2 followed by heating with KOH in high boiling solvent such as ethylene glycol. (b) Two molecules of (CH3)3C-CHO are treated with conc. NaOH.",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Named Reactions",
+      "correct_answer": "(a) Pentan-3-one + H2N-NH2/KOH → pentane (Wolff-Kishner reduction). (b) 2(CH3)3C-CHO + NaOH → (CH3)3C-CH2OH + (CH3)3C-COONa (Cannizzaro reaction).",
+      "solution_summary": "Wolff-Kishner reduction of ketone and Cannizzaro reaction of aldehyde without alpha-H.",
+      "concepts_required": [
+        "AC_26",
+        "AC_33"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.7,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recalling Wolff-Kishner reduction and Cannizzaro reaction."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q20",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 20,
+      "question_text": "Calculate the potential of Iron electrode in which the concentration of Fe2+ ion is 0.01M. (E°Fe2+/Fe = -0.45V at 298K) [Given: log 10 = 1]",
+      "question_type": "NAT",
+      "marks": 2,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Nernst Equation",
+      "correct_answer": "E = E° - (0.059/2) log(1/[Fe2+]) = -0.45 - (0.059/2) log(1/0.01) = -0.45 - 0.0295 × 2 = -0.45 - 0.059 = -0.509 V.",
+      "solution_summary": "Applying the Nernst equation for the Fe2+/Fe electrode.",
+      "concepts_required": [
+        "ELC_06"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 1.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.7,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires application of the Nernst equation for a metal-metal ion electrode."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q21",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 21,
+      "question_text": "Write two differences between order of reaction and molecularity of reaction.",
+      "question_type": "Subjective (Definitions & Comparison)",
+      "marks": 2,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Order vs Molecularity",
+      "correct_answer": "Differences: (1) Order is experimentally determined; molecularity is theoretical for elementary steps. (2) Order can be zero or fractional; molecularity is always a whole number (1, 2, or 3).",
+      "solution_summary": "Comparison of order and molecularity.",
+      "concepts_required": [
+        "CK_05",
+        "CK_06"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires comparing the definitions and characteristics of order and molecularity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q22",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 22,
+      "question_text": "Compound (A) (C6H12O2) on reduction with LiAlH4 gives two compounds (B) and (C). The compound (B) on oxidation with PCC gives compound (D) which upon treatment with dilute NaOH and subsequent heating gives compound (E). Compound (E) on catalytic hydrogenation gives compound (C). The compound (D) is oxidized further to give compound (F) which is found to be a monobasic acid (Molecular weight = 60). Identify the compounds (A), (B), (C), (D), (E) and (F).",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Identification of Organic Compounds",
+      "correct_answer": "A = CH3COOC2H5 (ethyl acetate). B = C2H5OH (ethanol). C = CH3OH (methanol). D = CH3CHO (acetaldehyde). E = CH3CH=CHCHO (crotonaldehyde). F = CH3COOH (acetic acid, MW=60).",
+      "solution_summary": "Stepwise identification: ester hydrolysis/reduction, oxidation of alcohol to aldehyde, aldol condensation, hydrogenation, and further oxidation to acetic acid.",
+      "concepts_required": [
+        "AC_12",
+        "APE_26",
+        "AC_31",
+        "AC_37"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 1.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 5,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires connecting multiple reactions to deduce the identity of unknown compounds in a sequence."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q23",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 23,
+      "question_text": "Answer the following: (any three) (a) What is peptide linkage? (b) What type of bonds hold a DNA double helix together? (c) Which one of the following is a polysaccharide? Sucrose, Glucose, Starch, Fructose. (d) Give one example each for water-soluble vitamins and fat-soluble vitamins.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Proteins, DNA, Carbohydrates, Vitamins",
+      "correct_answer": "(a) Peptide linkage: -CO-NH- bond between amino acids. (b) Hydrogen bonds. (c) Starch is a polysaccharide. (d) Water-soluble: Vitamin C (or B-complex). Fat-soluble: Vitamin A (or D, E, K).",
+      "solution_summary": "Definitions and identification of biomolecules.",
+      "concepts_required": [
+        "BM_23",
+        "BM_37",
+        "BM_02",
+        "BM_34",
+        "BM_33"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recall of definitions and identification of biomolecules."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q24",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 24,
+      "question_text": "(a) Write the mechanism of the following reaction: CH3CH2OH →[H+] CH2=CH2. (b) Write the main product in each of the following reactions: [Image: (i) Hydroboration-oxidation of but-1-ene, (ii) Oxidation of ketone]",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers / Aldehydes, Ketones",
+      "sub_topic": "Dehydration Mechanism and Reactions",
+      "correct_answer": "(a) Mechanism: Step 1: Protonation of -OH. Step 2: Loss of water to form carbocation (rate-determining). Step 3: Deprotonation to form ethene. (b)(i) Hydroboration-oxidation of but-1-ene gives butan-1-ol (anti-Markovnikov). (ii) Oxidation of ketone gives carboxylic acids (cleavage).",
+      "solution_summary": "Mechanism of acid-catalysed dehydration and products of hydroboration-oxidation and ketone oxidation.",
+      "concepts_required": [
+        "APE_25",
+        "APE_11",
+        "AC_27"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 1,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires writing the mechanism for dehydration and predicting products of hydroboration-oxidation and oxidation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q25",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 25,
+      "question_text": "(a) Write the formula for the following coordination compound: Potassium tetrahydroxidozinate (II). (b) Arrange the following complexes in the increasing order of conductivity of their solution: [Cr(NH3)5Cl]Cl2, [Cr(NH3)3Cl3], [Cr(NH3)6]Cl3. (c) Identify the type of isomerism exhibited by the following complexes: (i) [Co(NH3)5NO2]^2+ (ii) [Co(en)3]Cl3",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - Coordination Compounds",
+      "sub_topic": "Nomenclature, Conductivity, and Isomerism",
+      "correct_answer": "(a) K2[Zn(OH)4]. (b) Increasing conductivity: [Cr(NH3)3Cl3] (neutral, 0 ions) < [Cr(NH3)5Cl]Cl2 (2 ions) < [Cr(NH3)6]Cl3 (3 ions). (c)(i) Linkage isomerism (NO2 vs ONO). (ii) Optical isomerism.",
+      "solution_summary": "Formula writing, conductivity order based on number of ions, and identification of isomerism types.",
+      "concepts_required": [
+        "CC_12",
+        "CC_06",
+        "CC_15",
+        "CC_14"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.4,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires applying IUPAC rules, understanding conductivity based on ionization, and identifying isomerism types."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q26",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 26,
+      "question_text": "(a) Which of the following is an allylic halide? (i) CH3-CH=CH-Br (ii) CH2=CH-CH(Br)-CH3. (b) Out of chlorobenzene and 2,4,6-trinitrochlorobenzene, which is more reactive towards nucleophilic substitution and why? (c) Which isomer of C4H9Cl has the lowest boiling point?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Haloalkanes and Haloarenes",
+      "sub_topic": "Reactivity and Physical Properties",
+      "correct_answer": "(a) (ii) CH2=CH-CH(Br)-CH3 is allylic halide (Br attached to carbon adjacent to C=C). (b) 2,4,6-Trinitrochlorobenzene is more reactive due to electron withdrawing nitro groups stabilizing the carbanion intermediate. (c) tert-Butyl chloride (2-chloro-2-methylpropane) has the lowest boiling point due to maximum branching.",
+      "solution_summary": "Identification of allylic halide, reason for enhanced reactivity of nitro-substituted chlorobenzene, and lowest boiling point isomer.",
+      "concepts_required": [
+        "HH_03",
+        "HH_31",
+        "HH_14"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.6,
+          "comparative_ranking": 0.4
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of allylic halides, effect of substituents on reactivity, and factors affecting boiling points."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q27",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 27,
+      "question_text": "The following initial rate data were obtained for the reaction: 2NO(g) + Br2(g) → 2NOBr(g). [Table: Expt 1: [NO]=0.05, [Br2]=0.05, Rate=1.0×10^-3; Expt 2: [NO]=0.05, [Br2]=0.15, Rate=3.0×10^-3; Expt 3: [NO]=0.15, [Br2]=0.05, Rate=9.0×10^-3]. (a) What is the order with respect to NO and Br2? (b) Calculate the rate constant (k). (c) Determine the rate of reaction when [NO]=0.4M and [Br2]=0.2M.",
+      "question_type": "NAT",
+      "marks": 3,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Determination of Order from Initial Rate Data",
+      "correct_answer": "(a) When [Br2] triples (0.05 to 0.15) keeping [NO] constant, rate triples → order w.r.t Br2 = 1. When [NO] triples (0.05 to 0.15) keeping [Br2] constant, rate increases 9 times → order w.r.t NO = 2. Overall order = 3. (b) Rate = k[NO]^2[Br2]. k = 1.0×10^-3 / (0.05^2 × 0.05) = 8 L^2 mol^-2 s^-1. (c) Rate = 8 × (0.4)^2 × 0.2 = 0.256 mol L^-1 s^-1.",
+      "solution_summary": "Analysis of initial rate data to determine orders, rate constant, and rate at given concentrations.",
+      "concepts_required": [
+        "CK_03",
+        "CK_05"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 1.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires analysis of initial rate data to determine orders and calculate rate constant and rate."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q28",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 28,
+      "question_text": "When a certain conductivity cell was filled with 0.05 M KCl solution, it has a resistance of 100 ohm at 25°C. When the same cell was filled with 0.02 M AgNO3 solution, the resistance was 90 ohm. Calculate the conductivity and molar conductivity of AgNO3 solution. (Given: Conductivity of 0.05 M KCl solution = 1.35 × 10^-2 ohm^-1 cm^-1)",
+      "question_type": "NAT",
+      "marks": 3,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Conductivity and Molar Conductivity",
+      "correct_answer": "Cell constant G* = κ × R = 1.35 × 10^-2 × 100 = 1.35 cm^-1. For AgNO3 solution: κ = G*/R = 1.35/90 = 0.015 S cm^-1. Λm = κ × 1000 / M = 0.015 × 1000 / 0.02 = 750 S cm^2 mol^-1.",
+      "solution_summary": "Using the cell constant from KCl solution to find conductivity and molar conductivity of AgNO3.",
+      "concepts_required": [
+        "ELC_09",
+        "ELC_10",
+        "ELC_11"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 1.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires application of cell constant, conductivity, and molar conductivity formulas."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q29",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 29,
+      "question_text": "Case: Crystal Field Theory. (a) What is crystal field splitting energy? (b) Give reason for the violet colour of the complex [Ti(H2O)6]^3+ on the basis of crystal field theory. (c) [Cr(NH3)6]^3+ is paramagnetic while [Ni(CN)4]^2- is diamagnetic. Explain why. [Atomic No.: Cr=24, Ni=28] OR (c) Explain why [Fe(CN)6]^3- is an inner orbital complex, whereas [Fe(H2O)6]^3+ is an outer orbital complex. [Atomic No.: Fe=26]",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Inorganic Chemistry - Coordination Compounds",
+      "sub_topic": "Crystal Field Theory",
+      "correct_answer": "(a) Crystal field splitting energy is the energy difference between t2g and eg orbitals in an octahedral field. (b) Ti3+ is d1 (t2g^1 eg^0). d-d transition from t2g to eg absorbs light, giving the complementary colour (violet). (c) Cr3+ is d3 (t2g^3), paramagnetic. Ni2+ in [Ni(CN)4]^2- is d8, CN- is strong field, all electrons paired → diamagnetic. OR (c) CN- is strong field, pairs electrons → d2sp3 (inner orbital). H2O is weak field, no pairing → sp3d2 (outer orbital).",
+      "solution_summary": "CFT definitions, explanation of colour, and magnetic/inner-outer orbital classification.",
+      "concepts_required": [
+        "CC_24",
+        "CC_28",
+        "CC_27",
+        "CC_20"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires deep understanding of CFT, d-d transitions, and magnetic properties of complexes."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q30",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 30,
+      "question_text": "Case: Batteries and Fuel Cells. (a) How do primary batteries differ from secondary batteries? (b) The cell potential of Mercury cell is 1.35 V, and remains constant during its life. Give reason. (c) Write the reactions involved in the recharging of the lead storage battery. OR (c) Write two advantages of fuel cells over other galvanic cells.",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Batteries and Fuel Cells",
+      "correct_answer": "(a) Primary batteries are not rechargeable; secondary batteries are rechargeable. (b) The overall reaction in a mercury cell does not involve any change in ion concentration, so the potential remains constant. (c) Recharging of lead storage battery: Cathode: PbSO4 + 2e- → Pb + SO4^2-. Anode: PbSO4 + 2H2O → PbO2 + SO4^2- + 4H+ + 2e-. OR (c) Advantages of fuel cells: (1) Higher efficiency (about 70%) than ordinary cells. (2) Pollution-free (only water as by-product).",
+      "solution_summary": "Differences between primary and secondary batteries, reason for constant potential of mercury cell, and reactions/advantages.",
+      "concepts_required": [
+        "ELC_20",
+        "ELC_21",
+        "ELC_22",
+        "ELC_24"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "long_reaction_chains",
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.2,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of battery types, mercury cell chemistry, and fuel cell advantages."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q31",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 31,
+      "question_text": "(a) (i) Account for the following: (1) The melting and boiling points of Zn, Cd and Hg are low. (2) Of the d4 species, Cr2+ is strongly reducing while Mn3+ is strongly oxidizing. (3) E° value of Cu2+/Cu is +0.34 V. (ii) Complete and balance the following chemical equations: KMnO4 →[heat]; Cr2O7^2- + 6I^- + 14H+ →. OR (b) (i) Out of Cu2Cl2 and CuCl2, which is more stable in aqueous solution and why? (ii) Write the general electronic configuration of f-block elements. (iii) Predict which of the following will be coloured in aqueous solution and why? Sc3+, Fe3+, Zn2+. [Atomic number: Sc=21, Fe=26, Zn=30] (iv) How can you obtain potassium dichromate from sodium chromate? (v) Why do transition metals and their compounds show catalytic activities?",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Inorganic Chemistry - d- and f-Block Elements",
+      "sub_topic": "Periodic Trends, Redox, and Catalysis",
+      "correct_answer": "(a)(i)(1) Zn, Cd, Hg have completely filled d10 configuration, weak metallic bonding, low m.p./b.p. (2) Cr2+ → Cr3+ (stable d3); Mn3+ → Mn2+ (stable d5). (3) Cu has high atomisation enthalpy and low hydration enthalpy. (ii) 2KMnO4 → K2MnO4 + MnO2 + O2; Cr2O7^2- + 6I^- + 14H+ → 2Cr3+ + 3I2 + 7H2O. OR (b)(i) CuCl2 is more stable (Cu2+ more stable due to high hydration enthalpy). (ii) (n-2)f^1-14 (n-1)d^0-1 ns^2. (iii) Fe3+ is coloured (d5, unpaired electrons); Sc3+ (d0) and Zn2+ (d10) are colourless. (iv) 2Na2CrO4 + H2SO4 → Na2Cr2O7 + Na2SO4 + H2O; Na2Cr2O7 + 2KCl → K2Cr2O7 + 2NaCl. (v) Due to variable oxidation states and ability to form complexes.",
+      "solution_summary": "Reasons for periodic trends, redox behaviour, balancing equations, and transition metal properties.",
+      "concepts_required": [
+        "DF_04",
+        "DF_08",
+        "DF_09",
+        "DF_20",
+        "DF_31",
+        "DF_11",
+        "DF_13"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.2,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 5,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires deep understanding of transition metal chemistry, periodic trends, and redox behaviour."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q32",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 32,
+      "question_text": "(a) (i) At the same temperature, CO2 gas is more soluble in water than O2 gas. Which one of them will have higher value of KH and why? (ii) How does the size of blood cells change when placed in an aqueous solution containing more than 0.9% (mass/volume) sodium chloride? (iii) 1 molal aqueous solution of an electrolyte A2B3 is 60% ionized. Calculate the boiling point of the solution. (Given: Kb for H2O = 0.52 K kg mol^-1) OR (b) (i) The vapour pressures of A and B at 25°C are 75 mm Hg and 25 mm Hg, respectively. If A and B are mixed such that the mole fraction of A in the mixture is 0.4, then calculate the mole fraction of B in vapour phase. (ii) Define colligative property. Which colligative property is preferred for the molar mass determination of macromolecules? (iii) Why are equimolar solutions of sodium chloride and glucose not isotonic?",
+      "question_type": "Subjective (Numerical + Reasoning)",
+      "marks": 5,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Henry's Law, Colligative Properties, Osmosis",
+      "correct_answer": "(a)(i) O2 has higher KH because KH is inversely proportional to solubility. (ii) Blood cells shrink (crenation) due to osmosis. (iii) A2B3 → 2A^3+ + 3B^2-, n=5. α=0.6, i=1+(n-1)α = 1+4×0.6 = 3.4. ΔTb = i × Kb × m = 3.4 × 0.52 × 1 = 1.768 K. Tb = 373 + 1.768 = 374.768 K. OR (b)(i) PT = 75×0.4 + 25×0.6 = 45 mm Hg. yB = (25×0.6)/45 = 15/45 = 0.333. (ii) Colligative property depends on number of solute particles. Osmotic pressure is preferred for macromolecules. (iii) NaCl dissociates (i=2), glucose does not (i=1), so they have different osmotic pressures.",
+      "solution_summary": "Application of Henry's law, osmosis, boiling point elevation, Raoult's law, and colligative properties.",
+      "concepts_required": [
+        "SOL_12",
+        "SOL_28",
+        "SOL_24",
+        "SOL_31",
+        "SOL_14",
+        "SOL_27"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.5,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 5,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires application of multiple concepts: Henry's law, osmosis, boiling point elevation, van't Hoff factor, Raoult's law, and colligative properties."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2024CBSE_Set2_Q33",
+      "year": 2024,
+      "paper": "Set-2",
+      "question_number": 33,
+      "question_text": "Answer any five of the following: (a) N,N-diethyl-benzenesulphonamide is insoluble in alkali. Give reason. (b) Aniline does not undergo Friedel-Crafts reaction. Why? (c) Write a simple chemical test to distinguish between methylamine and aniline. (d) Write the chemical reaction involved in Gabriel phthalimide synthesis. (e) How will you convert aniline to p-bromoaniline? (f) Complete the following reaction: [Image: Diazonium salt reaction]. (g) Write the structures of A and B in the following reaction: COOH + NH3 → A →[Br2+NaOH] B.",
+      "question_type": "Subjective (Reasoning & Reactions)",
+      "marks": 5,
+      "topic": "Organic Chemistry - Amines",
+      "sub_topic": "Reactions and Tests",
+      "correct_answer": "(a) No H atom on N, so not acidic. (b) Aniline forms salt with AlCl3 (Lewis acid catalyst), deactivating the ring. (c) Carbylamine test: methylamine gives foul smell; aniline gives dye test. (d) Phthalimide + KOH → Potassium phthalimide + RX → N-alkylphthalimide + H2N-NH2 → Primary amine. (e) Aniline + Br2 in acetic acid → p-bromoaniline. (f) Product of diazonium reaction. (g) A = C6H5CONH2 (benzamide), B = C6H5NH2 (aniline) via Hofmann degradation.",
+      "solution_summary": "Reasons for insolubility, failure of Friedel-Crafts, distinguishing tests, and reactions.",
+      "concepts_required": [
+        "AM_20",
+        "AM_21",
+        "AM_16",
+        "AM_08",
+        "AM_28"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.4,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 4,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of amine chemistry, including tests, reactions, and conversions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,1544 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "subject": "Chemistry",
+    "version": "2.0",
+    "last_updated": "2026-06-26",
+    "scoring_version": "Exam_Spectrum_v1",
+    "concept_database_used": "NCERT_Chapters_1_to_25_2026",
+    "papers_included": [
+      {
+        "year": 2017,
+        "paper": "Sample Paper-02",
+        "question_count": 26,
+        "file_reference": "2017_11_sample_paper_chemistry_02_qp.pdf"
+      }
+    ]
+  },
+  "archetypes": {
+    "long_reaction_chains": {
+      "id": "ARC_001",
+      "name": "Long Reaction Chains",
+      "description": "Questions involving multiple sequential steps, reagents, or transformations.",
+      "indicators": {
+        "text_patterns": [
+          "reacts with",
+          "followed by",
+          "then treated with",
+          "on heating gives"
+        ],
+        "structural_patterns": [
+          "Multiple arrows in sequence",
+          "Product of one step becomes reactant of next"
+        ],
+        "concepts_involved": [
+          "Reaction mechanism understanding",
+          "Functional group transformations",
+          "Regioselectivity/Stereoselectivity",
+          "Intermediate stability"
+        ]
+      }
+    },
+    "counting_enumeration": {
+      "id": "ARC_002",
+      "name": "Counting/Enumeration",
+      "description": "Questions requiring counting of molecules, ions, bonds, or specific numerical calculations.",
+      "indicators": {
+        "text_patterns": [
+          "how many",
+          "number of",
+          "count the",
+          "which of the following"
+        ],
+        "structural_patterns": [
+          "List of compounds given",
+          "Multiple conditions to check"
+        ],
+        "concepts_involved": [
+          "Isomer counting",
+          "Optical activity criteria",
+          "Chemical test outcomes",
+          "Group classification",
+          "Property enumeration"
+        ]
+      }
+    },
+    "deep_mechanistic_reasoning": {
+      "id": "ARC_003",
+      "name": "Deep Mechanistic Reasoning",
+      "description": "Questions requiring understanding of reaction mechanisms, intermediates, or transition states.",
+      "indicators": {
+        "text_patterns": [
+          "mechanism",
+          "intermediate",
+          "transition state",
+          "electron density"
+        ],
+        "structural_patterns": [
+          "Curved arrow notation",
+          "Intermediate structures",
+          "Energy profile diagrams",
+          "Electron pushing"
+        ],
+        "concepts_involved": [
+          "Reaction kinetics",
+          "Thermodynamic vs kinetic control",
+          "Intermediate stability",
+          "Transition state theory",
+          "Electron delocalization",
+          "Orbital interactions"
+        ]
+      }
+    },
+    "comparative_ranking": {
+      "id": "ARC_004",
+      "name": "Comparative Ranking",
+      "description": "Questions requiring comparison of properties (acidity, basicity, reactivity, etc.) and arranging in orders.",
+      "indicators": {
+        "text_patterns": [
+          "most acidic",
+          "most basic",
+          "correct order of",
+          "arrange in increasing"
+        ],
+        "structural_patterns": [
+          "List of compounds to compare",
+          "Property to compare"
+        ],
+        "concepts_involved": [
+          "Inductive effect",
+          "Resonance effect",
+          "Hyperconjugation",
+          "Steric effect",
+          "Solvent effect",
+          "Aromaticity",
+          "Electronegativity",
+          "Polarizability"
+        ]
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "2017CBSE_Sample2_Q1",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 1,
+      "question_text": "What will be the volume of ammonia formed if 2L of nitrogen is mixed with 2L of hydrogen at constant temperature and pressure?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Gay Lussac's Law",
+      "correct_answer": "1.33 L",
+      "solution_summary": "N₂ + 3H₂ → 2NH₃. 2L N₂ requires 6L H₂, but only 2L H₂ available, so H₂ is limiting. 3L H₂ gives 2L NH₃, so 2L H₂ gives (2/3)×2 = 4/3 = 1.33L NH₃.",
+      "concepts_required": [
+        "SBC_18"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Gay Lussac's law of gaseous volumes."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q2",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 2,
+      "question_text": "Give two examples of state functions.",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "State Functions",
+      "correct_answer": "Enthalpy (H) and Internal Energy (U) are state functions. (Also: pressure, volume, temperature, entropy, Gibbs energy).",
+      "solution_summary": "State functions depend only on initial and final state, not path.",
+      "concepts_required": [
+        "TH_03"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.1,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of state function examples."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q3",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 3,
+      "question_text": "Why the molar enthalpy of vapourisation of acetone is less than that of water?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Thermodynamics / Intermolecular Forces",
+      "sub_topic": "Enthalpy of Vaporisation",
+      "correct_answer": "Acetone has weak van der Waals forces, while water has strong hydrogen bonding. More energy is required to break H-bonds in water, so water has higher enthalpy of vapourisation.",
+      "solution_summary": "Acetone has weaker intermolecular forces than water (H-bonding).",
+      "concepts_required": [
+        "TH_19",
+        "CB_17"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Comparison of intermolecular forces and their effect on enthalpy of vaporisation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q4",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 4,
+      "question_text": "How many electrons are present in 16g of methane?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Mole Concept - Electron Count",
+      "correct_answer": "6.022 × 10²⁴ electrons",
+      "solution_summary": "1 molecule CH₄ has 6+4=10 electrons. Moles of CH₄ = 16/16 = 1 mol = 6.022×10²³ molecules. Total electrons = 10 × 6.022×10²³ = 6.022×10²⁴ electrons.",
+      "concepts_required": [
+        "SBC_22",
+        "SBC_23"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Calculation of total electrons using mole concept."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q5",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 5,
+      "question_text": "How many grams of Na₂CO₃ should be dissolved to make 100cc of 0.15M Na₂CO₃?",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Some Basic Concepts",
+      "sub_topic": "Molarity",
+      "correct_answer": "1.59 g",
+      "solution_summary": "Molar mass of Na₂CO₃ = 106 g/mol. Moles needed = 0.15 × 0.1 = 0.015 mol. Mass = 0.015 × 106 = 1.59 g.",
+      "concepts_required": [
+        "SBC_30",
+        "SBC_23"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.6,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of molarity formula."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q6",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 6,
+      "question_text": "Which of these electrons experience lowest effective nuclear charge? (a) The Br atom containing 35 electrons in which 6 electrons are in 2p orbital or (b) 6 electrons in 3p orbital and 5 electrons in 4p orbital.",
+      "question_type": "Subjective",
+      "marks": 1,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "Effective Nuclear Charge",
+      "correct_answer": "Electrons in 4p orbital experience the lowest effective nuclear charge (farthest from nucleus, maximum shielding).",
+      "solution_summary": "As we go away from nucleus, effective nuclear charge decreases due to increased shielding.",
+      "concepts_required": [
+        "SA_26"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.6
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of shielding effect and effective nuclear charge."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q7",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 7,
+      "question_text": "Write structural formulas of the following compounds: (a) 3,4,4,5-Tetramethylheptane (b) 2,5-Dimethylhexane OR Write the structural formula of: (a) O-Ethylanisole (b) 2,3-Dibromo-1-phenylpentane",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Nomenclature",
+      "sub_topic": "IUPAC Names to Structures",
+      "correct_answer": "(a) CH₃-CH₂-CH(CH₃)-C(CH₃)₂-CH(CH₃)-CH₂-CH₃. (b) CH₃-CH(CH₃)-CH₂-CH₂-CH(CH₃)-CH₃. OR (a) o-C₆H₄(OCH₃)(OC₂H₅) or 1-ethoxy-2-methoxybenzene. (b) C₆H₅-CH(Br)-CH(Br)-CH₂-CH₂-CH₃.",
+      "solution_summary": "Drawing structures from IUPAC names.",
+      "concepts_required": [
+        "OC_13"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Conversion of IUPAC name to structural formula."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q8",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 8,
+      "question_text": "(a) How change in velocity of a moving particle change the wavelength of the particle? (b) Give the difference in the angular momentum of an electron present in 3p and 4p orbitals?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Structure of Atom",
+      "sub_topic": "de Broglie Wavelength, Angular Momentum",
+      "correct_answer": "(a) λ = h/(mv), so wavelength decreases with increase in velocity. (b) Angular momentum = √[l(l+1)] × h/2π. For p orbital, l=1. So angular momentum is same for 3p and 4p (same l value).",
+      "solution_summary": "de Broglie relation and angular momentum depends only on l.",
+      "concepts_required": [
+        "SA_25",
+        "SA_29"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of de Broglie wavelength and quantum numbers."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q9",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 9,
+      "question_text": "What is hydride gap? Why is heavy water used in nuclear reactors?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Inorganic Chemistry - Periodic Properties / Nuclear Chemistry",
+      "sub_topic": "Hydride Gap, Heavy Water",
+      "correct_answer": "Hydride gap: Elements of groups 7, 8 and 9 do not form hydrides. Heavy water (D₂O) is used as moderator in nuclear reactors to slow down neutrons.",
+      "solution_summary": "Hydride gap is the region where hydrides are not formed. D₂O slows neutrons.",
+      "concepts_required": [
+        "DF_01"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of hydride gap and use of heavy water."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q10",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 10,
+      "question_text": "Though carbon dioxide is inert and harmless gas, it is thought to be a serious pollutant. Why?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Environmental Chemistry",
+      "sub_topic": "Greenhouse Effect",
+      "correct_answer": "CO₂ absorbs IR radiation from atmosphere, contributing to global warming. If CO₂ level increases beyond 0.03%, the natural greenhouse balance is disturbed.",
+      "solution_summary": "CO₂ is a greenhouse gas that causes global warming.",
+      "concepts_required": [
+        "PBF_30"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of greenhouse effect and global warming."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q11",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 11,
+      "question_text": "(a) Give the importance of measuring BOD of a water body. (b) What is desirable concentration of fluoride ion and pH of drinking water? (c) Give the harmful effect of nitrogen dioxide.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Environmental Chemistry",
+      "sub_topic": "Water Pollution, Air Pollution",
+      "correct_answer": "(a) BOD measures organic pollution level; low BOD = less polluted. (b) Fluoride: 1 ppm desirable. pH: 5.5-9.5. (c) NO₂ is toxic, causes acid rain, photochemical smog, and harms plants and materials.",
+      "solution_summary": "BOD importance, fluoride and pH standards, NO₂ effects.",
+      "concepts_required": [
+        "OC_42"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of environmental chemistry standards."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q12",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 12,
+      "question_text": "(a) Define: (i) Intensive properties (ii) Adiabatic process (b) Derive ΔG = -TΔS_total from the relationship G = H - TS.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Intensive Properties, Adiabatic Process, Gibbs Energy",
+      "correct_answer": "(a)(i) Intensive properties: independent of amount (e.g., density, temperature). (ii) Adiabatic process: no heat exchange (q=0). (b) ΔG = ΔH - TΔS. ΔS_total = ΔS_system + ΔS_surroundings = ΔS - ΔH/T. Thus ΔH = -TΔS_total. Substituting: ΔG = -TΔS_total - TΔS = -T(ΔS_total + ΔS) ... Wait, standard derivation: ΔG = ΔH - TΔS. For spontaneous process, ΔS_total = ΔS - ΔH/T > 0. So ΔH - TΔS < 0 → ΔG < 0. And ΔG = -TΔS_total.",
+      "solution_summary": "Definitions and derivation of Gibbs energy relation.",
+      "concepts_required": [
+        "TH_11",
+        "TH_02",
+        "TH_32"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of thermodynamic definitions and derivation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q13",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 13,
+      "question_text": "We know that 75% of solar energy reaching the earth is absorbed. Some of the heat is trapped by gases causing global warming. (a) Suggest some measures to decrease CO gas in the atmosphere. (b) Give a method to save ozone layer. (c) Will the use of solar energy solve our problems? Comment.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Environmental Chemistry",
+      "sub_topic": "Global Warming, Ozone Depletion, Solar Energy",
+      "correct_answer": "(a) Use CNG, public transport, electric vehicles, avoid burning dry leaves/plastic. (b) Ban CFCs, use less petrol/diesel. (c) Yes, solar energy reduces pollution; green buildings save energy.",
+      "solution_summary": "Measures to reduce CO, protect ozone, and use solar energy.",
+      "concepts_required": [
+        "PB_29"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of environmental issues and solutions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q14",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 14,
+      "question_text": "Comment on the graph below. (Graph of p vs 1/V)",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Gaseous State",
+      "sub_topic": "Boyle's Law",
+      "correct_answer": "The graph is a straight line passing through origin, representing Boyle's law (p ∝ 1/V). At high pressures, gases deviate and straight line is not obtained.",
+      "solution_summary": "Boyle's law graph and deviation at high pressures.",
+      "concepts_required": [
+        "TH_05"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Interpretation of Boyle's law graph."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q15",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 15,
+      "question_text": "If the density of 3M solution of NaCl is 1.25 g/mL, calculate the molality of the solution.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Molarity to Molality Conversion",
+      "correct_answer": "2.79 m",
+      "solution_summary": "Molarity = 3M. Mass of NaCl in 1L = 3×58.5 = 175.5 g. Mass of 1L solution = 1.25×1000 = 1250 g. Mass of water = 1250 - 175.5 = 1074.5 g = 1.0745 kg. Molality = 3/1.0745 = 2.79 m.",
+      "concepts_required": [
+        "SBC_30",
+        "SBC_31"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.9,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.1
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Conversion between molarity and molality using density."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q16",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 16,
+      "question_text": "Calculate the standard enthalpy of formation of one mole of CH₃OH(l), if the combustion of one mole of methanol gives 726 kJ heat. Given: ΔfH° CO₂ = -393 kJ/mol, ΔfH° H₂O = -286 kJ/mol.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Thermodynamics",
+      "sub_topic": "Hess's Law - Enthalpy of Formation",
+      "correct_answer": "-239 kJ/mol",
+      "solution_summary": "Combustion: CH₃OH + 3/2O₂ → CO₂ + 2H₂O; ΔH = -726 kJ. ΔH = [ΔfH° CO₂ + 2ΔfH° H₂O] - [ΔfH° CH₃OH]. -726 = [-393 + 2(-286)] - ΔfH° CH₃OH = -965 - ΔfH° CH₃OH. ΔfH° CH₃OH = -965 + 726 = -239 kJ/mol.",
+      "concepts_required": [
+        "TH_15",
+        "TH_16",
+        "TH_21"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Hess's law for enthalpy of formation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q17",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 17,
+      "question_text": "What are the uses of sodium carbonate?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - s-Block Elements",
+      "sub_topic": "Sodium Carbonate Uses",
+      "correct_answer": "Sodium carbonate (washing soda) is used in: (i) water softening, laundering and cleaning. (ii) manufacture of glass, soap, borax and caustic soda.",
+      "solution_summary": "Uses of Na₂CO₃ in water softening, glass, soap, etc.",
+      "concepts_required": [
+        "SB_22"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of uses of sodium carbonate."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q18",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 18,
+      "question_text": "Describe in detail the expanded octet with suitable examples.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Chemical Bonding",
+      "sub_topic": "Expanded Octet",
+      "correct_answer": "Elements in period 3 and beyond can have more than 8 electrons in valence shell using d-orbitals. Examples: PF₅ (10 electrons around P), SF₆ (12 electrons around S), H₂SO₄.",
+      "solution_summary": "Expanded octet in elements with d-orbitals.",
+      "concepts_required": [
+        "CB_10"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of expanded octet concept with examples."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q19",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 19,
+      "question_text": "How would you prepare alkanes from alkenes?",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Hydrocarbons",
+      "sub_topic": "Hydrogenation of Alkenes",
+      "correct_answer": "Alkenes on hydrogenation with H₂ in presence of Ni, Pd or Pt catalysts give alkanes. Example: CH₂=CH₂ + H₂ → CH₃CH₃.",
+      "solution_summary": "Catalytic hydrogenation of alkenes to alkanes.",
+      "concepts_required": [
+        "HC_06"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of hydrogenation reaction."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q20",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 20,
+      "question_text": "(a) Calculate the concentration of hydroxyl ion in 0.1M solution of ammonium hydroxide having Kb = 1.8×10⁻⁵. (b) Ksp of Ni(OH)₂ = 2×10⁻¹⁵ and AgCN = 6.0×10⁻¹⁷. Which salt is more soluble? OR (a) Explain how a buffer made by sodium formate and formic acid neutralizes addition of small amount of acid or base. (b) Explain how a basic buffer (NH₄OH + NH₄NO₃) resists pH change.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Physical Chemistry - Ionic Equilibrium",
+      "sub_topic": "Ostwald's Dilution Law, Ksp, Buffer Solutions",
+      "correct_answer": "(a) [OH⁻] = √(Kb × C) = √(1.8×10⁻⁵ × 0.1) = √(1.8×10⁻⁶) = 1.34×10⁻³ M. (b) For AgCN: S = √Ksp = √(6×10⁻¹⁷) = 7.75×10⁻⁹ M. For Ni(OH)₂: S = ∛(Ksp/4) = ∛(2×10⁻¹⁵/4) = ∛(5×10⁻¹⁶) = 7.94×10⁻⁶ M. Ni(OH)₂ is more soluble. OR: Buffer neutralises acid/base by common ion effect.",
+      "solution_summary": "Hydroxyl ion concentration, Ksp comparison, buffer action.",
+      "concepts_required": [
+        "EQ_27",
+        "EQ_36",
+        "EQ_37",
+        "EQ_34"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.8,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Application of Kb, Ksp, and buffer concepts."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q21",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 21,
+      "question_text": "Give the names and formulae of the compounds in the statements given below: (a) A compound of Ca used in setting fractured bones. (b) A compound of Mg, S, O and H used as purgative in medicines. (c) A compound of Ca and C used for the production of acetylene. (d) A compound of Ca, C and N used as fertilizer.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Inorganic Chemistry - s-Block Elements / p-Block",
+      "sub_topic": "Compounds of Calcium and Magnesium",
+      "correct_answer": "(a) Plaster of Paris: CaSO₄·½H₂O. (b) Epsom salt: MgSO₄·7H₂O. (c) Calcium carbide: CaC₂. (d) Calcium cyanamide: CaCN₂.",
+      "solution_summary": "Names and formulae of important compounds.",
+      "concepts_required": [
+        "SB_48",
+        "SB_41"
+      ],
+      "concept_depth": 0.2,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Recall of common compounds and their formulae."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q22",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 22,
+      "question_text": "0.45 g of an organic compound gave 0.792 g of CO₂ and 0.324 g of water on combustion. 0.24 g of same substance was Kjeldahised and the NH₃ formed was absorbed in 50.0 cm³ of M/8 H₂SO₄. The excess acid required 77.0 cm³ of M/8 NaOH for complete neutralization. Calculate the empirical formula of the compound.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Quantitative Analysis",
+      "sub_topic": "Empirical Formula from Combustion and Kjeldahl",
+      "correct_answer": "Empirical formula: C₆H₁₂N₂? Actually calculation: C% = (12/44)×(0.792/0.45)×100 = 48%. H% = (2/18)×(0.324/0.45)×100 = 8%. N%: moles H₂SO₄ used = (50 - 77×M/8/M/8)??? Let's do: 50 cm³ M/8 H₂SO₄ = 50×1/8/1000 = 0.00625 mol. Excess NaOH = 77×1/8/1000 = 0.009625 mol. H₂SO₄ reacted with NH₃ = (0.00625 - 0.009625/2) = 0.0014375 mol. NH₃ = 2×0.0014375 = 0.002875 mol. N = 0.002875 mol. %N = (0.002875×14)/0.24 × 100 = 16.77%. O% = 100 - 48 - 8 - 16.77 = 27.23%. Mole ratio: C:48/12=4, H:8/1=8, N:16.77/14=1.2, O:27.23/16=1.7 → C₄H₈NO₂. Empirical formula = C₄H₈NO₂.",
+      "solution_summary": "Combustion analysis for C and H, Kjeldahl for N, then empirical formula.",
+      "concepts_required": [
+        "OC_44",
+        "OC_46",
+        "SBC_24",
+        "SBC_25"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "long_reaction_chains"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 6,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Multi-step calculation: combustion analysis and Kjeldahl method."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q23",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 23,
+      "question_text": "Prasad did not paint his iron gate and so it got corroded. (a) Justify: \"Corrosion is an electrochemical phenomenon\". (b) How rusting of iron be prevented? (c) What happens to the metal which undergoes corrosion?",
+      "question_type": "Subjective",
+      "marks": 4,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Corrosion",
+      "correct_answer": "(a) Corrosion involves electron transfer (oxidation of metal at anode, reduction of O₂ at cathode), so it's electrochemical. (b) Prevention: painting, oiling, greasing, galvanisation. (c) The metal gets oxidised to its oxide or salt.",
+      "solution_summary": "Corrosion as electrochemical process, prevention methods, and metal oxidation.",
+      "concepts_required": [
+        "ELC_25",
+        "ELC_26"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.2,
+          "deep_mechanistic_reasoning": 0.6,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Understanding of corrosion as electrochemical phenomenon."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q24",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 24,
+      "question_text": "(a) The species H₂O, HCO₃⁻, HSO₄⁻ and NH₃ can act both as Bronsted acids and bases. For each case give the corresponding conjugate acid and base. (b) For the reaction: CH₄(g) + H₂O(g) ⇌ CO(g) + 3H₂(g) (i) Write expression for Kp. (ii) How will the equilibrium be affected by: 1. Increasing pressure 2. Using a catalyst OR (a) Predict the acidic, basic or neutral nature of the following salts: NaCN, KBr, NaNO₂, NH₄NO₃. (b) How many grams of KBr are added to 1L of 0.05M AgNO₃ just to start precipitation of AgBr? Ksp = 5.0×10⁻¹³.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Ionic Equilibrium / Equilibrium",
+      "sub_topic": "Conjugate Acid-Base, Kp, Le Chatelier, Salt Hydrolysis, Ksp",
+      "correct_answer": "(a) H₂O: conjugate acid H₃O⁺, conjugate base OH⁻. HCO₃⁻: conjugate acid H₂CO₃, conjugate base CO₃²⁻. HSO₄⁻: conjugate acid H₂SO₄, conjugate base SO₄²⁻. NH₃: conjugate acid NH₄⁺, conjugate base NH₂⁻. (b)(i) Kp = (pCO × pH₂³)/(pCH₄ × pH₂O). (ii) 1. Increasing pressure shifts backward (fewer moles on product side). 2. Catalyst has no effect on equilibrium position. OR (a) NaCN: basic (weak acid HCN + strong base NaOH). KBr: neutral (strong acid HBr + strong base KOH). NaNO₂: basic (weak acid HNO₂). NH₄NO₃: acidic (strong acid HNO₃ + weak base NH₄OH). (b) Precipitation starts when [Ag⁺][Br⁻] = Ksp. [Ag⁺] = 0.05. [Br⁻] = 5.0×10⁻¹³/0.05 = 1.0×10⁻¹¹ M. Moles KBr needed = 1.0×10⁻¹¹ mol. Mass = 1.0×10⁻¹¹ × 119 = 1.19×10⁻⁹ g.",
+      "solution_summary": "Conjugate acid-base pairs, Kp expression, Le Chatelier, salt hydrolysis, Ksp.",
+      "concepts_required": [
+        "EQ_23",
+        "EQ_11",
+        "EQ_19",
+        "EQ_21",
+        "EQ_33",
+        "EQ_36",
+        "EQ_39"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.4,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.6,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Multiple equilibrium concepts."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q25",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 25,
+      "question_text": "With the help of structures, give the IUPAC names of different chain isomers of alkanes corresponding to the molecular formula C₆H₁₄. OR The preparation of acetaldehyde by passing mixture of ethene and oxygen under pressure into aqueous solution of PdCl₂ and CuCl₂ as a catalyst is called Wacker's process. (a) Give the best method to prepare acetaldehyde. Give two reasons. (b) Give the chemical equation for Wacker's process. (c) Give the disadvantage of preparing it from ethyne.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Organic Chemistry - Hydrocarbons / Aldehydes",
+      "sub_topic": "Isomerism, Wacker's Process",
+      "correct_answer": "Isomers of C₆H₁₄: n-hexane, 2-methylpentane, 3-methylpentane, 2,2-dimethylbutane, 2,3-dimethylbutane. OR (a) Wacker's process is best (eco-friendly, 90% yield). (b) 2CH₂=CH₂ + O₂ → 2CH₃CHO (PdCl₂/CuCl₂). (c) Ethyne route uses HgSO₄ which is unsafe for environment.",
+      "solution_summary": "Chain isomers of hexane and Wacker's process.",
+      "concepts_required": [
+        "OC_17",
+        "AC_04"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "long_reaction_chains"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.5,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 1,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Chain isomerism and Wacker's process for acetaldehyde."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2017CBSE_Sample2_Q26",
+      "year": 2017,
+      "paper": "Sample Paper-02",
+      "question_number": 26,
+      "question_text": "Give the net ionic equation for the reaction of potassium dichromate (VI) with sodium sulphite in an acid solution to give chromium (III) ion and the sulphate ion. OR Explain the reason for the following reactions to proceed differently: Pb₃O₄ + 8HCl → 3PbCl₂ + Cl₂ + 4H₂O and Pb₃O₄ + 4HNO₃ → 2Pb(NO₃)₂ + PbO₂ + 2H₂O.",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Physical Chemistry - Redox Reactions / Inorganic Chemistry",
+      "sub_topic": "Balancing Redox Equations, Pb₃O₄ Reactions",
+      "correct_answer": "Cr₂O₇²⁻ + 3SO₃²⁻ + 8H⁺ → 2Cr³⁺ + 3SO₄²⁻ + 4H₂O. OR: Pb₃O₄ is 2PbO + PbO₂. With HCl: PbO₂ oxidises Cl⁻ to Cl₂, while PbO reacts as base. With HNO₃: only PbO reacts (acid-base), PbO₂ remains due to HNO₃ being oxidising but not reducing.",
+      "solution_summary": "Balanced ionic equation for redox reaction. Explanation of Pb₃O₄ reactions.",
+      "concepts_required": [
+        "RD_16",
+        "DF_08"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.3,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.3,
+          "memory_recall_weight": 0.4,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Balancing redox equations and understanding of Pb₃O₄ chemistry."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    }
+  ]
+}

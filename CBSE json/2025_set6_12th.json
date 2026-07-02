@@ -1,0 +1,1933 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "subject": "Chemistry",
+    "version": "2.0",
+    "last_updated": "2026-06-26",
+    "scoring_version": "Exam_Spectrum_v1",
+    "concept_database_used": "NCERT_Chapters_1_to_25_2026",
+    "papers_included": [
+      {
+        "year": 2025,
+        "question_count": 33,
+        "file_reference": "9db5c80b-8da4-4970-84e7-0599eb8fe9b5.pdf",
+        "paper": "Set-6"
+      }
+    ]
+  },
+  "archetypes": {
+    "long_reaction_chains": {
+      "id": "ARC_001",
+      "name": "Long Reaction Chains",
+      "description": "Questions involving multiple sequential steps, reagents, or transformations.",
+      "indicators": {
+        "text_patterns": [
+          "reacts with",
+          "followed by",
+          "then treated with",
+          "on heating gives"
+        ],
+        "structural_patterns": [
+          "Multiple arrows in sequence",
+          "Product of one step becomes reactant of next"
+        ],
+        "concepts_involved": [
+          "Reaction mechanism understanding",
+          "Functional group transformations",
+          "Regioselectivity/Stereoselectivity",
+          "Intermediate stability"
+        ]
+      }
+    },
+    "counting_enumeration": {
+      "id": "ARC_002",
+      "name": "Counting/Enumeration",
+      "description": "Questions requiring counting of molecules, ions, bonds, or specific numerical calculations.",
+      "indicators": {
+        "text_patterns": [
+          "how many",
+          "number of",
+          "count the",
+          "which of the following"
+        ],
+        "structural_patterns": [
+          "List of compounds given",
+          "Multiple conditions to check"
+        ],
+        "concepts_involved": [
+          "Isomer counting",
+          "Optical activity criteria",
+          "Chemical test outcomes",
+          "Group classification",
+          "Property enumeration"
+        ]
+      }
+    },
+    "deep_mechanistic_reasoning": {
+      "id": "ARC_003",
+      "name": "Deep Mechanistic Reasoning",
+      "description": "Questions requiring understanding of reaction mechanisms, intermediates, or transition states.",
+      "indicators": {
+        "text_patterns": [
+          "mechanism",
+          "intermediate",
+          "transition state",
+          "electron density"
+        ],
+        "structural_patterns": [
+          "Curved arrow notation",
+          "Intermediate structures",
+          "Energy profile diagrams",
+          "Electron pushing"
+        ],
+        "concepts_involved": [
+          "Reaction kinetics",
+          "Thermodynamic vs kinetic control",
+          "Intermediate stability",
+          "Transition state theory",
+          "Electron delocalization",
+          "Orbital interactions"
+        ]
+      }
+    },
+    "comparative_ranking": {
+      "id": "ARC_004",
+      "name": "Comparative Ranking",
+      "description": "Questions requiring comparison of properties (acidity, basicity, reactivity, etc.) and arranging in orders.",
+      "indicators": {
+        "text_patterns": [
+          "most acidic",
+          "most basic",
+          "correct order of",
+          "arrange in increasing"
+        ],
+        "structural_patterns": [
+          "List of compounds to compare",
+          "Property to compare"
+        ],
+        "concepts_involved": [
+          "Inductive effect",
+          "Resonance effect",
+          "Hyperconjugation",
+          "Steric effect",
+          "Solvent effect",
+          "Aromaticity",
+          "Electronegativity",
+          "Polarizability"
+        ]
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "2025CBSE_Set6_Q1",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 1,
+      "question_text": "Which of the following transition metal ion is not coloured? (A) Cu+ (B) Ni2+ (C) Co2+ (D) V3+",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - d-Block Elements",
+      "sub_topic": "Colour of Transition Metal Ions",
+      "correct_answer": "A",
+      "solution_summary": "Cu+ has d10 configuration (completely filled d-orbitals), so it does not undergo d-d transitions and is colourless. Ni2+ (d8), Co2+ (d7), and V3+ (d2) have unpaired electrons and are coloured.",
+      "concepts_required": [
+        "DF_11"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recalling d-electron configurations and the condition for colour in transition metal ions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q2",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 2,
+      "question_text": "Which of the following solutions will have the highest boiling point in water? (A) 1% KCl (B) 1% glucose (C) 1% urea (D) 1% CaCl2",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Colligative Properties - Elevation of Boiling Point",
+      "correct_answer": "D",
+      "solution_summary": "Boiling point elevation is a colligative property: ΔTb = i × Kb × m. For same mass percentage, molality depends on molar mass. CaCl2 has low molar mass and dissociates into 3 ions (i=3), giving the highest ΔTb.",
+      "concepts_required": [
+        "SOL_24",
+        "SOL_31"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "counting_enumeration"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.5,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.5,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires comparing van't Hoff factors and molar masses to determine which solution has the highest boiling point."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q3",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 3,
+      "question_text": "During electrolysis of dilute H2SO4 using platinum electrodes, the gas evolved at the anode is: (A) H2 gas (B) O2 gas (C) SO2 gas (D) SO3 gas",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Electrolysis of Aqueous Solutions",
+      "correct_answer": "B",
+      "solution_summary": "At the anode, oxidation occurs. Water is oxidised to O2 gas: 2H2O → O2 + 4H+ + 4e-. H2 is evolved at the cathode.",
+      "concepts_required": [
+        "ELC_18"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of the products of electrolysis of dilute H2SO4."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q4",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 4,
+      "question_text": "The activation energy (Ea) of a reaction can be determined from the slope of which of the following plots? (A) ln k vs. T (B) ln k/T vs. T (C) ln k vs. 1/T (D) T/ln k vs. 1/T",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Arrhenius Equation",
+      "correct_answer": "C",
+      "solution_summary": "Arrhenius equation in logarithmic form: ln k = ln A - Ea/(RT). A plot of ln k vs 1/T gives a straight line with slope = -Ea/R, from which Ea can be determined.",
+      "concepts_required": [
+        "CK_13"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recalling the Arrhenius equation and the graphical method to determine activation energy."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q5",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 5,
+      "question_text": "Which of the following represents the fraction of molecules with energies equal to or greater than Ea? (A) Ea/RT (B) e^(-Ea/RT) (C) e^(+Ea/RT) (D) +Ea/RT",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Arrhenius Equation - Boltzmann Factor",
+      "correct_answer": "B",
+      "solution_summary": "The fraction of molecules having energy equal to or greater than activation energy (Ea) is given by the Boltzmann factor: f = e^(-Ea/RT).",
+      "concepts_required": [
+        "CK_13"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Pure recall of the Boltzmann factor representing the fraction of molecules with energy ≥ Ea."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q6",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 6,
+      "question_text": "The number of moles of AgCl precipitated when excess AgNO3 solution is mixed with one mole of [Co(NH3)3Cl3] is: (A) 0 (B) 1 (C) 2 (D) 3",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - Coordination Compounds",
+      "sub_topic": "Coordination Sphere and Ionisation",
+      "correct_answer": "A",
+      "solution_summary": "[Co(NH3)3Cl3] is a neutral complex with no ionisable chloride ions. All three chlorides are in the coordination sphere. Therefore, no AgCl is precipitated.",
+      "concepts_required": [
+        "CC_06"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.8,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires identifying whether chloride ions are in the coordination sphere or are counter ions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q7",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 7,
+      "question_text": "Which of the following haloalkanes react with aqueous KOH most rapidly by SN1 reaction? (A) 2-Chlorobutane (B) 1-Bromobutane (C) 2-Bromo-2-Methylpropane (D) 2,2-Dimethyl-1-Chloropropane",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Haloalkanes and Haloarenes",
+      "sub_topic": "SN1 Reactions",
+      "correct_answer": "C",
+      "solution_summary": "SN1 reactivity depends on carbocation stability. 2-Bromo-2-methylpropane gives a tertiary carbocation, which is most stable. 1-Bromobutane gives primary, 2-chlorobutane gives secondary. 2,2-Dimethyl-1-chloropropane is a neopentyl halide, which is extremely slow.",
+      "concepts_required": [
+        "HH_19",
+        "HH_18"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.5
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires comparing carbocation stabilities to determine SN1 reactivity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q8",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 8,
+      "question_text": "The reaction R-OH + Na → RO-Na+ + 1/2H2(g) suggests that alcohols are: (A) Acidic (B) Basic (C) Neutral (D) Amphoteric",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Acidity of Alcohols",
+      "correct_answer": "A",
+      "solution_summary": "Alcohols react with active metals like Na to liberate H2, indicating they behave as acids (though weak) by donating a proton to form alkoxide ions.",
+      "concepts_required": [
+        "APE_20"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires identifying the acidic nature of alcohols from their reaction with sodium."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q9",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 9,
+      "question_text": "At low temperature, phenol reacts with Br2 in CS2 to form: (A) 2,4,6-tribromophenol (B) p-bromophenol (C) o- and p-bromophenol (D) 2,4-dibromophenol",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Electrophilic Substitution in Phenols",
+      "correct_answer": "C",
+      "solution_summary": "In non-polar solvent (CS2) at low temperature, phenol gives a mixture of o- and p-bromophenol. With bromine water, it gives 2,4,6-tribromophenol.",
+      "concepts_required": [
+        "APE_28"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of the product of bromination of phenol under controlled conditions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q10",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 10,
+      "question_text": "When alkyl iodide is treated with large excess of ammonia, the major product obtained is: (A) Tertiary amine (B) Quaternary ammonium salt (C) Secondary amine (D) Primary amine",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Amines",
+      "sub_topic": "Ammonolysis of Alkyl Halides",
+      "correct_answer": "D",
+      "solution_summary": "With large excess of ammonia, the primary amine is the major product because the primary amine formed is less likely to undergo further alkylation due to the low concentration of alkyl halide relative to ammonia.",
+      "concepts_required": [
+        "AM_05"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding the effect of excess ammonia on the ammonolysis of alkyl halides."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q11",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 11,
+      "question_text": "An amine 'X' reacts with Hinsberg reagent and the product obtained is soluble in alkali. The amine 'X' is: (A) CH3-NH2 (B) (CH3)2NH (C) (CH3)3N (D) NH-CH3",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Amines",
+      "sub_topic": "Hinsberg Test",
+      "correct_answer": "A",
+      "solution_summary": "Primary amines react with Hinsberg reagent to give N-alkylsulphonamides, which are soluble in alkali due to the acidic proton on nitrogen. Secondary amines give products insoluble in alkali. Tertiary amines do not react.",
+      "concepts_required": [
+        "AM_20"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 1,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of the Hinsberg test and its results for different types of amines."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q12",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 12,
+      "question_text": "α-helix structure refers to: (A) primary structure of protein (B) secondary structure of protein (C) tertiary structure of protein (D) quaternary structure of protein",
+      "question_type": "MCQ",
+      "marks": 1,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Protein Structure",
+      "correct_answer": "B",
+      "solution_summary": "α-Helix is a type of secondary structure of proteins, where the polypeptide chain is coiled into a right-handed helical structure stabilised by hydrogen bonds.",
+      "concepts_required": [
+        "BM_27"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.9,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Pure recall of the levels of protein structure."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q13",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 13,
+      "question_text": "Assertion: A mixture of o-nitrophenol and p-nitrophenol can be separated by steam distillation. Reason: o-nitrophenol is steam volatile due to intermolecular hydrogen bonding.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Organic Chemistry - Alcohols, Phenols and Ethers",
+      "sub_topic": "Physical Properties of Phenols",
+      "correct_answer": "C",
+      "solution_summary": "Assertion is true: o-nitrophenol is separated from p-nitrophenol by steam distillation. Reason is false: o-nitrophenol is steam volatile due to intramolecular hydrogen bonding (not intermolecular), while p-nitrophenol has intermolecular H-bonding and is less volatile.",
+      "concepts_required": [
+        "APE_19",
+        "CB_41"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding the difference between intramolecular and intermolecular hydrogen bonding and their effect on volatility."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q14",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 14,
+      "question_text": "Assertion: Cooking time is reduced in pressure cooker. Reason: Boiling point of water inside the pressure cooker is elevated.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Effect of Pressure on Boiling Point",
+      "correct_answer": "A",
+      "solution_summary": "Assertion is true: cooking time is reduced because food cooks faster at higher temperatures. Reason is true and explains it: pressure increases the boiling point of water, allowing cooking at higher temperatures.",
+      "concepts_required": [
+        "SOL_?? - (Vapour pressure and boiling point)"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding the relationship between pressure and boiling point."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q15",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 15,
+      "question_text": "Assertion: Actinoids show irregularities in their electronic configurations. Reason: Actinoids are radioactive in nature.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Inorganic Chemistry - f-Block Elements",
+      "sub_topic": "Actinoids - Electronic Configuration",
+      "correct_answer": "B",
+      "solution_summary": "Assertion is true: actinoids show irregularities in electronic configurations due to comparable energies of 5f, 6d, and 7s orbitals. Reason is also true: actinoids are radioactive, but this does not explain the irregularities in electronic configurations.",
+      "concepts_required": [
+        "DF_30"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.7,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires distinguishing between the cause of electronic irregularities and the property of radioactivity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q16",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 16,
+      "question_text": "Assertion: Vitamin K can be stored in our body. Reason: Vitamin K is a water soluble vitamin.",
+      "question_type": "AssertionReason",
+      "marks": 1,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Vitamins",
+      "correct_answer": "C",
+      "solution_summary": "Assertion is true: Vitamin K is fat-soluble and can be stored in the body. Reason is false: Vitamin K is fat-soluble, not water-soluble.",
+      "concepts_required": [
+        "BM_33"
+      ],
+      "concept_depth": 0.3,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.6
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.5,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of fat-soluble vs water-soluble vitamins and their storage."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q17",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 17,
+      "question_text": "What is meant by positive deviation from Raoult's law? Give an example. What type of azeotrope is formed by positive deviation?",
+      "question_type": "Subjective (Definitions & Example)",
+      "marks": 2,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Non-Ideal Solutions - Positive Deviation",
+      "correct_answer": "Positive deviation: when the vapour pressure of a solution is higher than predicted by Raoult's law (A-B interactions weaker than A-A and B-B). Example: ethanol + acetone (or carbon disulphide + acetone). It forms a minimum boiling azeotrope.",
+      "solution_summary": "Definition of positive deviation with example and the type of azeotrope formed.",
+      "concepts_required": [
+        "SOL_19",
+        "SOL_21"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recall of the definition, example, and associated azeotrope for positive deviation."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q18",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 18,
+      "question_text": "State a condition under which a bimolecular reaction is kinetically first order reaction. Give an example. For which type of reactions, do order and molecularity have the same value?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "Pseudo First Order Reactions",
+      "correct_answer": "A bimolecular reaction becomes kinetically first order when one reactant is present in large excess (pseudo first order). Example: hydrolysis of ester (CH3COOC2H5 + H2O → CH3COOH + C2H5OH, where water is in excess). Order and molecularity have the same value for elementary reactions (single-step reactions).",
+      "solution_summary": "Condition for pseudo first order, example, and the relation between order and molecularity.",
+      "concepts_required": [
+        "CK_07",
+        "CK_08"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.5,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding the concept of pseudo first order reactions and the distinction between order and molecularity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q19",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 19,
+      "question_text": "(a) Write the IUPAC name of the complex [Pt(en)2Cl2]2+. Draw the structure of geometrical isomer of this complex which is optically inactive. OR (b) (i) Write the formula of the following coordination compound: Pentaamminecarbonatocobalt(III) chloride (ii) Write the IUPAC name of the linkage isomer of the complex [Co(NH3)5(NO2)]Cl2",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Inorganic Chemistry - Coordination Compounds",
+      "sub_topic": "IUPAC Nomenclature and Geometrical Isomerism",
+      "correct_answer": "(a) IUPAC name: Dichloridobis(ethylenediamine)platinum(IV) ion. The trans isomer is optically inactive due to a plane of symmetry. (b)(i) [Co(NH3)5CO3]Cl. (ii) The linkage isomer is [Co(NH3)5(ONO)]Cl2, named Pentaamminenitrito-O-cobalt(III) chloride.",
+      "solution_summary": "Application of IUPAC nomenclature and identification of optically inactive geometrical isomers.",
+      "concepts_required": [
+        "CC_12",
+        "CC_14",
+        "CC_15"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires systematic application of IUPAC rules and understanding of geometrical isomerism."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q20",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 20,
+      "question_text": "Why are haloarenes less reactive towards nucleophilic substitution reaction? How does the presence of nitro -NO2 group at ortho- and para-positions in haloarenes increase the reactivity towards nucleophilic substitution reaction?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Haloalkanes and Haloarenes",
+      "sub_topic": "Nucleophilic Substitution in Haloarenes",
+      "correct_answer": "Haloarenes are less reactive due to: (1) resonance (C-X bond has partial double bond character), (2) sp2 hybridised carbon (more electronegative, stronger bond), (3) instability of phenyl cation, and (4) electron-rich arene repels nucleophiles. Nitro groups at o/p positions increase reactivity by stabilising the carbanion intermediate through resonance (negative charge is delocalised onto the nitro group).",
+      "solution_summary": "Reasons for low reactivity of haloarenes and activation by electron-withdrawing groups.",
+      "concepts_required": [
+        "HH_30",
+        "HH_31"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires mechanistic understanding of resonance, bond character, and carbanion stabilisation in haloarenes."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q21",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 21,
+      "question_text": "The two strands in DNA are not identical but complementary. Explain. What products would be formed when DNA is hydrolysed?",
+      "question_type": "Subjective",
+      "marks": 2,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "DNA Structure and Hydrolysis",
+      "correct_answer": "DNA strands are complementary: adenine pairs with thymine (A=T) and guanine pairs with cytosine (G≡C) via hydrogen bonds. They are not identical because the sequence of bases on one strand determines the sequence on the other. On hydrolysis, DNA gives: (i) phosphoric acid, (ii) deoxyribose sugar, and (iii) nitrogenous bases (adenine, guanine, cytosine, thymine).",
+      "solution_summary": "Explanation of complementary base pairing in DNA and products of hydrolysis.",
+      "concepts_required": [
+        "BM_35",
+        "BM_37"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.6,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 1,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": true,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.8,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of DNA structure and hydrolysis products."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 2.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q22",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 22,
+      "question_text": "0.3 g of acetic acid (Molar mass = 60 g mol-1) dissolved in 30 g of benzene shows a depression in freezing point equal to 0.45°C. Calculate the percentage association of acid if it forms a dimer in the solution. Given: Kf for benzene = 5.12 K kg mol-1.",
+      "question_type": "NAT",
+      "marks": 3,
+      "topic": "Physical Chemistry - Solutions",
+      "sub_topic": "Colligative Properties - Depression in Freezing Point",
+      "correct_answer": "0.3/60 = 0.005 mol. molality = 0.005/0.03 = 0.1667 mol/kg. Observed ΔTf = i × Kf × m. 0.45 = i × 5.12 × 0.1667 → i = 0.45/(5.12 × 0.1667) = 0.527. For dimerisation: i = 1 - α/2. 0.527 = 1 - α/2 → α/2 = 0.473 → α = 0.946. Percentage association = 94.6%.",
+      "solution_summary": "Application of freezing point depression formula and van't Hoff factor for dimerisation.",
+      "concepts_required": [
+        "SOL_25",
+        "SOL_31",
+        "SOL_32"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 1.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires calculation of molality, van't Hoff factor, and degree of association from freezing point depression."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q23",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 23,
+      "question_text": "(a) Write the name of the cell which is generally used in inverters. Write the reactions taking place at anode and cathode of this cell, when it is in use. OR (b) Explain why electrolysis of an aqueous solution of NaCl gives H2 gas at cathode and Cl2 gas at anode? Write overall reaction. Given: E°Na+/Na = -2.71V, E°H2O/H2 = -0.83V, E°Cl2/Cl- = +1.36V, E°H+/O2/H2O = +1.23V",
+      "question_type": "Subjective (Electrochemistry)",
+      "marks": 3,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Cells and Electrolysis",
+      "correct_answer": "(a) Lead storage battery is used in inverters. Anode (discharge): Pb + SO4^2- → PbSO4 + 2e-. Cathode (discharge): PbO2 + 4H+ + SO4^2- + 2e- → PbSO4 + 2H2O. OR (b) At cathode, H2O is reduced (E° = -0.83V) rather than Na+ (E° = -2.71V) because less negative E° means easier reduction. At anode, Cl- is oxidised to Cl2 (E° = +1.36V) instead of water (E° = +1.23V) due to overpotential and higher concentration of Cl-. Overall: 2NaCl + 2H2O → 2NaOH + H2 + Cl2.",
+      "solution_summary": "Cell used in inverters with electrode reactions, or explanation of electrolysis products of NaCl based on electrode potentials.",
+      "concepts_required": [
+        "ELC_22",
+        "ELC_19"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.4,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires knowledge of lead storage battery or understanding of selective discharge during electrolysis."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q24",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 24,
+      "question_text": "The following data were obtained during the first order thermal decomposition of N2O5(g) at constant volume: 2N2O5(g) → 2N2O4(g) + O2(g). [Table: Time=0s, Total Pressure=0.5 atm; Time=100s, Total Pressure=0.625 atm]. Calculate rate constant. [Given: log 2 = 0.3010, log 10 = 1]",
+      "question_type": "NAT",
+      "marks": 3,
+      "topic": "Physical Chemistry - Chemical Kinetics",
+      "sub_topic": "First Order Kinetics - Pressure Method",
+      "correct_answer": "For the reaction, p0 = 0.5 atm. At time t, total pressure pt = p0 + x (where x is pressure of N2O5 decomposed). Since 2N2O5 gives 2N2O4 + O2, increase in pressure = x. At t=100s, pt = 0.625 atm, so x = 0.125 atm. pN2O5 = p0 - x = 0.5 - 0.125 = 0.375 atm. k = (2.303/t) log(p0/(p0-x)) = (2.303/100) log(0.5/0.375) = (2.303/100) log(1.333) = 0.02303 × 0.1249 = 0.002878 s-1.",
+      "solution_summary": "Application of first order integrated rate law for gas-phase reactions using pressure data.",
+      "concepts_required": [
+        "CK_11"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 1.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.9,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires application of the pressure method for first order kinetics in gas-phase reactions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q25",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 25,
+      "question_text": "A compound (A) with molecular formula C4H9I which is a primary alkyl halide, reacts with alcoholic KOH to give compound (B). Compound (B) reacts with HI to give (C) which is an isomer of (A). When (A) reacts with Na metal in the presence of dry ether, it gives a compound (D), C8H18, which is different from the compound formed when n-butyl iodide reacts with sodium. Write the structures of (A), (B), (C) and (D). Write the chemical equation when compound (A) is reacted with alcoholic KOH.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Hydrocarbons / Haloalkanes",
+      "sub_topic": "Identification of Organic Compounds",
+      "correct_answer": "A = CH3CH(CH3)CH2I (isobutyl iodide, primary but branched). B = CH3CH(CH3)=CH2 (2-methylpropene). C = CH3CH(CH3)CH2I (isobutyl iodide, same as A, isomer of n-butyl iodide). D = CH3CH(CH3)CH2-CH2CH(CH3)CH3 (2,5-dimethylhexane). Equation: CH3CH(CH3)CH2I + alc.KOH → CH3CH(CH3)=CH2 + KI + H2O.",
+      "solution_summary": "Stepwise identification based on reactions: dehydrohalogenation, addition of HI, and Wurtz reaction.",
+      "concepts_required": [
+        "HH_24",
+        "HC_31",
+        "HH_29"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 1.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.0,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 2,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires connecting multiple reactions to deduce the identity of unknown compounds in a sequence."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q26",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 26,
+      "question_text": "Write structure of the products of the following reactions: [Image: i) Ozonolysis of alkenes, ii) Oxidation of ketones, iii) Reduction of carbonyl compounds]",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Reactions of Carbonyl Compounds",
+      "correct_answer": "(i) Ozonolysis of alkenes gives aldehydes/ketones depending on the alkene. (ii) Ketones on oxidation with KMnO4 or chromic acid undergo cleavage to give carboxylic acids. (iii) Reduction of carbonyl compounds (NaBH4/LiAlH4) gives alcohols.",
+      "solution_summary": "Products of ozonolysis, oxidation of ketones, and reduction of carbonyl compounds.",
+      "concepts_required": [
+        "HC_36",
+        "AC_27",
+        "AC_25"
+      ],
+      "concept_depth": 0.5,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.8,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 1,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires writing products of specific reactions based on structural inputs."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q27",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 27,
+      "question_text": "Give reasons for the following: (a) Benzoic acid does not undergo Friedel-Crafts reaction. (b) HCHO is more reactive than CH3CHO towards addition of HCN. (c) Vinyl group directly attached with carboxylic acid should decrease the acidity of corresponding carboxylic acid due to resonance, but on the contrary it increases the acidity.",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Reactivity and Acidity",
+      "correct_answer": "(a) Benzoic acid has a deactivated ring and the carboxyl group is meta-directing; also, the catalyst AlCl3 forms a complex with the carboxyl group. (b) HCHO has no alkyl group, so less steric hindrance and greater electrophilicity at the carbonyl carbon. (c) The vinyl group is electron-withdrawing via inductive effect (-I), which stabilises the carboxylate ion and increases acidity, despite resonance effects.",
+      "solution_summary": "Reasons for Friedel-Crafts failure, higher reactivity of HCHO, and acidity enhancement by vinyl group.",
+      "concepts_required": [
+        "AC_51",
+        "AC_20",
+        "OC_26"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 1,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires mechanistic understanding of electronic effects (steric, inductive, resonance) on reactivity and acidity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q28",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 28,
+      "question_text": "Write the reaction of D-Glucose with the following: (a) HCN (b) Br2 water (c) (CH3CO)2O",
+      "question_type": "Subjective",
+      "marks": 3,
+      "topic": "Organic Chemistry - Biomolecules",
+      "sub_topic": "Reactions of Glucose",
+      "correct_answer": "(a) Glucose + HCN → Glucose cyanohydrin (addition across carbonyl). (b) Glucose + Br2 water → Gluconic acid (oxidation of aldehyde group). (c) Glucose + (CH3CO)2O → Glucose pentaacetate (acetylation of five -OH groups).",
+      "solution_summary": "Reactions of glucose with HCN (nucleophilic addition), Br2 water (oxidation), and acetic anhydride (acetylation).",
+      "concepts_required": [
+        "BM_06",
+        "BM_07"
+      ],
+      "concept_depth": 0.4,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [],
+        "archetype_score": {
+          "long_reaction_chains": 0.8,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires recall of specific reactions of glucose with different reagents."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 3.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q29",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 29,
+      "question_text": "Case: Crystal Field Theory. (a) On the basis of CFT, explain why [Ti(H2O)6]Cl3 complex is coloured? What happens on heating the complex [Ti(H2O)6]Cl3? Give reason. [Atomic no.: Ti=22] (b) (i) What is crystal field splitting energy? OR (ii) On the basis of Δ0 and P (pairing energy), how can you differentiate between a strong field ligand and a weak field ligand? (c) Why are low spin tetrahedral complexes rarely observed?",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Inorganic Chemistry - Coordination Compounds",
+      "sub_topic": "Crystal Field Theory",
+      "correct_answer": "(a) [Ti(H2O)6]3+ has Ti3+ (d1). d-d transition (t2g to eg) absorbs visible light, giving colour. On heating, it loses water to form [TiCl6]3- (or changes geometry), altering the splitting and colour. (b)(i) Crystal field splitting energy is the energy difference between t2g and eg orbitals. OR (ii) If Δ0 > P, electrons pair (low spin); if Δ0 < P, electrons remain unpaired (high spin). (c) Low spin tetrahedral complexes are rare because tetrahedral splitting (Δt) is small, and pairing energy is rarely exceeded.",
+      "solution_summary": "CFT explanation for colour, effect of heating, definition of splitting energy, and rarity of low spin tetrahedral complexes.",
+      "concepts_required": [
+        "CC_24",
+        "CC_27",
+        "CC_25"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.8,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 2,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of CFT, d-d transitions, and comparison of octahedral vs tetrahedral splitting."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q30",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 30,
+      "question_text": "Case: Amines. (a) How can you convert the following? (i) Ethanoic acid to methanamine (ii) Propanenitrile to 1-aminopropane (b) Why is pKb value of aniline more than that of methylamine? (c) (i) Arrange the following in increasing order of their basic strength in aqueous solution: CH3NH2, (CH3)2NH, (CH3)3N OR (ii) Give the structures of A and B in the following reaction: C6H5NO2 →[Fe/HCl] A →[HNO2 at 273K] B",
+      "question_type": "CaseBased",
+      "marks": 4,
+      "topic": "Organic Chemistry - Amines",
+      "sub_topic": "Preparation and Basicity of Amines",
+      "correct_answer": "(a)(i) CH3COOH + NH3 → CH3CONH2 → (Br2/NaOH) → CH3NH2 (Hofmann bromamide degradation). (ii) CH3CH2CN + 4[H] → CH3CH2CH2NH2 (reduction with H2/Ni or LiAlH4). (b) Aniline is weaker base (higher pKb) because the lone pair on N is delocalised into the benzene ring, making it less available. Methylamine has +I effect of CH3, increasing basicity. (c)(i) In aqueous solution: (CH3)3N < CH3NH2 < (CH3)2NH (considering steric and solvation effects). OR (ii) A = C6H5NH2 (aniline); B = C6H5N2+Cl- (benzenediazonium chloride).",
+      "solution_summary": "Conversions involving amines, comparison of basicity, and identification of products in a reaction sequence.",
+      "concepts_required": [
+        "AM_09",
+        "AM_06",
+        "AM_11",
+        "AM_12",
+        "AM_13",
+        "AM_18"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "comparative_ranking",
+        "secondary_archetypes": [
+          "long_reaction_chains",
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.4,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 3,
+          "named_reactions_involved": 2,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.6,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of Hofmann degradation, reduction of nitriles, and electronic effects on basicity."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 4.5
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q31",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 31,
+      "question_text": "(a) (i) Account for the following: (I) The E°Mn2+/Mn value for manganese is highly negative, whereas E°Mn3+/Mn2+ is highly positive. (II) Actinoids show wide range of oxidation states. (III) Transition metals have high melting points. (ii) Complete the following ionic equations: SO3^2- + 2MnO4^- + 6H+ →; 2MnO4^- + H2O + I^- →",
+      "question_type": "Subjective",
+      "marks": 5,
+      "topic": "Inorganic Chemistry - d- and f-Block Elements",
+      "sub_topic": "Periodic Trends and Redox Equations",
+      "correct_answer": "(i)(I) Mn2+ has a stable d5 half-filled configuration, making E°Mn2+/Mn highly negative (difficult to reduce to Mn). Mn3+ to Mn2+ is highly positive because Mn3+ is stabilised by the formation of stable Mn2+ (d5). (II) Actinoids show a wide range of oxidation states due to comparable energies of 5f, 6d, and 7s orbitals. (III) Transition metals have high melting points due to strong metallic bonding (involvement of (n-1)d electrons). (ii) SO3^2- + 2MnO4^- + 6H+ → SO4^2- + 2Mn2+ + 3H2O; 2MnO4^- + H2O + I^- → 2MnO2 + 2OH- + IO3^- (in neutral/alkaline medium).",
+      "solution_summary": "Reasons for electrode potential trends, actinoid oxidation states, high melting points, and balancing redox equations.",
+      "concepts_required": [
+        "DF_09",
+        "DF_32",
+        "DF_04",
+        "RD_16",
+        "DF_23"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "deep_mechanistic_reasoning",
+        "secondary_archetypes": [
+          "long_reaction_chains",
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.2,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.5,
+          "comparative_ranking": 0.3
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 0,
+          "requires_mechanism": true,
+          "enumeration_required": false,
+          "comparison_required": true,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.5,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires understanding of electronic configurations, stability of oxidation states, and balancing redox equations."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q32",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 32,
+      "question_text": "(a) (i) An organic compound (X) having molecular formula C5H10O can show various properties depending on its structures. Draw each of the structures if it: (I) shows Cannizzaro reaction. (II) reduces Tollens' reagent and has a chiral carbon. (III) gives positive iodoform test. (ii) Write the reaction involved in the following: (I) Clemmensen reduction (II) Etard reaction",
+      "question_type": "Subjective (Organic Structures & Named Reactions)",
+      "marks": 5,
+      "topic": "Organic Chemistry - Aldehydes, Ketones and Carboxylic Acids",
+      "sub_topic": "Isomers and Named Reactions",
+      "correct_answer": "(i)(I) 2,2-dimethylpropanal (no alpha-H) for Cannizzaro. (II) 2-methylbutanal (has aldehyde and chiral carbon at C2) for Tollens and chiral carbon. (III) Pentan-2-one (methyl ketone) for iodoform. (ii)(I) Clemmensen reduction: >C=O + Zn-Hg/HCl → >CH2. (II) Etard reaction: Toluene + CrO2Cl2 → Benzaldehyde.",
+      "solution_summary": "Drawing structures of isomers of C5H10O with specific properties, and writing equations for named reactions.",
+      "concepts_required": [
+        "AC_33",
+        "AC_28",
+        "AC_30",
+        "AC_26",
+        "AC_11"
+      ],
+      "concept_depth": 0.6,
+      "archetype_analysis": {
+        "primary_archetype": "long_reaction_chains",
+        "secondary_archetypes": [
+          "comparative_ranking"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.6,
+          "counting_enumeration": 0.0,
+          "deep_mechanistic_reasoning": 0.2,
+          "comparative_ranking": 0.2
+        },
+        "indicators": {
+          "step_count": 4,
+          "named_reactions_involved": 3,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 0.0,
+          "memory_recall_weight": 0.7,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires drawing specific isomers based on functional group reactions and recalling named reactions."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.0
+      }
+    },
+    {
+      "id": "2025CBSE_Set6_Q33",
+      "year": 2025,
+      "paper": "Set-6",
+      "question_number": 33,
+      "question_text": "(a) (i) Calculate the emf of the following cell at 25°C: Zn(s)|Zn2+(0.1M)||H+(0.01M)|H2(g)(1 bar), Pt(s). [Given: E°Zn2+/Zn = -0.76V, E°H+/H2 = 0.00V, log 10 = 1] (ii) State Faraday's second law of electrolysis. How much electricity is required in terms of Faraday for the reduction of 1 mol of Cr2O7^2- to Cr3+? OR (b) (i) The conductivity of 0.20M solution of KCl is 2.48 × 10^-2 S cm^-1. Calculate its molar conductivity and degree of dissociation (α) [Given: λ°(K+) = 73.5 S cm2 mol-1, λ°(Cl-) = 76.5 S cm2 mol-1] (ii) Calculate ΔrG° of the following cell: Mg(s) + Cu2+(aq) → Mg2+(aq) + Cu(s) [Given: E°Mg2+/Mg = -2.37V, E°Cu2+/Cu = +0.34V, 1F = 96500 C mol-1] (iii) What type of cell is mercury cell? Why is it more advantageous than dry cell?",
+      "question_type": "Subjective (Numerical + Electrochemistry)",
+      "marks": 5,
+      "topic": "Physical Chemistry - Electrochemistry",
+      "sub_topic": "Cell EMF, Faraday's Laws, Conductivity, Gibbs Energy",
+      "correct_answer": "(a)(i) Ecell = E°cell - (0.059/n) log Q = 0 - (-0.76) = 0.76V (since E°cell = 0.76V). Q = [Zn2+]/[H+]^2 = 0.1/(0.01)^2 = 1000. Ecell = 0.76 - (0.059/2) log(1000) = 0.76 - 0.0295 × 3 = 0.6715 V. (ii) Faraday's second law: when same quantity of electricity is passed through different electrolytes, the amounts of substances liberated are proportional to their equivalent weights. For Cr2O7^2- to Cr3+: Cr goes from +6 to +3, change = 3 per Cr, total = 6 per Cr2O7^2-. Electricity required = 6 F. OR (b)(i) Molar conductivity = κ × 1000 / M = 2.48e-2 × 1000 / 0.20 = 124 S cm2 mol-1. Λ° = 73.5 + 76.5 = 150 S cm2 mol-1. α = Λ/Λ° = 124/150 = 0.827. (ii) E°cell = 0.34 - (-2.37) = 2.71V. ΔrG° = -nFE° = -2 × 96500 × 2.71 = -523,030 J = -523.03 kJ. (iii) Mercury cell is a primary cell. It has constant voltage and longer life compared to dry cell.",
+      "solution_summary": "Application of Nernst equation, Faraday's laws, conductivity calculations, and Gibbs energy.",
+      "concepts_required": [
+        "ELC_07",
+        "ELC_16",
+        "ELC_11",
+        "ELC_13",
+        "ELC_08",
+        "ELC_21"
+      ],
+      "concept_depth": 0.7,
+      "archetype_analysis": {
+        "primary_archetype": "counting_enumeration",
+        "secondary_archetypes": [
+          "deep_mechanistic_reasoning"
+        ],
+        "archetype_score": {
+          "long_reaction_chains": 0.0,
+          "counting_enumeration": 0.7,
+          "deep_mechanistic_reasoning": 0.3,
+          "comparative_ranking": 0.0
+        },
+        "indicators": {
+          "step_count": 5,
+          "named_reactions_involved": 0,
+          "requires_mechanism": false,
+          "enumeration_required": false,
+          "comparison_required": false,
+          "calculation_intensity": 1.0,
+          "memory_recall_weight": 0.3,
+          "distractor_plausibility": 0.0,
+          "matching_risk": false
+        },
+        "reasoning": "Requires multiple calculations involving Nernst equation, Faraday's laws, molar conductivity, and Gibbs energy."
+      },
+      "performance_data": {
+        "total_candidates": null,
+        "not_attempted": null,
+        "percent_not_attempted": null,
+        "full_marks": null,
+        "percent_full_marks": null,
+        "partial_marks": null,
+        "percent_partial_marks": null,
+        "wrong_response": null,
+        "percent_wrong_response": null
+      },
+      "target": {
+        "calculated_difficulty": 5.5
+      }
+    }
+  ]
+}
