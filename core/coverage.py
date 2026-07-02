@@ -23,7 +23,7 @@ import math
 from collections import defaultdict
 from pathlib import Path
 
-_SAVE_PATH = Path(__file__).parent / "coverage_state.json"
+_SAVE_PATH = Path(__file__).parent.parent / "coverage_state.json"
 
 
 class Coverage:

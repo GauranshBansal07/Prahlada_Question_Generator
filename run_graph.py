@@ -17,10 +17,10 @@ import random
 from datetime import datetime, timezone
 from openai import OpenAI
 
-from blackboard import Blackboard
-from meta_tags import compute_meta_tags
-from graph_traversal import get_paths, get_node, NODES, _EDGES_FROM
-from coverage import Coverage
+from core.blackboard import Blackboard
+from core.meta_tags import compute_meta_tags
+from core.graph_traversal import get_paths, get_node, NODES, _EDGES_FROM
+from core.coverage import Coverage
 
 # ── API clients ───────────────────────────────────────────────────────────────
 # Load .env if present (no external deps required)
@@ -139,7 +139,7 @@ def sample_paths(coverage: Coverage, n_options: int = 6, depth: int = 3,
     for i, p in enumerate(all_paths[:n_options]):
         # Look up edge reagents for the description
         steps = []
-        with open("reaction_graph.json") as f:
+        with open(os.path.join(os.path.dirname(__file__), "knowledge", "reaction_graph.json")) as f:
             graph = json.load(f)
         edge_map = {e["id"]: e for e in graph["edges"]}
         for eid in p["edges"]:

@@ -1,10 +1,11 @@
 import json
-from blackboard import Blackboard
-from concept_reasoner import reason_over_concept_book
-from generator import generate_augmented_problem
-from verifier import verify_problem
-from weak_solver import solve_weak, WEAK_SCORE_CEILING
-from strong_solver import solve_strong, STRONG_SCORE_FLOOR
+import os
+from core.blackboard import Blackboard
+from core.concept_reasoner import reason_over_concept_book
+from core.generator import generate_augmented_problem
+from core.verifier import verify_problem
+from core.weak_solver import solve_weak, WEAK_SCORE_CEILING
+from core.strong_solver import solve_strong, STRONG_SCORE_FLOOR
 
 
 def check_acceptance(verifier_result: dict, weak_result: dict, strong_result: dict):
@@ -122,11 +123,11 @@ def run_pipeline(seed: dict, concept_book: dict, target_profile: dict, max_retri
 
 def main():
     print("Loading classified seeds...")
-    with open("classified_seeds.json", "r") as f:
+    with open(os.path.join(os.path.dirname(__file__), "data", "seeds", "classified_seeds.json"), "r") as f:
         seeds = json.load(f)
 
     print("Loading concept book...")
-    with open("concept_book.json", "r") as f:
+    with open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "knowledge", "concept_book.json"), "r") as f:
         concept_book = json.load(f)
 
     target_profile = {

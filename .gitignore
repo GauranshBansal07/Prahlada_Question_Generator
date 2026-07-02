@@ -17,3 +17,4 @@ pipeline_output.json
 
 # macOS
 .DS_Store
+.claude/

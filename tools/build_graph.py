@@ -11,8 +11,12 @@ Strategy:
 """
 
 import json
+import os
 import re
 from collections import defaultdict
+
+_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+_KG   = os.path.join(_ROOT, "knowledge")
 
 # ── Canonical node definitions ─────────────────────────────────────────────────
 
@@ -959,7 +963,7 @@ def build_edges(txs):
 
 
 def main():
-    with open("concept_book.json") as f:
+    with open(os.path.join(_KG, "concept_book.json")) as f:
         cb = json.load(f)
     txs = cb["structural_operators"]["add_reaction_step"]["valid_transformations"]
 
@@ -1026,10 +1030,10 @@ def main():
                     edge["chapter"] = n.get("chapter", "Reaction Mechanisms")
                     break
 
-    with open("reaction_graph.json", "w") as f:
+    with open(os.path.join(_KG, "reaction_graph.json"), "w") as f:
         json.dump(graph, f, indent=2, ensure_ascii=False)
 
-    with open("graph_unmapped.json", "w") as f:
+    with open(os.path.join(_KG, "graph_unmapped.json"), "w") as f:
         json.dump(unmapped, f, indent=2, ensure_ascii=False)
 
     print(f"\nreaction_graph.json: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")

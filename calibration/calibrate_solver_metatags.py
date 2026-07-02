@@ -39,9 +39,10 @@ def get_client():
 
 MODEL = "DeepSeek-V3.2"
 
-TRACES_FILE   = "solver_traces.json"
-SEEDS_FILE    = "jeeadv_organic_seeds.json"
-NORM_FILE     = "meta_tag_norm_stats.json"
+_HERE         = os.path.dirname(os.path.abspath(__file__))
+TRACES_FILE   = os.path.join(_HERE, "solver_traces.json")
+SEEDS_FILE    = os.path.join(_HERE, "..", "data", "seeds", "jeeadv_organic_seeds.json")
+NORM_FILE     = os.path.join(_HERE, "meta_tag_norm_stats.json")
 
 ARCH_CODE_MAP = {
     "Long Reaction Chains": "I",

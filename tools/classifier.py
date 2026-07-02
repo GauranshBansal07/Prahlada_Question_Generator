@@ -61,8 +61,9 @@ def classify_problem(problem_data):
     return response.choices[0].message.content.strip()
 
 def main():
-    input_file = "merged_SEED.json"
-    output_file = "classified_seeds.json"
+    _here = os.path.dirname(os.path.abspath(__file__))
+    input_file  = os.path.join(_here, "data", "seeds", "merged_SEED.json")
+    output_file = os.path.join(_here, "data", "seeds", "classified_seeds.json")
     
     print(f"Loading seeds from {input_file}...")
     with open(input_file, 'r') as f:

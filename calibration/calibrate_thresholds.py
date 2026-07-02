@@ -28,8 +28,9 @@ WEAK_MODEL    = "llama3.2"
 strong_client = OpenAI(api_key=SAMBANOVA_KEY, base_url="https://api.sambanova.ai/v1")
 weak_client   = OpenAI(api_key="ollama",       base_url="http://localhost:11434/v1")
 
-JEE_DIR  = "/Users/admin/dummy 2/JEE Advanced json/"
-OUT_PATH = "/Users/admin/dummy 2/calibration_results.json"
+_HERE    = os.path.dirname(os.path.abspath(__file__))
+JEE_DIR  = os.path.join(_HERE, "..", "data", "jee_advanced")
+OUT_PATH = os.path.join(_HERE, "calibration_results.json")
 
 ARCHETYPE_MAP = {
     "long_reaction_chains":     "Long Reaction Chains (I)",

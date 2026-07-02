@@ -8,7 +8,7 @@ import os
 import time
 from datetime import datetime, timezone
 from openai import OpenAI
-from meta_tags import compute_meta_tags, archetype_code_from_label
+from core.meta_tags import compute_meta_tags, archetype_code_from_label
 
 # Load .env if present
 _env_path = os.path.join(os.path.dirname(__file__), ".env")
@@ -62,7 +62,7 @@ def sambanova_call(fn, retries=3, base_wait=65):
 
 # ── inline the pipeline components with real clients ──────────────────────────
 
-from blackboard import Blackboard
+from core.blackboard import Blackboard
 
 def reason_over_concept_book_live(blackboard, concept_book):
     context = blackboard.context_summary()
@@ -252,7 +252,7 @@ def main():
     STRONG_FLOOR  = 85
     MAX_RETRIES   = 3
 
-    with open("jeeadv_organic_seeds.json") as f:
+    with open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "seeds", "jeeadv_organic_seeds.json")) as f:
         seeds = json.load(f)
     with open("concept_book.json") as f:
         concept_book = json.load(f)

@@ -1,4 +1,85 @@
 # AutoData — Organic Chemistry Question Generation
+
+## Quick Start
+
+**Prerequisites**
+- Python 3.11+
+- [Ollama](https://ollama.com/) running locally with `llama3.2` pulled (`ollama pull llama3.2`)
+- SambaNova API keys (get them at [cloud.sambanova.ai](https://cloud.sambanova.ai))
+
+**Setup**
+```bash
+git clone https://github.com/GauranshBansal07/Prahlada_Question_Generator.git
+cd Prahlada_Question_Generator
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env and fill in your SAMBANOVA_KEY_1 through SAMBANOVA_KEY_4
+```
+
+**Run the graph-wired pipeline (main entrypoint)**
+```bash
+python3 run_graph.py
+```
+Generates one accepted JEE Advanced-level organic chemistry question and saves it to `generated_questions.json`. The pipeline retries up to 3 times; accepted questions must pass a 4-gate filter (verifier PASS + strong solver ≥85% + weak solver ≤60% + reference key confirmed correct).
+
+**Fallback (no graph, uses full concept_book TX dump)**
+```bash
+python3 run_groundup.py
+```
+
+---
+
+## Repository Layout
+
+```
+run_graph.py              ← MAIN entrypoint — graph-wired generation (start here)
+run_groundup.py           ← FALLBACK entrypoint — concept_book-based, no graph
+
+core/                     ← Internal pipeline modules (imported by run_*.py)
+  blackboard.py           ← Shared conversation state across pipeline stages
+  coverage.py             ← Diversity tracking (inverse-frequency weighting)
+  meta_tags.py            ← 6-axis difficulty meta-tag computation
+  graph_traversal.py      ← Knowledge graph BFS query interface + tool dispatcher
+  concept_reasoner.py     ← RLM: selects reaction chain from graph paths
+  generator.py            ← Question/solution generator module
+  verifier.py             ← Chemical correctness verifier module
+  strong_solver.py        ← Expert-level blind solver module
+  weak_solver.py          ← Undergraduate-level solver module
+
+knowledge/                ← All structured knowledge files (edit these to extend)
+  reaction_graph.json     ← 56 nodes, 198 edges (functional group transformation graph)
+  reaction_orders.json    ← GOC ordering tiers (acidity, nucleophilicity, stability…)
+  node_labels.json        ← IUPAC class names + example molecules per graph node
+  molecule_constructor.json ← Concrete IUPAC molecule pools per node
+  concept_book.json       ← 657 TX operators + FRAG / EXC / DIST entries
+  graph_unmapped.json     ← Diagnostic: 288 TXs not yet mapped to graph edges
+
+calibration/              ← One-shot scripts (already ran; outputs committed)
+  calibrate_thresholds.py       ← Sets STRONG_FLOOR / WEAK_CEILING
+  calibrate_solver_metatags.py  ← Computes meta-tag norm stats
+  calibration_results.json      ← Solver score distributions (153 seeds)
+  meta_tag_norm_stats.json      ← z-score params used by core/meta_tags.py at runtime
+  solver_traces.json            ← Per-question strong/weak solver traces
+
+tools/                    ← One-off utility scripts (not part of generation loop)
+  build_graph.py          ← Rebuilds knowledge/reaction_graph.json from concept_book
+  classifier.py           ← Labels seed questions by archetype → classified_seeds.json
+  evaluate.py             ← Scores pipeline_output.json quality
+  extract_notes.py        ← Parses lecture PDFs → concept_book.json entries
+  make_approach_pdf.py    ← Generates architecture overview PDF
+
+data/                     ← External question corpora (read-only inputs)
+  jee_advanced/           ← JEE Advanced papers 2012–2025
+  seeds/                  ← Processed seed corpora (organic, arihant, JIC stats)
+  chapterwise/            ← Full chapterwise question banks (all subjects)
+
+archive/                  ← Deprecated; kept for reference
+  run_live.py             ← Old seed-based pipeline (pre-graph era)
+  pipeline.py             ← Old seed-augmentation pipeline (pre-graph era)
+```
+
+---
+
 ## Full Architecture Reference (Complete Granular State)
 
 > Canonical reference as of end of June 2026 design session.

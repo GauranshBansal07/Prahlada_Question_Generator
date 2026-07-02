@@ -18,6 +18,7 @@ Two model-dependent meta-tags (computed from solver outputs):
 
 import json
 import math
+import os
 import re
 
 _NORM_STATS = None
@@ -25,7 +26,7 @@ _NORM_STATS = None
 def _load_norm_stats():
     global _NORM_STATS
     if _NORM_STATS is None:
-        with open("meta_tag_norm_stats.json") as f:
+        with open(os.path.join(os.path.dirname(__file__), "..", "calibration", "meta_tag_norm_stats.json")) as f:
             _NORM_STATS = json.load(f)
     return _NORM_STATS
 

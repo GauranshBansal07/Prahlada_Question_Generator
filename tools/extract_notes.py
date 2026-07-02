@@ -170,7 +170,10 @@ def extract_from_notes(ocr_text: str, chapter_name: str) -> dict:
     return json.loads(response.choices[0].message.content.strip())
 
 
-def merge_into_concept_book(extracted: dict, concept_book_path: str = "concept_book.json"):
+_CB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "knowledge", "concept_book.json")
+
+
+def merge_into_concept_book(extracted: dict, concept_book_path: str = _CB_PATH):
     """
     Merges extracted entries into the existing concept_book.json.
 
@@ -257,7 +260,7 @@ def main():
     print(f"  Added distractors:       {added['distractors']}")
 
     # Step 3: Verify final counts
-    with open("concept_book.json") as f:
+    with open(_CB_PATH) as f:
         cb = json.load(f)
 
     txs   = cb["structural_operators"]["add_reaction_step"]["valid_transformations"]

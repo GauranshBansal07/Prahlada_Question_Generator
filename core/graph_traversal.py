@@ -17,9 +17,10 @@ from collections import deque
 
 # ── Load graph at import time ─────────────────────────────────────────────────
 
-_GRAPH_PATH  = os.path.join(os.path.dirname(__file__), "reaction_graph.json")
-_ORDERS_PATH = os.path.join(os.path.dirname(__file__), "reaction_orders.json")
-_LABELS_PATH = os.path.join(os.path.dirname(__file__), "node_labels.json")
+_KG          = os.path.join(os.path.dirname(__file__), "..", "knowledge")
+_GRAPH_PATH  = os.path.join(_KG, "reaction_graph.json")
+_ORDERS_PATH = os.path.join(_KG, "reaction_orders.json")
+_LABELS_PATH = os.path.join(_KG, "node_labels.json")
 
 def _load_graph():
     with open(_GRAPH_PATH, encoding="utf-8") as f:

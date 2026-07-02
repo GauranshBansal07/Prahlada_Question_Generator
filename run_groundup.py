@@ -13,8 +13,8 @@ import time
 from datetime import datetime, timezone
 from openai import OpenAI
 
-from blackboard import Blackboard
-from meta_tags import compute_meta_tags
+from core.blackboard import Blackboard
+from core.meta_tags import compute_meta_tags
 
 # ── API clients ───────────────────────────────────────────────────────────────
 _env_path = os.path.join(os.path.dirname(__file__), ".env")
@@ -326,7 +326,7 @@ def main():
     OUTPUT_FILE = "generated_questions.json"
 
     print("Loading concept book...")
-    with open("concept_book.json") as f:
+    with open(os.path.join(os.path.dirname(__file__), "knowledge", "concept_book.json")) as f:
         concept_book = json.load(f)
 
     hydro_txs = filter_hydrocarbon_txs(concept_book)
