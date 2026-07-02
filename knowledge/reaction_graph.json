@@ -537,6 +537,13 @@
       "can_be_end": false,
       "functional_group": "R₂C: (divalent carbon, two non-bonding electrons)",
       "chapter": "Reaction Mechanisms"
+    },
+    {
+      "id": "isocyanide",
+      "type": "stable",
+      "can_be_start": false,
+      "can_be_end": true,
+      "description": "Isocyanide (carbylamine) R-NC — foul-smelling compound; product of carbylamine reaction; distinguishing test for primary amines"
     }
   ],
   "edges": [
@@ -8940,6 +8947,69 @@
         }
       },
       "notes": "TNT synthesis: 3 successive nitrations; methyl (EDG) directs ortho/para → 1st: 2- and 4-nitrotoluene; 2nd: 2,4-dinitrotoluene; 3rd: 2,4,6-trinitrotoluene (TNT); each step requires more vigorous conditions (NO2 deactivates ring) | Double bromination of nitrobenzene; NO2 is meta-director → Br goes to C-3 and C-5 (both meta positions); with 2 equiv Br2/Fe both meta positions are brominated; product = 1,3-dibromo-5-nitrobenzene (= 3,5-dibromonitrobenzene); KEY: EWG like NO2 directs to BOTH meta positions with excess electrophile; no ortho/para bromination occurs | toluene=methylbenzene; anisole=methoxybenzene; phenol=hydroxybenzene; aniline=benzenamine; cumene=(1-methylethyl)benzene=isopropylbenzene; styrene=ethenylbenzene=vinylbenzene; o-xylene=1,2-dimethylbenzene; m-xylene=1,3-dimethylbenzene; p-xylene=1,4-dimethylbenzene; o-cresol=2-methylphenol; m-cresol=3-methylphenol; p-cresol=4-methylphenol; mesitylene=1,3,5-trimethylbenzene; isooctane=2,2,4-trimethylpentane; acetone=propan-2-one (NOT IUPAC: crossed out in notes)"
+    },
+    {
+      "id": "amine_to_isocyanide_carbylaminetest",
+      "from": "amine",
+      "to": "isocyanide",
+      "reagents": [
+        "CHCl₃",
+        "alc. KOH"
+      ],
+      "conditions": "CHCl₃ + excess alc. KOH; heat; primary amines ONLY",
+      "firing_condition": null,
+      "chapter": "Amines",
+      "archetype": [
+        "I",
+        "III"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [
+        82
+      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 2,
+        "conceptual_fragility": 4,
+        "number_of_exceptions": 4,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 4
+      },
+      "notes": "SCOPE RESTRICTION: primary amines ONLY. Secondary and tertiary amines give NO reaction. This is the carbylamine test — the isocyanide has a characteristically foul smell. Mechanism: CHCl₃ + KOH → :CCl₂ (dichlorocarbene) → reacts with R-NH₂. EXCEPTION: aniline (ArNH₂) also gives positive (it is a primary amine). JEE TRAP: 2° and 3° amines do not give isocyanide — this test distinguishes 1° from 2°/3°. qualitative_test_ref: carbylamine"
+    },
+    {
+      "id": "isocyanide_to_amine_hydrolysis",
+      "from": "isocyanide",
+      "to": "amine",
+      "reagents": [
+        "dil. HCl",
+        "H₂O"
+      ],
+      "conditions": "acid hydrolysis; reflux; R-NC + H₂O → R-NH₂ + HCOOH (formic acid)",
+      "firing_condition": null,
+      "chapter": "Amines",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 2,
+        "model_solution_length": 2,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 2,
+        "distractor_plausibility": 3
+      },
+      "notes": "Isocyanide hydrolysis: R-NC + H₂O → R-NH₂ + HCOOH. Gives primary amine + formic acid. Useful in synthesis to purify primary amines (form isocyanide, purify by smell/bp, then hydrolyze back)."
     }
   ]
 }

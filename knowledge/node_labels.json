@@ -448,5 +448,13 @@
     "description": "R2C: — divalent carbon with two non-bonding electrons (singlet or triplet)",
     "example_iupac": "methylene",
     "example_common": "carbene"
+  },
+  "isocyanide": {
+    "display": "Isocyanide (Carbylamine)",
+    "iupac_class": "Isocyanide (R–NC)",
+    "common_names": ["carbylamine", "isonitrile", "carbylamines"],
+    "description": "Organic compound with R-NC functional group; foul odour; formed exclusively from primary amines via carbylamine reaction (CHCl₃/alc.KOH); distinguishing test for 1° amines",
+    "example_iupac": "isocyanomethane",
+    "example_common": "methyl isocyanide (methyl carbylamine)"
   }
 }
