@@ -966,7 +966,7 @@
     {
       "id": "alcohol_to_carbene_chndiazometh",
       "from": "alcohol",
-      "to": "carbene",
+      "to": "ether",
       "reagents": [
         "CH₂N₂ (diazomethane)",
         "ether solvent"
@@ -1034,7 +1034,7 @@
             "PCl₅ (phosphorus pentachloride)"
           ],
           "conditions": "PCl₅ reacts with ALL oxygen-containing functional groups by replacing C-O bonds with C-Cl bonds. SUBSTRATE-SPECIFIC OUTCOMES:\n1. R-OH + PCl₅ → R-Cl + HCl + POCl₃ (phosphoryl trichloride). Stereochemistry: INVERSION (SN2 at C by Cl⁻).\n2. R-COOH + PCl₅ → R-COCl (acyl chloride) + HCl + POCl₃. The -OH o",
-          "to": "carboxylic_acid",
+          "to": "alkyl_halide",
           "tx_index": 271,
           "note": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         },
@@ -1233,7 +1233,7 @@
     {
       "id": "alcohol_to_substituted_benzene_4methylbenze",
       "from": "alcohol",
-      "to": "substituted_benzene",
+      "to": "sulfonate",
       "reagents": [
         "4-methylbenzenesulfonyl chloride (TsCl)",
         "pyridine (as base and solvent)"
@@ -1252,10 +1252,14 @@
       "tx_ids": [
         247
       ],
-      "meta_tags": [
-        "Long Reaction Chain",
-        "Semantic Obfuscation"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "EAS: product regiochemistry determined by existing substituent(s). Check for conflicting or cooperating directors before assigning major product."
     },
     {
@@ -1779,7 +1783,12 @@
         646
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: hydroxybenzene (phenol); methanal (formaldehyde); Novolac linear; Bakelite cross-linked network thermosetting; melamine = 2,4,6-triamino-1,3,5-triazine"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Novolac: linear polymer [-Ph(OH)-CH₂-]ₙ; soluble, used in paints and lacquers; requires hardener (e.g. hexamethylenetetramine) to cure to Bakelite. Bakelite: once cross-linked, CANNOT be remelted (thermosetting). Melamine-formaldehyde resin: melamine (2,4,6-triamino-1,3,5-triazine) + HCHO → methylol intermediate → cross-linked melamine polymer (crockery, laminates). Classified: condensation + copolymer + network polymer + thermosetting."
     },
@@ -1837,7 +1846,7 @@
       ],
       "conditions": "HIO₄ (periodic acid); aqueous; RT. Periodate cleavage of 1,2-diol (vicinal diol): CH₃CH(OH)CH(OH)CH₃ + HIO₄ → 2 CH₃CHO (ethanal) + HIO₃ + H₂O. One equiv HIO₄ per vicinal diol. Mechanism: cyclic periodate ester → oxidative cleavage. Cleaves vicinal diols specifically (not 1,3-diols). Pb(OAc)₄ is an alternative (non-aqueous). Stoichiometric: each CHOH fragment → aldehyde/ketone/HCHO.",
       "firing_condition": null,
-      "chapter": "Hydrocarbons",
+      "chapter": "Aldehydes & Ketones",
       "archetype": [
         "I"
       ],
@@ -1986,7 +1995,7 @@
             "400 degrees C"
           ],
           "conditions": "Conc HNO₃ (dilute nitric acid, 20%); 400°C; gas phase (vapour-phase nitration). Free radical mechanism at high T: HNO₃ → OH• + NO₂• at 400°C; OH• abstracts H from propane → propyl radical → NO₂• + radical → nitropropane. 2-Nitropropane (secondary, from more stable 2° radical) is major product. 1-Nit",
-          "to": "alkyl_halide",
+          "to": "nitro_compound",
           "tx_index": 417,
           "note": "Vapour-phase nitration of propane; propane + conc HNO3/400°C → mixture: 2-nitropropane (major, 2° H abstracted preferentially by NO2•) + 1-nitropropane (minor) + nitroethane + nitromethane (C-C bond cleavage at 400°C gives shorter-chain nitroalkanes as byproducts); assumed mechanism: free radical; rate order: 3° > 2° > 1°; high temperature (400°C) causes both C-H and C-C homolysis → multiple products; contrast with aromatic nitration (electrophilic, not free radical)"
         }
@@ -2028,7 +2037,7 @@
     {
       "id": "alkane_to_carboxylic_acid_conch2so4",
       "from": "alkane",
-      "to": "carboxylic_acid",
+      "to": "substituted_benzene",
       "reagents": [
         "conc H2SO4",
         "delta (heat)"
@@ -2947,11 +2956,14 @@
       "tx_ids": [
         368
       ],
-      "meta_tags": [
-        "Long Reaction Chains",
-        "Deep Mechanistic Reasoning",
-        "Counting/Enumeration"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product."
     },
     {
@@ -3010,11 +3022,14 @@
         324,
         350
       ],
-      "meta_tags": [
-        "Counting/Enumeration",
-        "Number of Exceptions",
-        "Long Reaction Chains"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "conditions_variants": {
         "reagent_1": {
           "reagents": [
@@ -3054,11 +3069,14 @@
         333,
         627
       ],
-      "meta_tags": [
-        "Long Reaction Chains",
-        "Deep Mechanistic Reasoning",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "conditions_variants": {
         "reagent_1": {
           "reagents": [
@@ -3219,11 +3237,14 @@
         322,
         365
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Long Reaction Chains",
-        "Counting/Enumeration"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "conditions_variants": {
         "reagent_1": {
           "reagents": [
@@ -3391,11 +3412,14 @@
       "tx_ids": [
         285
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Comparative Ranking/GOC",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
@@ -3444,7 +3468,7 @@
     {
       "id": "alkyne_to_alkane_o3",
       "from": "alkyne",
-      "to": "alkane",
+      "to": "ketone",
       "reagents": [
         "O3",
         "Zn (reductive workup)"
@@ -3747,10 +3771,14 @@
       "tx_ids": [
         252
       ],
-      "meta_tags": [
-        "Long Reaction Chain",
-        "Semantic Obfuscation"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
@@ -4103,7 +4131,7 @@
     {
       "id": "anhydride_to_alkane_1lialh4exces",
       "from": "anhydride",
-      "to": "alkane",
+      "to": "diol",
       "reagents": [
         "(1) LiAlH4 (excess, 2+ equivalents)",
         "(2) H2O (aqueous workup)"
@@ -4285,11 +4313,14 @@
       "tx_ids": [
         309
       ],
-      "meta_tags": [
-        "Comparative Ranking/GOC",
-        "Deep Mechanistic Reasoning",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "EAS: product regiochemistry determined by existing substituent(s). Check for conflicting or cooperating directors before assigning major product."
     },
     {
@@ -4402,11 +4433,14 @@
         409,
         412
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Comparative Ranking/GOC",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "conditions_variants": {
         "reagent_1": {
           "reagents": [
@@ -4565,7 +4599,7 @@
     {
       "id": "benzene_to_carboxylic_acid_fuminghsoole",
       "from": "benzene",
-      "to": "carboxylic_acid",
+      "to": "substituted_benzene",
       "reagents": [
         "fuming H₂SO₄ (oleum)"
       ],
@@ -4758,11 +4792,14 @@
       "tx_ids": [
         329
       ],
-      "meta_tags": [
-        "Long Reaction Chains",
-        "Deep Mechanistic Reasoning",
-        "Counting/Enumeration"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
@@ -4820,17 +4857,20 @@
       "tx_ids": [
         351
       ],
-      "meta_tags": [
-        "Long Reaction Chains",
-        "Deep Mechanistic Reasoning",
-        "Counting/Enumeration"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "EAS: product regiochemistry determined by existing substituent(s). Check for conflicting or cooperating directors before assigning major product."
     },
     {
       "id": "carbene_to_carbanion_naohstrongba",
-      "from": "carbene",
-      "to": "carbanion",
+      "from": "carbanion",
+      "to": "carbene",
       "reagents": [
         "NaOH (strong base)",
         "KOH",
@@ -4851,11 +4891,14 @@
       "tx_ids": [
         317
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Comparative Ranking/GOC",
-        "Counting/Enumeration"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product."
     },
     {
@@ -4881,11 +4924,14 @@
       "tx_ids": [
         318
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Long Reaction Chains",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product."
     },
     {
@@ -5269,33 +5315,6 @@
       "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
-      "id": "carboxylic_acid_to_amino_acid_concentrated",
-      "from": "carboxylic_acid",
-      "to": "amino_acid",
-      "reagents": [
-        "concentrated HNO₃",
-        "heat"
-      ],
-      "conditions": "plain benzene ring in phenylalanine has no activating group (-OH or -NH) at the ring; insufficient ring activation for nitration under Xanthoproteic conditions",
-      "firing_condition": null,
-      "chapter": "Carboxylic Acids & Derivatives",
-      "archetype": [
-        "I"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        623
-      ],
-      "meta_tags": {
-        "semantic_obfuscation": "IUPAC: 2-amino-3-phenylpropanoic acid (phenylalanine); plain phenyl ring — insufficient activation for Xanthoproteic nitration"
-      },
-      "notes": "Phenylalanine is called an 'aromatic amino acid' but gives NEGATIVE Xanthoproteic test. The benzene ring requires activating substituents (electron-donating groups) for EAS nitration under dilute/mild HNO₃. Tyrosine has -OH (strong +M activator), tryptophan has indolic N-H (activates by +M). Phenylalanine has unsubstituted phenyl → no reaction."
-    },
-    {
       "id": "carboxylic_acid_to_anhydride_hso",
       "from": "carboxylic_acid",
       "to": "anhydride",
@@ -5476,24 +5495,6 @@
           "tx_index": 198,
           "note": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         },
-        "reagent_3": {
-          "reagents": [
-            "NaHCO₃ (sodium bicarbonate, sodium hydrogencarbonate)"
-          ],
-          "conditions": "Carboxylic acids (pKa ~1-5) are MORE ACIDIC than H₂CO₃ (pKa₁ = 6.35) → NaHCO₃ can deprotonate them → CO₂ effervescence is the visual test. CO₂ bubbles = RCOOH present. This distinguishes RCOOH from phenols (PhOH pKa=10 > H₂CO₃ pKa=6.35 → no reaction with NaHCO₃).",
-          "to": "ester",
-          "tx_index": 242,
-          "note": "CO₂ gas evolution = diagnostic test for RCOOH. Sulfonic acids (R-SO₃H) also react. p-Nitrophenol (pKa≈7.2) does NOT react with NaHCO₃ even though it's more acidic than regular phenol."
-        },
-        "reagent_4": {
-          "reagents": [
-            "Δ (heat) or polar solvent or base"
-          ],
-          "conditions": "heterolytic fission: both electrons of O-H bond go to oxygen; forms ions not radicals",
-          "to": "ester",
-          "tx_index": 598,
-          "note": "Ethanoic acid (CH3COOH) → CH3COO⁻ + H⁺; pKa = 4.76; contrast with homolytic which would give radical R-COO• + H•"
-        },
         "reagent_5": {
           "reagents": [
             "conc. H₂SO₄ (catalyst)"
@@ -5554,7 +5555,7 @@
     {
       "id": "cycloalkene_to_alkane_o3",
       "from": "cycloalkene",
-      "to": "alkane",
+      "to": "aldehyde",
       "reagents": [
         "O3",
         "Zn",
@@ -5590,7 +5591,7 @@
             "H2O2"
           ],
           "conditions": "O₃; then H₂O₂ (oxidative workup); –78°C, CH₂Cl₂ then H₂O₂/AcOH. Ozonolysis of cyclopentene → ozonide → H₂O₂ → pentanedioic acid (glutaric acid, 5C dicarboxylic acid). Oxidative workup: terminal CH=CH₂ → HCOOH; internal CH= → RCOOH. Ring opened completely → linear diacid.",
-          "to": "alkane",
+          "to": "carboxylic_acid",
           "tx_index": 426,
           "note": "Oxidative ozonolysis of cyclopentene; cyclopentene + O3 → ozonide → H2O2 cleaves ozonide oxidatively → pentanedioic acid (glutaric acid, HOOC-(CH2)3-COOH); oxidative workup (H2O2 or Ag2O): aldehydes are OXIDIZED to carboxylic acids; the two aldehyde groups from reductive ozonolysis are oxidized to COOH; cyclic alkene → diacid (ONE molecule, ring opened); contrast with reductive: Zn/H2O → pentane-1,5-dial (dialdehyde); H2O2 → pentanedioic acid (diacid)"
         }
@@ -5619,10 +5620,14 @@
       "tx_ids": [
         250
       ],
-      "meta_tags": [
-        "Long Reaction Chain",
-        "Deep Mechanistic Reasoning"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "notes": "Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible."
     },
     {
@@ -6242,7 +6247,7 @@
     {
       "id": "epoxide_to_epoxide_h3odiluteaci",
       "from": "epoxide",
-      "to": "epoxide",
+      "to": "diol",
       "reagents": [
         "H3O+ (dilute acid)",
         "H2O"
@@ -6264,11 +6269,14 @@
         289,
         290
       ],
-      "meta_tags": [
-        "Deep Mechanistic Reasoning",
-        "Counting/Enumeration",
-        "Number of Exceptions"
-      ],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
       "conditions_variants": {
         "reagent_1": {
           "reagents": [
@@ -6281,7 +6289,7 @@
             "any Nu:- without acid"
           ],
           "conditions": "BASIC/NEUTRAL EPOXIDE OPENING — 2 KEY RULES: (1) SN2 MECHANISM: Nu:- attacks directly (no protonation step). (2) Nu ATTACKS LESS SUBSTITUTED (LESS CROWDED) CARBON: SN2 prefers less steric hindrance → attacks at 1° C (primary C next to O). The 3° or more substituted C gets the O- (alkoxide). Reason: ",
-          "to": "epoxide",
+          "to": "diol",
           "tx_index": 290,
           "note": "Stereochemical outcome critical: syn addition (mCPBA), then ring-opening gives anti-addition overall. Track face selectivity carefully."
         }
@@ -6485,7 +6493,7 @@
     {
       "id": "ester_to_ester_aqnaoh",
       "from": "ester",
-      "to": "ester",
+      "to": "carboxylic_acid",
       "reagents": [
         "aq NaOH",
         "BAc2, most common basic hydrolysis, IRREVERSIBLE"
@@ -7137,7 +7145,7 @@
     {
       "id": "ketone_to_carbene_methylenepho",
       "from": "ketone",
-      "to": "carbene",
+      "to": "alkene",
       "reagents": [
         "methylenephosphorane (H2C=PPh3)",
         "delta (heat)"
@@ -7268,7 +7276,12 @@
         653
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: Baeyer-Villiger oxidation; Criegee intermediate; meta-chloroperoxybenzoic acid; migration aptitude H > 3° > 2° > cyclohexyl > phenyl > 1° > cyclopropyl > methyl; O-insertion; lactone formation from cyclic ketone"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Full Baeyer-Villiger migration order: H > 3° > 2° > cyclohexyl > Ph > 1° > cyclopropyl > CH₃. Key exceptions: (1) H migrates FASTER than 3° alkyl — opposite to carbocation stability; (2) cyclopropyl migrates SLOWER than 1° alkyl (unlike SN1 where cyclopropylcarbinyl is exceptionally fast); (3) Ph (aryl) migrates less readily than secondary alkyl. Regioselectivity rule: more substituted/electron-rich C migrates → O goes between carbonyl C and the migrating group → ester C-O forms on side of migrating group."
     },
@@ -7417,7 +7430,12 @@
         656
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: diazomethane (CH₂N₂); ketone homologation; ring expansion; 1,2-migration; aptitude H > Ph > R; anti-periplanar migration to N₂ departure; Arndt-Eistert vs ketone CH₂N₂ distinction"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "In the diazonium intermediate, the group ANTI-PERIPLANAR to N₂ migrates (like Beckmann rearrangement where anti group migrates). Priority: H > Ph > R — H migrates fastest because C-H bond is most easily donated (hyperconjugation-like). Ph > R because Ph can delocalize the developing positive charge. Contrast with Baeyer-Villiger where H also migrates fastest, but phenyl migrates LESS than 2° alkyl in BV (different mechanisms). CH₂N₂ + ketone is NOT the same as Arndt-Eistert (which uses acyl halide + CH₂N₂ → ketene → homologated acid)."
     },
@@ -7555,7 +7573,12 @@
         645
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: hexane-1,6-diamine; hexanedioic acid (adipic acid); azepan-2-one (caprolactam); Nylon-6,6 vs Nylon-6 copolymer vs homo-polymer; polyamide fibre"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Key differences: Nylon-6,6 = copolymer; Nylon-6 = homo-polymer. Both = condensation polymers, polyamides, fibres. Amide linkage is same in both but arrangement differs (Nylon-6,6: alternating 6C+6C; Nylon-6: uniform 6C). Properties: high tensile strength (H-bonding between amide groups → crystalline). Nylon-6 melting point lower than Nylon-6,6 (430°C vs 455°C) because of different H-bond geometry."
     },
@@ -7850,14 +7873,19 @@
         648
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: propenenitrile (acrylonitrile); poly(propenenitrile); anionic living polymerisation; carbanion propagation; no chain termination"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Anionic polymerisation key feature: NO spontaneous chain termination → called 'living polymerisation'. The chain keeps growing as long as monomer is available. On addition of new monomer (even different type) → block copolymers can be formed. Examples: Buna-type synthetic rubbers, polyacrylonitrile, polyisoprene (anionic). Requires electron-poor monomers (C=C adjacent to EWG like -CN, -CHO, -COOR) to stabilise the carbanion intermediate."
     },
     {
       "id": "nitrile_to_substituted_benzene_1ch3mgbr",
       "from": "nitrile",
-      "to": "substituted_benzene",
+      "to": "ketone",
       "reagents": [
         "(1) CH3MgBr",
         "(2) H3O+"
@@ -8221,7 +8249,7 @@
     {
       "id": "phenol_to_geminal_dihalide_kso",
       "from": "phenol",
-      "to": "geminal_dihalide",
+      "to": "diol",
       "reagents": [
         "K₂S₂O₈",
         "KOH"
@@ -8455,8 +8483,8 @@
     },
     {
       "id": "polymer_to_carbocation_lewisacidbfa",
-      "from": "polymer",
-      "to": "carbocation",
+      "from": "alkene",
+      "to": "polymer",
       "reagents": [
         "Lewis acid (BF₃, AlCl₃, FeBr₃, SnCl₄) + trace H₂O"
       ],
@@ -8475,14 +8503,19 @@
         647
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: 2-methylpropene; poly(2-methylpropene) = polyisobutylene; Lewis acid-catalysed cationic chain-growth polymerisation; tertiary carbocation propagation"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Cationic polymerisation requires: (1) electron-rich alkene (stabilises carbocation intermediate); (2) Lewis acid catalyst. Works for: polystyrene (H₂C=CHPh → tertiary-benzylic), polyvinyl ethers (H₂C=CH-OR), polyisobutylene. Contrast with anionic (electron-poor monomers) and radical (any alkene). Cationic: rate of propagation >> termination → high MW but broad distribution."
     },
     {
       "id": "polymer_to_diene_conjugated_radicaliniti",
-      "from": "polymer",
-      "to": "diene_conjugated",
+      "from": "diene_conjugated",
+      "to": "polymer",
       "reagents": [
         "radical initiator (emulsion polymerisation)"
       ],
@@ -8501,7 +8534,12 @@
         643
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: buta-1,3-diene; propenenitrile (acrylonitrile); 2-chlorobuta-1,3-diene (chloroprene); polychloroprene (Neoprene); BUNA-N and BUNA-S as copolymers"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "BUNA = butadiene + Na (sodium, early catalyst). -N = acrylonitrile; -S = styrene. Neoprene monomer: 2-chlorobuta-1,3-diene (IUPAC: 2-chloro-1,3-butadiene); polymer is polychloroprene. Neoprene is a HOMO-polymer (one monomer type). BUNA-N and BUNA-S are both copolymers. All are elastomers held by weak van der Waals forces."
     },
@@ -8529,7 +8567,12 @@
         651
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: 1,2-dichloroethane; sodium disulphide; Thiokol = polysulphide rubber; NaCl elimination; condensation copolymer"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "conditions_variants": {
         "reagent_1": {
@@ -8547,8 +8590,8 @@
     },
     {
       "id": "polymer_to_radical_radicaliniti",
-      "from": "polymer",
-      "to": "radical",
+      "from": "alkene",
+      "to": "polymer",
       "reagents": [
         "radical initiator (LDPE)",
         "Ziegler-Natta catalyst TiCl₄/Al(C₂H₅)₃ (HDPE)",
@@ -8569,7 +8612,12 @@
         642
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: poly(ethene); poly(chloroethene) = PVC; poly(tetrafluoroethene) = PTFE/Teflon; poly(phenylethene) = polystyrene; poly(2-methylpropene) = polyisobutylene"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "LDPE: high pressure (1000–2000 atm), 350–570K, radical mechanism → branched chains (branching prevents close packing → low density). HDPE: Ziegler-Natta, low pressure, 333–343K → linear chains → high crystallinity → high density. PVC thermoplastic, can be plasticised. Teflon = poly(tetrafluoroethene): most chemically inert polymer known; non-stick surface."
     },
@@ -8597,7 +8645,12 @@
         649
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: benzoyl peroxide (diphenyl peroxalate); azobisisobutyronitrile (AIBN); free radical chain-growth polymerisation; initiation/propagation/termination steps"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Free radical polymerisation used for LDPE (high pressure, radical mechanism → branched). Termination modes: (a) combination: R• + R• → R-R; (b) disproportionation: one chain gives H to another → one saturated + one with terminal alkene. Explains why NOT all ethylene converts to polymer (side reactions, termination). Initiator is NOT the same as catalyst — it is consumed. AIBN (azobisisobutyronitrile) is another common initiator."
     },
@@ -8649,7 +8702,7 @@
     {
       "id": "substituted_benzene_to_alkane_o3",
       "from": "substituted_benzene",
-      "to": "alkane",
+      "to": "ketone",
       "reagents": [
         "O3",
         "Zn (reductive ozonolysis)"
@@ -8701,7 +8754,12 @@
         608
       ],
       "meta_tags": {
-        "semantic_obfuscation": "IUPAC: nitro, cyano, aldehyde, ketone, anhydride, ester, carboxylate functional group names"
+        "question_length_scope": 3,
+        "model_solution_length": 3,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
       },
       "notes": "Practical ordering for ring electron density comparison: NO₂ strongest -M (both -M and -I); COO⁻ weakest -M (compensating negative charge). Amide (-CONH₂) weaker -M than ester (-COOR) because N lone pair donates back into C=O."
     },
