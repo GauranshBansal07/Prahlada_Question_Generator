@@ -239,6 +239,7 @@ Return JSON:
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=1.0
     ))
     return json.loads(resp.choices[0].message.content.strip())
@@ -333,6 +334,7 @@ Return JSON:
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=0.7
     ))
     return json.loads(resp.choices[0].message.content.strip())
@@ -342,15 +344,15 @@ def verifier(problem: str, solution: str) -> dict:
     # Pass 1: solve completely blind — no candidate solution in context yet
     blind_prompt = f"""You are an expert organic chemistry verifier.
 
-Solve the following problem completely independently. Show full step-by-step working.
-Do NOT skip steps. Track the molecular formula at EVERY step.
+Solve the following problem completely independently. Be concise — one sentence per step is enough.
+Track the molecular formula at EVERY step.
 
 Problem:
 {problem}
 
 Return JSON:
 {{
-  "independent_solution": "full step-by-step solution",
+  "independent_solution": "concise step-by-step solution (one sentence per step)",
   "formula_trace": ["molecular formula after each step, e.g. C4H8 → C4H9Br → C4H10O → ..."],
   "final_answer": "IUPAC name or formula of the final product"
 }}"""
@@ -358,10 +360,11 @@ Return JSON:
     blind_resp = api_call(lambda: samba_client().chat.completions.create(
         model=VERIFIER_MODEL,
         messages=[
-            {"role": "system", "content": "You are an expert organic chemist. Output JSON only."},
+            {"role": "system", "content": "You are an expert organic chemist. Output JSON only. Be concise."},
             {"role": "user",   "content": blind_prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=8192,
         temperature=0.0
     ))
     blind = json.loads(blind_resp.choices[0].message.content.strip())
@@ -432,6 +435,7 @@ Return JSON:
             {"role": "user",   "content": compare_prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=0.0
     ))
     result = json.loads(compare_resp.choices[0].message.content.strip())
@@ -466,6 +470,7 @@ Return JSON:
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=0.7
     )
     return json.loads(resp.choices[0].message.content.strip())
@@ -475,14 +480,14 @@ def strong_solver(problem: str, solution: str) -> dict:
     # Step 1: solve blind — do not show reference solution yet
     blind_prompt = f"""You are an expert organic chemist solving a JEE Advanced problem.
 
-Solve rigorously. Show full mechanism and track molecular formulas step by step.
+Solve rigorously but concisely. One sentence per step. Track molecular formulas.
 
 Problem:
 {problem}
 
 Return JSON:
 {{
-  "attempted_solution": "full step-by-step solution with mechanism",
+  "attempted_solution": "concise step-by-step solution with mechanism (one sentence per step)",
   "final_answer": "IUPAC name or formula of the final product/answer",
   "formula_trace": ["molecular formula at each step"]
 }}"""
@@ -490,10 +495,11 @@ Return JSON:
     blind_resp = api_call(lambda: samba_client().chat.completions.create(
         model=STRONG_SOLVER_MODEL,
         messages=[
-            {"role": "system", "content": "You are an expert organic chemist. Output JSON only."},
+            {"role": "system", "content": "You are an expert organic chemist. Output JSON only. Be concise."},
             {"role": "user",   "content": blind_prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=8192,
         temperature=0.0
     ))
     blind = json.loads(blind_resp.choices[0].message.content.strip())
@@ -529,6 +535,7 @@ Return JSON:
             {"role": "user",   "content": score_prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=0.0
     ))
     scored = json.loads(score_resp.choices[0].message.content.strip())
@@ -568,6 +575,7 @@ Return JSON:
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
+        max_tokens=4096,
         temperature=0.0
     ))
     return json.loads(resp.choices[0].message.content.strip())
@@ -653,6 +661,19 @@ def main():
         if ver["verdict"] == "FAIL":
             print(f"  Flaw: {ver.get('semantic_flaws','')[:120]}")
             print(f"  Fix: {ver.get('feedback_for_generator','')[:120]}")
+
+        # Skip strong solver (expensive API call) if verifier already rejected
+        if ver["verdict"] == "FAIL":
+            blackboard.record_attempt(
+                problem          = gen["problem"],
+                solution         = gen["solution"],
+                operators_used   = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
+                verifier_result  = ver,
+                weak_score       = 0,
+                strong_score     = 0,
+            )
+            print("  → Skipping solvers (verifier FAIL). Next attempt.")
+            continue
 
         print("Weak solver (llama3.2)...")
         try:
