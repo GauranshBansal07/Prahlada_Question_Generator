@@ -3,7 +3,7 @@ Ground-up question generation — no seed question.
 Target: Hydrocarbon, Archetype I (Long Reaction Chains).
 
 Pipeline: concept_reasoner (RLM) → generator → verifier → weak → strong → 3-gate → meta_tags
-Uses SambaNova (DeepSeek-V3.2) with key rotation. Weak solver via Ollama (llama3.2).
+Uses OpenRouter for all API roles. Weak solver via Ollama (llama3.2, local).
 """
 
 import json
@@ -26,46 +26,36 @@ if os.path.exists(_env_path):
                 _k, _v = _line.split("=", 1)
                 os.environ.setdefault(_k.strip(), _v.strip())
 
-SAMBANOVA_KEYS = [
-    k for k in (
-        os.environ.get("SAMBANOVA_KEY_1", ""),
-        os.environ.get("SAMBANOVA_KEY_2", ""),
-        os.environ.get("SAMBANOVA_KEY_3", ""),
-        os.environ.get("SAMBANOVA_KEY_4", ""),
-    ) if k
-]
-_key_idx = 0
+OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY", "")
 
-def samba_client():
-    return OpenAI(api_key=SAMBANOVA_KEYS[_key_idx], base_url="https://api.sambanova.ai/v1")
+def openrouter_client():
+    return OpenAI(
+        api_key=OPENROUTER_KEY,
+        base_url="https://openrouter.ai/api/v1",
+    )
 
 weak_client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")
 
-STRONG_MODEL = "DeepSeek-V3.2"
+STRONG_MODEL = "deepseek/deepseek-chat-v3-0324"
 WEAK_MODEL   = "llama3.2"
 STRONG_FLOOR = 85
 WEAK_CEILING = 60
 
 
-def samba_call(fn, retries=3, base_wait=65):
-    global _key_idx
-    for attempt in range(retries * len(SAMBANOVA_KEYS)):
+def api_call(fn, retries=5, base_wait=10):
+    """Retry wrapper for OpenRouter calls. Backs off on 429/503."""
+    for attempt in range(retries):
         try:
             return fn()
         except Exception as e:
-            if "429" in str(e) or "rate_limit" in str(e).lower():
-                next_idx = (_key_idx + 1) % len(SAMBANOVA_KEYS)
-                if next_idx != _key_idx:
-                    _key_idx = next_idx
-                    print(f"    [rate limit] → rotating to key {_key_idx + 1}")
-                    time.sleep(2)
-                else:
-                    wait = base_wait * (2 ** (attempt // len(SAMBANOVA_KEYS)))
-                    print(f"    [all keys limited] waiting {wait}s...")
-                    time.sleep(wait)
+            msg = str(e)
+            if "429" in msg or "rate_limit" in msg.lower() or "503" in msg:
+                wait = base_wait * (2 ** attempt)
+                print(f"    [rate limit] waiting {wait}s (attempt {attempt+1}/{retries})...")
+                time.sleep(wait)
             else:
                 raise
-    raise RuntimeError("SambaNova: exhausted all keys and retries")
+    raise RuntimeError("OpenRouter: max retries exceeded")
 
 
 # ── Filter concept book to Hydrocarbon + Archetype I TXs ─────────────────────
@@ -143,7 +133,7 @@ Return JSON:
   "reasoning": "step-by-step reasoning about why you picked these"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry reasoning model. Output JSON only."},
@@ -212,7 +202,7 @@ Return JSON:
   "reasoning": "brief note on what makes this hard"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry problem generator. Output JSON only."},
@@ -250,7 +240,7 @@ Return JSON:
   "feedback_for_generator": "specific actionable fix if FAIL, else empty string"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry verifier. Output JSON only."},
@@ -307,7 +297,7 @@ Return JSON:
   "reasoning": "explanation of score and any discrepancies"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert chemist. Output JSON only."},

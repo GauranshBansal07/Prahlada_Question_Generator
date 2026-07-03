@@ -39,27 +39,31 @@ SAMBANOVA_KEYS = [
         os.environ.get("SAMBANOVA_KEY_2", ""),
         os.environ.get("SAMBANOVA_KEY_3", ""),
         os.environ.get("SAMBANOVA_KEY_4", ""),
+        os.environ.get("SAMBANOVA_KEY_5", ""),
     ) if k
 ]
 _key_idx = 0
 
+OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY", "")
+
 def samba_client():
     return OpenAI(api_key=SAMBANOVA_KEYS[_key_idx], base_url="https://api.sambanova.ai/v1")
+
+def openrouter_client():
+    return OpenAI(api_key=OPENROUTER_KEY, base_url="https://openrouter.ai/api/v1")
 
 weak_client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")
 
 # ── Model assignments — deliberately different families per role ───────────────
-# Generator:      DeepSeek-V3.2      — best at creative instruction-following
-# Verifier:       DeepSeek-R1        — reasoning model, explicit CoT, different
-#                                      architecture from V3.2; less likely to share
-#                                      the same systematic blind spots
-# Strong solver:  Meta-Llama-3.3-70B — completely different family (Meta/dense vs
-#                                      DeepSeek/MoE); independent second opinion
-# Weak solver:    llama3.2 (Ollama)  — local, stays
-GENERATOR_MODEL    = "DeepSeek-V3.2"
-VERIFIER_MODEL     = "DeepSeek-R1"
-STRONG_SOLVER_MODEL = "Meta-Llama-3.1-405B-Instruct"
-WEAK_MODEL         = "llama3.2"
+# Generator:     DeepSeek-V3.2                — best at creative instruction-following
+# Verifier:      DeepSeek-R1                  — reasoning model; independent blind-solver
+# Strong solver: Meta-Llama-3.1-405B-Instruct — different family (Meta dense 405B vs
+#                                               DeepSeek MoE); genuinely 400B+ active params
+# Weak solver:   llama3.2 (Ollama local)      — free, stays local
+GENERATOR_MODEL     = "DeepSeek-V3.2"
+VERIFIER_MODEL      = "DeepSeek-V3.2"
+STRONG_SOLVER_MODEL = "DeepSeek-V3.2"
+WEAK_MODEL          = "llama3.2"
 
 # Keep STRONG_MODEL alias for meta_tags / blackboard calls that still use it
 STRONG_MODEL = GENERATOR_MODEL
@@ -67,7 +71,8 @@ STRONG_FLOOR = 85
 WEAK_CEILING = 60
 
 
-def samba_call(fn, retries=3, base_wait=65):
+def api_call(fn, retries=3, base_wait=65):
+    """4-key rotation on 429; exponential backoff when all keys exhausted."""
     global _key_idx
     for attempt in range(retries * len(SAMBANOVA_KEYS)):
         try:
@@ -157,7 +162,7 @@ def sample_paths(coverage: Coverage, n_options: int = 6, depth: int = 3,
 
 def edges_to_tx_format(edge_ids: list[str]) -> list[dict]:
     """Convert graph edge IDs to TX-format dicts for the generator prompt."""
-    with open("reaction_graph.json") as f:
+    with open(os.path.join(os.path.dirname(__file__), "knowledge", "reaction_graph.json")) as f:
         graph = json.load(f)
     edge_map = {e["id"]: e for e in graph["edges"]}
     txs = []
@@ -227,7 +232,7 @@ Return JSON:
   "reasoning": "brief reasoning for your choice"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: samba_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry reasoning model. Output JSON only."},
@@ -321,7 +326,7 @@ Return JSON:
   "reasoning": "brief note on what makes this hard"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: samba_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry problem generator. Output JSON only."},
@@ -350,7 +355,7 @@ Return JSON:
   "final_answer": "IUPAC name or formula of the final product"
 }}"""
 
-    blind_resp = samba_call(lambda: samba_client().chat.completions.create(
+    blind_resp = api_call(lambda: samba_client().chat.completions.create(
         model=VERIFIER_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert organic chemist. Output JSON only."},
@@ -420,7 +425,7 @@ Return JSON:
   "feedback_for_generator": "specific actionable fix if FAIL, else empty string"
 }}"""
 
-    compare_resp = samba_call(lambda: samba_client().chat.completions.create(
+    compare_resp = api_call(lambda: samba_client().chat.completions.create(
         model=VERIFIER_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry verifier. Output JSON only."},
@@ -482,7 +487,7 @@ Return JSON:
   "formula_trace": ["molecular formula at each step"]
 }}"""
 
-    blind_resp = samba_call(lambda: samba_client().chat.completions.create(
+    blind_resp = api_call(lambda: samba_client().chat.completions.create(
         model=STRONG_SOLVER_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert organic chemist. Output JSON only."},
@@ -517,7 +522,7 @@ Return JSON:
   "reasoning": "brief explanation of the score"
 }}"""
 
-    score_resp = samba_call(lambda: samba_client().chat.completions.create(
+    score_resp = api_call(lambda: samba_client().chat.completions.create(
         model=STRONG_SOLVER_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry scorer. Output JSON only."},
@@ -556,7 +561,7 @@ Return JSON:
   "reasoning": "explanation of score and any discrepancies"
 }}"""
 
-    resp = samba_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: samba_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert chemist. Output JSON only."},
