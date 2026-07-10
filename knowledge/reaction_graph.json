@@ -729,7 +729,19 @@
           "note": "Primary alcohol → aldehyde using MILD oxidants (STOPS at aldehyde, does NOT over-oxidize to acid): PCC (pyridinium chlorochromate) / PDC (pyridinium dichromate) / Collins (CrO3·2py) / Swern (oxalyl chloride+DMSO+NEt3) / Moffatt (DCC+DMSO) / Cu/Delta / X2 / NBS / MnO2 / CAN; propan-1-ol + PCC → propanal; KEY: these mild oxidants are used when you want primary alcohol → aldehyde selectively without over-oxidation; CONTRAST: strong oxidants (KMnO4/H+, K2Cr2O7/H+) over-oxidize primary alcohol → carboxylic acid (NOT useful for aldehyde synthesis); secondary alcohol + same mild oxidants → ketone (ketones are stable to over-oxidation); BEST for secondary: CrO3/pyridinium (circled in notes)"
         }
       },
-      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Primary alcohol → aldehyde using MILD oxidants (STOPS at aldehyde, does NOT over-oxidize to acid): PCC (pyridinium chlorochromate) / PDC (pyridinium dichromate) / Collins (CrO3·2py) / Swern (oxalyl chloride+DMSO+NEt3) / Moffatt (DCC+DMSO) / Cu/Delta / X2 / NBS / MnO2 / CAN; propan-1-ol + PCC → propanal; KEY: these mild oxidants are used when you want primary alcohol → aldehyde selectively without over-oxidation; CONTRAST: strong oxidants (KMnO4/H+, K2Cr2O7/H+) over-oxidize primary alcohol → carboxylic acid (NOT useful for aldehyde synthesis); secondary alcohol + same mild oxidants → ketone (ketones are stable to over-oxidation); BEST for secondary: CrO3/pyridinium (circled in notes)"
+      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Primary alcohol → aldehyde using MILD oxidants (STOPS at aldehyde, does NOT over-oxidize to acid): PCC (pyridinium chlorochromate) / PDC (pyridinium dichromate) / Collins (CrO3·2py) / Swern (oxalyl chloride+DMSO+NEt3) / Moffatt (DCC+DMSO) / Cu/Delta / X2 / NBS / MnO2 / CAN; propan-1-ol + PCC → propanal; KEY: these mild oxidants are used when you want primary alcohol → aldehyde selectively without over-oxidation; CONTRAST: strong oxidants (KMnO4/H+, K2Cr2O7/H+) over-oxidize primary alcohol → carboxylic acid (NOT useful for aldehyde synthesis); secondary alcohol + same mild oxidants → ketone (ketones are stable to over-oxidation); BEST for secondary: CrO3/pyridinium (circled in notes)",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "PCC stops at aldehyde (primary alcohol); KMnO4 over-oxidises to carboxylic acid — oxidant choice is a genuine lever"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "PCC does NOT oxidise secondary alcohols to carboxylic acids (stops at ketone for 2°, aldehyde for 1°)",
+          "Tertiary alcohols are NOT oxidised by PCC — if starting material is tertiary, this step gives no reaction"
+        ],
+        "jee_difficulty_axis": "Interpretive (oxidant selectivity: PCC vs KMnO4 vs CrO3)"
+      }
     },
     {
       "id": "alcohol_to_alkene_conchso",
@@ -924,7 +936,19 @@
           "note": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         }
       },
-      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible."
+      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Primary/secondary: SN2 with inversion (pyridine required for retention-free SN2); tertiary: elimination competes strongly — Lucas reagent (conc. HCl/ZnCl2) is the textbook route for tertiary"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": "inherits from alcohol; pyridine forces inversion at existing stereocenter (SN2); do NOT combine pyridine with SN1 claims",
+        "common_traps": [
+          "pyridine + SOCl2 = SN2/inversion; claiming SN1 in the same step is mechanistically incoherent",
+          "Tertiary alcohols + SOCl2 prefer elimination, not substitution — use HCl/ZnCl2 for clean tertiary chloride"
+        ],
+        "jee_difficulty_axis": "Interpretive (mechanism discrimination: SN1 vs SN2 vs E2 based on substrate class and base)"
+      }
     },
     {
       "id": "alcohol_to_amine_al2o3450c",
@@ -2085,7 +2109,19 @@
           "note": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         }
       },
-      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
+      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Markovnikov regiochemistry — compare carbocation stability at each carbon to determine OH placement"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": "conditional — only if the two faces of the resulting sp3 carbon bear four different groups; check substituents before asserting chirality",
+        "common_traps": [
+          "E/Z of the starting alkene is ERASED by addition — do not invoke it as a difficulty lever or stereochemistry hook",
+          "Tertiary carbocation formed: 'no rearrangement' note is gratuitous unless a competing migration is genuinely possible"
+        ],
+        "jee_difficulty_axis": "Structural (regiochemistry only); Interpretive only if the formed alcohol is genuinely chiral"
+      }
     },
     {
       "id": "alkene_to_aldehyde_o",
@@ -2132,7 +2168,19 @@
           "note": "Reductive ozonolysis of a terminal alkene (R-CH=CH2); general: R-CH=CH2 + O3/Zn/H2O → R-CHO (aldehyde) + HCHO (formaldehyde/methanal); for terminal alkene, the =CH2 end gives HCHO; the internal end gives R-CHO; under reductive conditions (Zn or DMS), HCHO is the product from terminal carbon; under OXIDATIVE conditions (H2O2): HCHO → HCOOH (formic acid); NOTE: all reductive ozonolysis products are aldehydes/ketones (NEVER carboxylic acid)"
         }
       },
-      "notes": "Archetype ['I', 'II'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Reductive ozonolysis of a terminal alkene (R-CH=CH2); general: R-CH=CH2 + O3/Zn/H2O → R-CHO (aldehyde) + HCHO (formaldehyde/methanal); for terminal alkene, the =CH2 end gives HCHO; the internal end gives R-CHO; under reductive conditions (Zn or DMS), HCHO is the product from terminal carbon; under OXIDATIVE conditions (H2O2): HCHO → HCOOH (formic acid); NOTE: all reductive ozonolysis products are aldehydes/ketones (NEVER carboxylic acid)"
+      "notes": "Archetype ['I', 'II'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Reductive ozonolysis of a terminal alkene (R-CH=CH2); general: R-CH=CH2 + O3/Zn/H2O → R-CHO (aldehyde) + HCHO (formaldehyde/methanal); for terminal alkene, the =CH2 end gives HCHO; the internal end gives R-CHO; under reductive conditions (Zn or DMS), HCHO is the product from terminal carbon; under OXIDATIVE conditions (H2O2): HCHO → HCOOH (formic acid); NOTE: all reductive ozonolysis products are aldehydes/ketones (NEVER carboxylic acid)",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Reductive ozonolysis (Zn/H2O) gives aldehyde from terminal alkene C=CH2; internal symmetrical alkene gives one aldehyde (doubled); internal unsymmetrical gives two different aldehydes"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "E/Z of starting alkene is ERASED by ozonolysis — do not invoke",
+          "Oxidative workup (H2O2) gives carboxylic acid, not aldehyde — workup condition is a genuine lever"
+        ],
+        "jee_difficulty_axis": "Structural (which C=O fragments appear); Interpretive if oxidative vs reductive workup is the discriminator"
+      }
     },
     {
       "id": "alkene_to_alkane_h",
@@ -2391,7 +2439,19 @@
           "note": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         }
       },
-      "notes": "Stereochemistry: syn-diol from OsO₄ or cold KMnO₄; anti-diol from epoxide then H₂O/base. Specify workup conditions explicitly in answers. | Stereochemical outcome critical: syn addition (mCPBA), then ring-opening gives anti-addition overall. Track face selectivity carefully. | Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
+      "notes": "Stereochemistry: syn-diol from OsO₄ or cold KMnO₄; anti-diol from epoxide then H₂O/base. Specify workup conditions explicitly in answers. | Stereochemical outcome critical: syn addition (mCPBA), then ring-opening gives anti-addition overall. Track face selectivity carefully. | Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Syn dihydroxylation — both OH added to same face; E-alkene → (R,S) diol (meso); Z-alkene → (R,R)/(S,S) diol (racemic)"
+        ],
+        "ez_propagates": true,
+        "creates_stereocenters": true,
+        "common_traps": [
+          "E/Z of starting alkene IS a genuine lever — it determines meso vs chiral diol",
+          "Anti dihydroxylation (Br2/H2O → halohydrin → epoxide → diol) gives the opposite stereochemistry"
+        ],
+        "jee_difficulty_axis": "Interpretive — one of the few places where E/Z genuinely propagates to stereochemistry"
+      }
     },
     {
       "id": "alkene_to_epoxide_mcpba",
@@ -2423,7 +2483,19 @@
         "semantic_obfuscation": 2,
         "distractor_plausibility": 4
       },
-      "notes": "Stereochemical outcome critical: syn addition (mCPBA), then ring-opening gives anti-addition overall. Track face selectivity carefully."
+      "notes": "Stereochemical outcome critical: syn addition (mCPBA), then ring-opening gives anti-addition overall. Track face selectivity carefully.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Syn epoxidation — both O atoms add to same face; retention of alkene geometry in product"
+        ],
+        "ez_propagates": true,
+        "creates_stereocenters": "always — epoxidation of a prochiral alkene gives two new stereocenters (cis/trans epoxide from E/Z alkene)",
+        "common_traps": [
+          "E-alkene → trans-epoxide (substituents remain trans); Z-alkene → cis-epoxide",
+          "E/Z of starting alkene IS a genuine lever here — it determines epoxide relative stereochemistry"
+        ],
+        "jee_difficulty_axis": "Interpretive (stereochemistry of epoxide from E/Z alkene is a legitimate hard question)"
+      }
     },
     {
       "id": "alkene_to_ether_hgoacrohorhg",
@@ -2720,7 +2792,20 @@
           "note": "Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible."
         }
       },
-      "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product. | Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible."
+      "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product. | Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "alc. KOH = E2 elimination → alkene (Zaitsev product unless bulky base)",
+          "aq. KOH = SN2 substitution → alcohol"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "alc. KOH gives alkene, NOT carbocation — carbocation is only a transient intermediate in E1",
+          "E2 is anti-periplanar: if substrate is cyclic, product geometry is constrained"
+        ],
+        "jee_difficulty_axis": "Interpretive (alc. vs aq. KOH discrimination is a classic JEE lever)"
+      }
     },
     {
       "id": "alkyl_halide_to_alkyl_halide_nai",
@@ -3149,7 +3234,20 @@
         "semantic_obfuscation": 2,
         "distractor_plausibility": 2
       },
-      "notes": "Strict anhydrous conditions required. Proton source (H₂O, ROH) destroys Grignard before reaction with substrate."
+      "notes": "Strict anhydrous conditions required. Proton source (H₂O, ROH) destroys Grignard before reaction with substrate.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Anhydrous/inert conditions are mandatory (Grignard reacts with water/O2)",
+          "tertiary Grignards suffer Wurtz coupling and elimination side reactions — not a clean textbook step for tertiary halides"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "Grignard carbon bears formal carbanion character — do not confuse with SN2 product",
+          "Tertiary Grignards are experimentally problematic; prefer primary/secondary for clean chain synthesis"
+        ],
+        "jee_difficulty_axis": "Structural (nomenclature of RMgX) + reagent-condition knowledge"
+      }
     },
     {
       "id": "alkyl_halide_to_ketone_dmsodimethyl",
@@ -3496,7 +3594,19 @@
         "semantic_obfuscation": 2,
         "distractor_plausibility": 4
       },
-      "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
+      "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry.",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Markovnikov addition places OH on more-substituted carbon → enol → ketone (internal alkynes); terminal alkynes give methyl ketone (Markovnikov)"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "Anti-Markovnikov hydration (hydroboration-oxidation of alkyne) gives aldehyde — reagent choice is a genuine lever",
+          "HgSO4 catalyst is required; plain H2O/H+ gives very slow reaction"
+        ],
+        "jee_difficulty_axis": "Interpretive (Markovnikov vs anti-Markovnikov product from reagent choice)"
+      }
     },
     {
       "id": "alkyne_to_vinyl_halide_hx1equiv",
@@ -6997,7 +7107,20 @@
           "note": "Favorskii rearrangement: 2-chlorocyclohexan-1-one (alpha-chlorocyclohexanone, 6-membered ring) + (1)NaOH → (2)H+ → cyclopentane-1-carboxylic acid (COOH on 5-membered ring); GENERAL: alpha-halocyclic ketone + base (OH-) → ring-contracted carboxylic acid (ring shrinks by 1 C; the COOH replaces the ring junction); MECHANISM: OH- abstracts alpha-H → carbanion → intramolecular SN2 on C-X (the carbanion attacks the C-Cl carbon → forms cyclopropanone intermediate) → cyclopropanone ring opens under OH- (nucleophilic addition of OH-) → ring-opened carboxylate → H+ → carboxylic acid; RING CONTRACTION RULE: n-membered ring alpha-haloketone + NaOH → (n-1)-membered ring COOH; so cyclohexanone derivative → cyclopentane-COOH; cyclopentanone derivative → cyclobutane-COOH; ALTERNATIVE: with OR- (alkoxide) instead of OH-: gives ester (methyl or ethyl ester) instead of carboxylic acid; NICHE JEE TOPIC: a ring-contracted COOH from a cyclic ketone is the signature of Favorskii"
         }
       },
-      "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Favorskii rearrangement: 2-chlorocyclohexan-1-one (alpha-chlorocyclohexanone, 6-membered ring) + (1)NaOH → (2)H+ → cyclopentane-1-carboxylic acid (COOH on 5-membered ring); GENERAL: alpha-halocyclic ketone + base (OH-) → ring-contracted carboxylic acid (ring shrinks by 1 C; the COOH replaces the ring junction); MECHANISM: OH- abstracts alpha-H → carbanion → intramolecular SN2 on C-X (the carbanion attacks the C-Cl carbon → forms cyclopropanone intermediate) → cyclopropanone ring opens under OH- (nucleophilic addition of OH-) → ring-opened carboxylate → H+ → carboxylic acid; RING CONTRACTION RULE: n-membered ring alpha-haloketone + NaOH → (n-1)-membered ring COOH; so cyclohexanone derivative → cyclopentane-COOH; cyclopentanone derivative → cyclobutane-COOH; ALTERNATIVE: with OR- (alkoxide) instead of OH-: gives ester (methyl or ethyl ester) instead of carboxylic acid; NICHE JEE TOPIC: a ring-contracted COOH from a cyclic ketone is the signature of Favorskii"
+      "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry. | Favorskii rearrangement: 2-chlorocyclohexan-1-one (alpha-chlorocyclohexanone, 6-membered ring) + (1)NaOH → (2)H+ → cyclopentane-1-carboxylic acid (COOH on 5-membered ring); GENERAL: alpha-halocyclic ketone + base (OH-) → ring-contracted carboxylic acid (ring shrinks by 1 C; the COOH replaces the ring junction); MECHANISM: OH- abstracts alpha-H → carbanion → intramolecular SN2 on C-X (the carbanion attacks the C-Cl carbon → forms cyclopropanone intermediate) → cyclopropanone ring opens under OH- (nucleophilic addition of OH-) → ring-opened carboxylate → H+ → carboxylic acid; RING CONTRACTION RULE: n-membered ring alpha-haloketone + NaOH → (n-1)-membered ring COOH; so cyclohexanone derivative → cyclopentane-COOH; cyclopentanone derivative → cyclobutane-COOH; ALTERNATIVE: with OR- (alkoxide) instead of OH-: gives ester (methyl or ethyl ester) instead of carboxylic acid; NICHE JEE TOPIC: a ring-contracted COOH from a cyclic ketone is the signature of Favorskii",
+      "difficulty_notes": {
+        "genuine_levers": [
+          "Haloform/iodoform reaction is SELECTIVE for methyl ketones (CH3COR) — the alpha-carbon must be a methyl group",
+          "Product is RCOOH + CHX3 (trihalomethane precipitate), NOT an alkyl halide"
+        ],
+        "ez_propagates": false,
+        "creates_stereocenters": false,
+        "common_traps": [
+          "The organic product is the CARBOXYLIC ACID (RCOOH), not the haloform (CHX3) — students often name the wrong product",
+          "Iodoform (CHI3) is the precipitate used for the qualitative test; the useful synthetic product is the carboxylate"
+        ],
+        "jee_difficulty_axis": "Interpretive (substrate scope: methyl ketone requirement; product identification)"
+      }
     },
     {
       "id": "ketone_to_cyanohydrin_hcn",

@@ -21,6 +21,7 @@ from core.blackboard import Blackboard
 from core.meta_tags import compute_meta_tags
 from core.graph_traversal import get_paths, get_node, NODES, _EDGES_FROM
 from core.coverage import Coverage
+from core.validators import run_all as run_validators
 
 # ── API clients ───────────────────────────────────────────────────────────────
 # Load .env if present (no external deps required)
@@ -185,12 +186,13 @@ def edges_to_tx_format(edge_ids: list[str]) -> list[dict]:
     for eid in edge_ids:
         e = edge_map.get(eid, {})
         txs.append({
-            "from":       e.get("from", "?"),
-            "to":         e.get("to", "?"),
-            "reagents":   e.get("reagents", []),
-            "conditions": e.get("conditions", ""),
-            "notes":      e.get("notes", ""),
-            "chapter":    e.get("chapter", "Hydrocarbons"),
+            "from":             e.get("from", "?"),
+            "to":               e.get("to", "?"),
+            "reagents":         e.get("reagents", []),
+            "conditions":       e.get("conditions", ""),
+            "notes":            e.get("notes", ""),
+            "chapter":          e.get("chapter", "Hydrocarbons"),
+            "difficulty_notes": e.get("difficulty_notes", {}),
         })
     return txs
 
@@ -286,6 +288,31 @@ Fix the specific issue flagged. Keep all other elements identical.
 
     tx_detail = json.dumps(selected_txs, indent=2)
 
+    # Build per-step difficulty guidance from edge difficulty_notes
+    diff_guidance_lines = []
+    for i, tx in enumerate(selected_txs, 1):
+        dn = tx.get("difficulty_notes", {})
+        if dn:
+            traps = dn.get("common_traps", [])
+            genuine = dn.get("genuine_levers", [])
+            ez_prop = dn.get("ez_propagates", None)
+            creates_stereo = dn.get("creates_stereocenters", False)
+            line = f"Step {i} ({tx['from']}→{tx['to']}):"
+            if genuine:
+                line += f"\n    GENUINE levers: {'; '.join(genuine)}"
+            if traps:
+                line += f"\n    TRAPS to avoid: {'; '.join(traps)}"
+            if ez_prop is False:
+                line += f"\n    E/Z from prior step does NOT propagate through this reaction."
+            if ez_prop is True:
+                line += f"\n    E/Z DOES propagate — valid stereochemistry lever."
+            if creates_stereo is False:
+                line += f"\n    This step does NOT create new stereocenters."
+            elif creates_stereo:
+                line += f"\n    Stereocenters created: {creates_stereo}"
+            diff_guidance_lines.append(line)
+    diff_guidance = "\n".join(diff_guidance_lines) if diff_guidance_lines else "(no edge-level notes)"
+
     prompt = f"""You are an expert JEE Advanced organic chemistry problem designer.
 
 CREATE A QUESTION FROM SCRATCH using the reaction steps below.
@@ -297,6 +324,9 @@ Chain: {chain_desc}
 
 Reaction steps to incorporate:
 {tx_detail}
+
+PER-STEP DIFFICULTY GUIDANCE (read before writing the question):
+{diff_guidance}
 
 MANDATORY INTERNAL CHECKS — do these BEFORE writing the question:
 1. MOLECULAR FORMULA TRACKING: Write the molecular formula of the starting compound,
@@ -332,11 +362,24 @@ Question format:
 
 {refine_block}
 
+STEREOCHEMISTRY RULES — CRITICAL:
+- Only invoke chirality, racemic mixtures, or R/S descriptors if the relevant carbon
+  genuinely has FOUR DIFFERENT substituents. Before writing any stereochemistry note,
+  verify: list the four groups on the carbon — if any two are identical, the carbon
+  is NOT a stereocenter. Do not invent stereocenters.
+- E/Z descriptors on a starting alkene are ONLY a valid difficulty lever if the E/Z
+  geometry propagates to the final answer. If Step 1 destroys the double bond
+  (hydration, addition, hydrogenation, ozonolysis), the E/Z information is erased
+  and must NOT appear in the question's Note or difficulty discussion.
+- pyridine with SOCl₂ forces SN2/inversion. Do not combine pyridine with SN1 claims.
+- "No rearrangement" is gratuitous when the cation is already maximally stable (3°).
+
 Return JSON:
 {{
   "problem": "full question text",
   "solution": "complete step-by-step solution with mechanism and final answer",
   "formula_trace": ["CₙHₘ (start)", "CₙHₘ+₁Br (after step 1)", "..."],
+  "smiles_trace": ["SMILES of starting material", "SMILES after step 1", "SMILES after step 2", "..."],
   "active_fgs_per_step": ["alkene (start)", "allylic bromide + alkene (after step 1)", "..."],
   "difficulty_levers": ["lever: condition X → product A; without X → product B"],
   "operators_applied": ["list of reaction names used"],
@@ -692,6 +735,27 @@ def main():
                 strong_score     = 0,
             )
             print("  → Skipping solvers (verifier FAIL). Next attempt.")
+            continue
+
+        # Premise-validity gate — runs independently of formula/answer correctness
+        print("Premise validators (stereocenters, E/Z, mechanism, conditions)...")
+        smiles_trace = gen.get("smiles_trace", [])
+        smiles_map = {f"step_{i}": s for i, s in enumerate(smiles_trace) if s}
+        val_result = run_validators(gen["problem"], gen["solution"], smiles_map or None)
+        if val_result["all_pass"]:
+            print("  Premise validators: all PASS")
+        else:
+            for fail in val_result["failures"]:
+                print(f"  Premise FAIL: {fail[:120]}")
+            blackboard.record_attempt(
+                problem          = gen["problem"],
+                solution         = gen["solution"],
+                operators_used   = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
+                verifier_result  = {**ver, "premise_failures": val_result["failures"]},
+                weak_score       = 0,
+                strong_score     = 0,
+            )
+            print("  → Premise validation FAIL. Next attempt.")
             continue
 
         print("Weak solver (llama3.2)...")
