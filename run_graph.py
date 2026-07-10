@@ -50,17 +50,20 @@ OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY", "")
 def openrouter_client():
     return OpenAI(api_key=OPENROUTER_KEY, base_url="https://openrouter.ai/api/v1")
 
-weak_client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")
+# weak_client now uses OpenRouter so we get a calibrated 70B model
+# (llama3.2 local always scored 0% — no signal; 70B with student persona gives real gradient)
 
 # ── Model assignments — deliberately different families per role ───────────────
-# Generator:     DeepSeek V3.2 (OpenRouter)       — best at creative instruction-following
-# Verifier:      DeepSeek V3.2 (OpenRouter)       — independent blind-solver
-# Strong solver: Hermes-3 Llama-3.1-405B (free)  — different family; 405B dense active params
-# Weak solver:   llama3.2 (Ollama local)          — free, stays local
+# Generator:     DeepSeek V3.2 (OpenRouter)             — creative instruction-following
+# Verifier:      DeepSeek V3.2 (OpenRouter)             — independent blind-solver
+# Strong solver: Llama-4-Maverick 128E (OpenRouter)     — different family; 17B×128E MoE
+# Weak solver:   Llama-3.3-70B-Instruct:free (OpenRouter) — calibrated "strong student";
+#                70B model with constrained persona; can solve standard reactions but
+#                struggles with multi-step obscure chains → provides actual difficulty signal
 GENERATOR_MODEL     = "deepseek/deepseek-v3.2"
 VERIFIER_MODEL      = "deepseek/deepseek-v3.2"
 STRONG_SOLVER_MODEL = "meta-llama/llama-4-maverick"
-WEAK_MODEL          = "llama3.2"
+WEAK_MODEL          = "meta-llama/llama-3.3-70b-instruct:free"
 
 # Keep STRONG_MODEL alias for meta_tags / blackboard calls that still use it
 STRONG_MODEL = GENERATOR_MODEL
@@ -506,32 +509,37 @@ Return JSON:
 
 
 def weak_solver(problem: str, solution: str) -> dict:
-    prompt = f"""You are a chemistry undergraduate student.
-Solve this organic chemistry problem as best you can, then score yourself 0-100 against the reference.
+    prompt = f"""You are a JEE Advanced student who has studied standard organic reactions
+from NCERT and a single coaching module. You know common named reactions and basic mechanisms,
+but you have NOT drilled multi-step synthesis problems or obscure reagent conditions.
+
+Attempt this problem honestly based only on what a prepared-but-not-expert student would know.
+Then compare your answer to the reference and score yourself 0-100.
+Deduct points for wrong regiochemistry, wrong product, wrong mechanism, missing steps.
 
 Problem:
 {problem}
 
-Reference Solution (for scoring only):
+Reference Solution (for scoring only — do not anchor to it before attempting):
 {solution}
 
 Return JSON:
 {{
-  "attempted_solution": "your answer",
+  "attempted_solution": "your honest attempt",
   "score": integer 0-100,
-  "reasoning": "where you lost points"
+  "reasoning": "specific points lost and why"
 }}"""
 
-    resp = weak_client.chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=WEAK_MODEL,
         messages=[
-            {"role": "system", "content": "You are a chemistry undergraduate. Output JSON only."},
+            {"role": "system", "content": "You are a JEE student, not an expert. Output JSON only."},
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=8192,
+        max_tokens=4096,
         temperature=0.7
-    )
+    ))
     return _parse_json_response(resp)
 
 
