@@ -1674,12 +1674,12 @@
     {
       "id": "aldehyde_to_diol_lahallylalco",
       "from": "aldehyde",
-      "to": "diol",
+      "to": "alcohol",
       "reagents": [
-        "① LAH → allyl alcohol",
-        "② cold KMnO₄ → glycerol"
+        "LiAlH4 (LAH)",
+        "dry ether"
       ],
-      "conditions": "Step 1: LiAlH₄ (dry ether, 0°C, anhydrous) → allyl alcohol (selective 1,2-reduction of C=O; LiAlH₄ does not reduce C=C without catalyst). Step 2: Cold KMnO₄ (dil, alkaline) or OsO₄/NMO → syn dihydroxylation of C=C → glycerol (1,2,3-propanetriol). Two-step synthesis of glycerol from acrolein.",
+      "conditions": "LiAlH4 (LAH), dry ether, then H2O workup. Reduces aldehyde (RCHO) to primary alcohol (RCH2OH). NaBH4/EtOH is milder alternative (there is a separate edge for NaBH4). Do NOT confuse with cold KMnO4 which dihydroxylates alkenes.",
       "firing_condition": null,
       "chapter": "Aldehydes & Ketones",
       "archetype": [
@@ -1701,7 +1701,7 @@
         "semantic_obfuscation": 3,
         "distractor_plausibility": 2
       },
-      "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
+      "notes": "LAH reduction: R-CHO → R-CH2-OH (primary alcohol). Stronger than NaBH4; reduces esters, acids, nitriles too. Requires anhydrous conditions (reacts with water/protic solvents)."
     },
     {
       "id": "aldehyde_to_geminal_dihalide_pcl5",
@@ -1767,46 +1767,13 @@
       "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
-      "id": "aldehyde_to_phenol_hcatalystnov",
-      "from": "aldehyde",
-      "to": "phenol",
-      "reagents": [
-        "H⁺ catalyst (→ Novolac, linear)",
-        "OH⁻ / excess HCHO (→ Bakelite, cross-linked)",
-        "H₂O eliminated"
-      ],
-      "conditions": "Step 1 (both): phenol + HCHO → 2-hydroxybenzyl alcohol (ortho-methylol phenol). Step 2 acid: further condensation → linear Novolac chain. Step 2 base/excess HCHO: 3D cross-linking at ortho and para positions → thermosetting Bakelite. Bakelite = hard, infusible, network polymer (thermosetting).",
-      "firing_condition": null,
-      "chapter": "Aldehydes & Ketones",
-      "archetype": [
-        "I"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        646
-      ],
-      "meta_tags": {
-        "question_length_scope": 3,
-        "model_solution_length": 3,
-        "conceptual_fragility": 3,
-        "number_of_exceptions": 1,
-        "semantic_obfuscation": 3,
-        "distractor_plausibility": 3
-      },
-      "notes": "Novolac: linear polymer [-Ph(OH)-CH₂-]ₙ; soluble, used in paints and lacquers; requires hardener (e.g. hexamethylenetetramine) to cure to Bakelite. Bakelite: once cross-linked, CANNOT be remelted (thermosetting). Melamine-formaldehyde resin: melamine (2,4,6-triamino-1,3,5-triazine) + HCHO → methylol intermediate → cross-linked melamine polymer (crockery, laminates). Classified: condensation + copolymer + network polymer + thermosetting."
-    },
-    {
       "id": "aldehyde_to_substituted_benzene_naohaqueouss",
       "from": "aldehyde",
-      "to": "substituted_benzene",
+      "to": "carboxylic_acid",
       "reagents": [
-        "NaOH (aqueous, strong base)"
+        "NaOH (aq, conc)"
       ],
-      "conditions": "NaOH (aq); RT; Cannizzaro reaction for aldehyde without α-H. Actually this is decarboxylation/elimination: (2,4,6-trinitrophenyl)methanal → on treatment with base, the aldehyde undergoes benzylic carbanion-type elimination → 1,3,5-trinitrobenzene + HCOO⁻? Or: Cannizzaro disproportionation → 50% alcohol + 50% acid. TNT-related aldehyde → strained system. More likely: base eliminates formyl group → TNB.",
+      "conditions": "Conc. NaOH (aq): Cannizzaro reaction (only no-alpha-H aldehydes, e.g. HCHO, PhCHO, (CH3)3CCHO). Disproportionation: 2 RCHO + NaOH → RCOO⁻Na⁺ + RCH2OH. One molecule oxidised to carboxylate, one reduced to alcohol.",
       "firing_condition": null,
       "chapter": "Aldehydes & Ketones",
       "archetype": [
@@ -1841,7 +1808,7 @@
           "note": "Steric crowding deformylation: (2,6-dimethylphenyl)methanal (2,6-dimethylbenzaldehyde) + NaOH → 1,3-dimethylbenzene (m-xylene) + HCOONa (sodium formate); reason = STERIC CROWDING around the CHO group; the two ortho-methyl groups (2,6-positions) flank the CHO from both sides → OH⁻ cannot attack the C=O normally (too crowded, steric hindrance prevents nucleophilic approach) → instead, the aldehyde undergoes deformylation (C-CHO bond cleavage) → Ar⁻ + HCOO⁻; NOTE: this compound does NOT give Cannizzaro reaction despite having no α-H; REASON: Cannizzaro requires OH⁻ to attack C=O (step 1), which is blocked by steric crowding; deformylation is the alternative pathway; 2,6-disubstituted benzaldehyde is specifically noted as a Cannizzaro exception 'due to crowding'"
         }
       },
-      "notes": "Deformylation reaction: (2,4,6-trinitrophenyl)methanal (2,4,6-trinitrobenzaldehyde) + NaOH → 1,3,5-trinitrobenzene + HCOO⁻ (sodium formate); DEFORMYLATION = the C-CHO bond breaks, the CHO group is cleaved as HCOO⁻ (formate) and the aryl group leaves as Ar⁻ (aryl anion, stabilized by the three EWG NO₂ groups); mechanism: OH⁻ attacks C=O of ArCHO → [Ar-CH(OH)(O⁻)] tetrahedral intermediate → Ar⁻ migrates (1,2-anionic shift of Ar⁻ = aryl carbanion, stabilized by EWG) → HCOO⁻ remains → Ar⁻ + H⁺ → ArH (1,3,5-trinitrobenzene); ANALOGY: same as chloral anomaly (CCl₃⁻ migration from CCl₃CHO) but now Ar⁻ migrates instead of CCl₃⁻; GENERAL RULE: ArCHO with ≥2 EWG groups (NO₂, Cl, Br in ortho/para positions) → deformylation under NaOH; NO Cannizzaro products obtained; NOTE: single EWG (like p-NO₂-PhCHO alone) gives slow Cannizzaro (not deformylation); requires multiple or strong EWG for deformylation pathway | Steric crowding deformylation: (2,6-dimethylphenyl)methanal (2,6-dimethylbenzaldehyde) + NaOH → 1,3-dimethylbenzene (m-xylene) + HCOONa (sodium formate); reason = STERIC CROWDING around the CHO group; the two ortho-methyl groups (2,6-positions) flank the CHO from both sides → OH⁻ cannot attack the C=O normally (too crowded, steric hindrance prevents nucleophilic approach) → instead, the aldehyde undergoes deformylation (C-CHO bond cleavage) → Ar⁻ + HCOO⁻; NOTE: this compound does NOT give Cannizzaro reaction despite having no α-H; REASON: Cannizzaro requires OH⁻ to attack C=O (step 1), which is blocked by steric crowding; deformylation is the alternative pathway; 2,6-disubstituted benzaldehyde is specifically noted as a Cannizzaro exception 'due to crowding'"
+      "notes": "Cannizzaro reaction: requires no alpha-H (cannot enolise). Products are RCOOH (after acidification) + RCH2OH. Cross-Cannizzaro possible with HCHO (reduces other aldehyde, HCHO → HCOO⁻). Aldol condensation occurs instead when alpha-H is present."
     },
     {
       "id": "diol_to_aldehyde_hio4periodic",
@@ -2040,38 +2007,6 @@
         "distractor_plausibility": 2
       },
       "notes": "catalytic reforming/aromatization; also Mo2O3/delta; dehydrogenation + cyclization of alkane"
-    },
-    {
-      "id": "alkane_to_carboxylic_acid_conch2so4",
-      "from": "alkane",
-      "to": "substituted_benzene",
-      "reagents": [
-        "conc H2SO4",
-        "delta (heat)"
-      ],
-      "conditions": "Conc H₂SO₄; Δ (heat); electrophilic sulphonation. (CH₃)₃CH + H₂SO₄ → (CH₃)₃C-SO₃H. Mechanism: electrophilic attack of SO₃ (from H₂SO₄ equilibrium) on 3° C-H? More likely: SO₃ as electrophile in Markovnikov addition to isobutene → sulphonation. Or: conc H₂SO₄ direct sulphonation of alkane (harsh). Tertiary C-H most reactive.",
-      "firing_condition": null,
-      "chapter": "Hydrocarbons",
-      "archetype": [
-        "I"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        418
-      ],
-      "meta_tags": {
-        "question_length_scope": 4,
-        "model_solution_length": 4,
-        "conceptual_fragility": 2,
-        "number_of_exceptions": 3,
-        "semantic_obfuscation": 4,
-        "distractor_plausibility": 4
-      },
-      "notes": "Vapour-phase sulphonation of 2-methylpropane (isobutane); mechanism same as nitration = free radical; 2-methylpropane + conc H2SO4/Δ → 2-methylpropane-2-sulfonic acid (major, 3° position) + minor 1° product; rate of sulphonation: 3° > 2° >> 1° (same selectivity trend as FSR and nitration); also C-C bonds cleave at high temp giving shorter-chain sulfonic acids"
     },
     {
       "id": "alkane_to_cycloalkane_electrolysis",
@@ -2589,39 +2524,6 @@
       "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
-      "id": "alkyl_halide_to_acid_chloride_o2",
-      "from": "alkyl_halide",
-      "to": "acid_chloride",
-      "reagents": [
-        "O2",
-        "hv (sunlight/air oxidation)"
-      ],
-      "conditions": "O₂ + hν (sunlight/air); slow oxidation. CHCl₃ in air and light → CCl₂ (dichlorocarbene) → O₂ → COCl₂ (phosgene) + HCl. HAZARD: phosgene is highly toxic (WWI chemical weapon). This is why chloroform must be stored in dark bottles with stabiliser (ethanol, 1%) to prevent phosgene formation. Industrial phosgene: CO + Cl₂/activated C → COCl₂.",
-      "firing_condition": null,
-      "chapter": "Alkyl Halides",
-      "archetype": [
-        "I",
-        "III"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        203
-      ],
-      "meta_tags": {
-        "question_length_scope": 2,
-        "model_solution_length": 2,
-        "conceptual_fragility": 2,
-        "number_of_exceptions": 1,
-        "semantic_obfuscation": 2,
-        "distractor_plausibility": 2
-      },
-      "notes": "Archetype ['I', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
-    },
-    {
       "id": "alkyl_halide_to_alcohol_naoh",
       "from": "alkyl_halide",
       "to": "alcohol",
@@ -3055,12 +2957,12 @@
     {
       "id": "alkyl_halide_to_carbocation_alckohdeltae",
       "from": "alkyl_halide",
-      "to": "carbocation",
+      "to": "alkene",
       "reagents": [
-        "alc. KOH/Delta (E2 -> exo alkene)",
-        "aq. KOH (E1 -> ring expansion -> cyclopentanol)"
+        "alc. KOH",
+        "heat"
       ],
-      "conditions": "CYCLOBUTYL BROMIDE — TWO DIFFERENT CONDITIONS, TWO DIFFERENT OUTCOMES:\n\nSUBSTRATE: Cyclobutane ring with Br at one ring carbon (cyclobutyl bromide).\n\nPATH A — alc. KOH/Δ (E2, base-induced):\nMechanism: Concerted E2, no carbocation intermediate. Base removes β-H anti-periplanar to Br → C=C forms in the exo position → METHYLENECYCLOBUTANE (exo alkene, ring intact with =CH₂ or =CHR extending out). NO ring expansion because E2 is concerted (no cation intermediate).\nProduct: Exocyclic alkene (cyclobut",
+      "conditions": "Alcoholic KOH, heat (E2 elimination). Anti-periplanar geometry required. Follows Saytzeff rule (more substituted alkene preferred). Primary substrates may give some SN2. Distinguished from aq. KOH (SN2 → alcohol).",
       "firing_condition": null,
       "chapter": "Alkyl Halides",
       "archetype": [
@@ -3096,7 +2998,7 @@
           "note": "Primary R-X + conc. NaOH → SN2 → inversion at α-carbon. Tertiary R-X + aq. KOH → SN1 → carbocation → OH⁻ attack → racemisation. SN2: Walden inversion; SN1: racemic mixture. Key: aq/dilute = SN1; conc. = SN2."
         }
       },
-      "notes": "Carbocation intermediate: check for rearrangement (1,2-H or 1,2-alkyl shift) if a more stable cation is accessible. | Primary R-X + conc. NaOH → SN2 → inversion at α-carbon. Tertiary R-X + aq. KOH → SN1 → carbocation → OH⁻ attack → racemisation. SN2: Walden inversion; SN1: racemic mixture. Key: aq/dilute = SN1; conc. = SN2."
+      "notes": "alc. KOH → E2 → alkene (Saytzeff). aq. KOH → SN2 → alcohol. Key JEE distinction. Carbocation is the SN1/E1 intermediate for tertiary substrates in polar solvent without strong base — product is still alkene (E1) or alcohol (SN1), not isolated carbocation."
     },
     {
       "id": "alkyl_halide_to_cycloalkane_mgmagnesiumm",
@@ -3218,69 +3120,6 @@
       "notes": "Archetype ['I'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
     },
     {
-      "id": "alkyl_halide_to_geminal_dihalide_rliorganolit",
-      "from": "alkyl_halide",
-      "to": "geminal_dihalide",
-      "reagents": [
-        "RLi (organolithium)",
-        "RNa (organosodium)",
-        "n-BuLi",
-        "PhLi"
-      ],
-      "conditions": "CARBENE FROM GEM-DIHALIDE CYCLIC COMPOUNDS + RLi/RNa:\n\nREACTION TYPE: 1,1 α-elimination mediated by organolithium/organosodium (metal-halogen exchange then α-elimination).\n\nEXAMPLE 1: Gem-dibromocyclopropane (C₃H₄Br₂, Br₂ on same C of a cyclopropane ring) + RLi:\nStep 1: Li-Br exchange: RLi (the R⁻ carbanion of organolithium) + C-Br → R-Br + C-Li (lithium-carbon bond forms). The gem-diBr becomes gem-BrLi (one Br replaced by Li → Li carbanion at that C, with one Br still on same C).\nStep 2: 1,1 α-",
-      "firing_condition": null,
-      "chapter": "Alkyl Halides",
-      "archetype": [
-        "I",
-        "III"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        319,
-        322,
-        365
-      ],
-      "meta_tags": {
-        "question_length_scope": 3,
-        "model_solution_length": 3,
-        "conceptual_fragility": 3,
-        "number_of_exceptions": 1,
-        "semantic_obfuscation": 3,
-        "distractor_plausibility": 3
-      },
-      "conditions_variants": {
-        "reagent_1": {
-          "reagents": [
-            "Mg/Delta (carbanion mechanism)",
-            "Zn/Delta (radical mechanism)",
-            "NaI/acetone/Delta",
-            "Zn/EtOH",
-            "Mg/ether"
-          ],
-          "conditions": "DEHALOGENATION: 1,n-DIHALIDE + METAL → CYCLIC PRODUCTS OR ALKENE:\n\nMECHANISM OPTIONS (for dehalogenation):\n① Mg/Δ → THINK CARBANION: Mg inserts into one C-X bond (Grignard-like) → organometallic carbanion at one C (C⁻ character) → the carbanion expels the other halide from the same or adjacent C → a",
-          "to": "geminal_dihalide",
-          "tx_index": 322,
-          "note": "Radical mechanism: initiation required (hν or ROOR). Chain process — omitting any propagation step loses marks in mechanism questions."
-        },
-        "reagent_2": {
-          "reagents": [
-            "Zn (zinc metal)",
-            "Zn/Delta (zinc with heat)",
-            "Zn-Cu (zinc-copper couple for more reactive substrates)"
-          ],
-          "conditions": "ZN/DELTA REDUCTIVE DEHALOGENATION — FUNCTION OF Zn (RM lec 11, pages 1-3):\n\nTEACHER HEADER: 'Funtion of Zn/Delta' (underlined, page 1)\nMECHANISM: Zn → Zn²⁺ + 2e⁻ (written explicitly by teacher)\nThe two electrons from Zn are used to break the two C-X bonds simultaneously.\n\nSUBSTRATE: Any vicinal 1,2-",
-          "to": "geminal_dihalide",
-          "tx_index": 365,
-          "note": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product."
-        }
-      },
-      "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product. | Radical mechanism: initiation required (hν or ROOR). Chain process — omitting any propagation step loses marks in mechanism questions."
-    },
-    {
       "id": "alkyl_halide_to_grignard_mg",
       "from": "alkyl_halide",
       "to": "grignard",
@@ -3315,12 +3154,12 @@
     {
       "id": "alkyl_halide_to_ketone_dmsodimethyl",
       "from": "alkyl_halide",
-      "to": "ketone",
+      "to": "aldehyde",
       "reagents": [
         "DMSO (dimethyl sulfoxide)",
         "heat (Delta)"
       ],
-      "conditions": "Kornblum oxidation: DMSO (dimethyl sulfoxide) + heat (Δ, 100–150°C). 2° alkyl halide + DMSO → ketone (Kornblum). Mechanism: SN2 of Br by DMSO O → sulfonium ion → base or heat → elimination → ketone + dimethyl sulphide. Also: PCC/K₂Cr₂O₇ etc. (after conversion to alcohol first). Direct Kornblum: halide → ketone via DMSO oxidation.",
+      "conditions": "DMSO, heat (Kornblum oxidation). Only activated (benzylic or allylic) alkyl halides. Product is aldehyde (not ketone). Mechanism: DMSO acts as oxidant via sulfonium ylide intermediate.",
       "firing_condition": null,
       "chapter": "Alkyl Halides",
       "archetype": [
@@ -3342,7 +3181,7 @@
         "semantic_obfuscation": 4,
         "distractor_plausibility": 4
       },
-      "notes": "Kornblum oxidation: alkyl halide + DMSO/Delta → carbonyl compound; 2-bromopropane (secondary R-CHBr-R') + DMSO/Delta → propan-2-one (acetone/propan-2-one); RULES: (1) primary R-CH2-X + DMSO/Delta → R-CHO (aldehyde); (2) secondary R-CHX-R' + DMSO/Delta → R-CO-R' (ketone); (3) TERTIARY R3C-X + DMSO/Delta → NO REACTION (cannot form tertiary carbonyl = impossible, no H); MECHANISM: SN2 of DMSO on R-X → alkoxysulfonium salt → E2 beta-elimination → R-C=O (carbonyl) + DMS (dimethyl sulfide); DMSO is the oxidant (gets reduced to DMS); this is essentially the REVERSE of Swern oxidation workup"
+      "notes": "Kornblum oxidation: R-CH2-X + DMSO → R-CHO. Restricted to benzylic/allylic substrates. Primary halides give aldehydes; secondary halides give ketones only if substrate is allylic/benzylic — general alkyl halides do NOT react."
     },
     {
       "id": "alkyl_halide_to_nitrile_nacn",
@@ -3475,12 +3314,12 @@
     {
       "id": "alkyne_to_alkane_o3",
       "from": "alkyne",
-      "to": "ketone",
+      "to": "carboxylic_acid",
       "reagents": [
         "O3",
         "Zn (reductive workup)"
       ],
-      "conditions": "O₃; Zn/H₂O (reductive); –78°C; CH₂Cl₂. But-2-yne (CH₃C≡CCH₃) → ozonolysis of triple bond → 2 acyl units → butane-2,3-dione (CH₃COCOCH₃, diacetyl)? Actually: ozonolysis of alkynes gives acid anhydrides or α-dicarbonyls. CH₃C≡CCH₃ + O₃ → CH₃CO-COCH₃ (butane-2,3-dione) via molozonide on triple bond → carboxylic acid fragments. Reductive workup stops at diketone.",
+      "conditions": "O3; Zn/H2O (reductive workup); -78°C; CH2Cl2. Internal alkynes R-C≡C-R + O3/Zn → R-COOH + R-COOH (two carboxylic acid molecules via oxidative cleavage of triple bond).",
       "firing_condition": null,
       "chapter": "Hydrocarbons",
       "archetype": [
@@ -3502,7 +3341,7 @@
         "semantic_obfuscation": 4,
         "distractor_plausibility": 2
       },
-      "notes": "Ozonolysis of internal alkyne gives alpha-diketone (1,2-diketone/vicinal diketone): R-C≡C-R' + O3/Zn → R-CO-CO-R'; but-2-yne (CH3-C≡C-CH3) + O3/Zn → butane-2,3-dione (CH3-CO-CO-CH3 = diacetyl); ALSO: cold KMnO4/H2O at 0°C or OsO4 + alkyne → SAME alpha-diketone (via dihydroxylation of triple bond → enediol → tautomerizes to alpha-diketone); contrast: alkene ozonolysis (O3/Zn) → aldehydes+ketones (single C=O); alkyne ozonolysis → alpha-DIKETONE (two adjacent C=O)"
+      "notes": "JEE convention: ozonolysis of internal alkyne (O3/Zn reductive workup) gives two molecules of carboxylic acid. but-2-yne → 2 CH3COOH (acetic acid). Do NOT confuse with Hg2+/H2SO4 hydration (which gives ketone via keto-enol tautomerism)."
     },
     {
       "id": "alkyne_to_alkene_h",
@@ -4873,40 +4712,6 @@
         "distractor_plausibility": 3
       },
       "notes": "EAS: product regiochemistry determined by existing substituent(s). Check for conflicting or cooperating directors before assigning major product."
-    },
-    {
-      "id": "carbene_to_carbanion_naohstrongba",
-      "from": "carbanion",
-      "to": "carbene",
-      "reagents": [
-        "NaOH (strong base)",
-        "KOH",
-        "t-BuOK"
-      ],
-      "conditions": "1,1 ELIMINATION (α-ELIMINATION) — HALOFORM → CARBENE:\n\nDEFINITION: H and the LG depart from the SAME carbon (the α-carbon) → CARBENE (:CXY, a divalent carbon with lone pair + empty orbital).\n\nMECHANISM (for CHCl₃ + NaOH → :CCl₂):\n1. OH⁻ (strong base) deprotonates the acidic α-H (C-H is acidic because 3 Cl groups stabilize the carbanion via -I effect) → carbanion :CCl₃⁻ (trichloromethyl carbanion).\n2. The carbanion undergoes α-elimination (1,1 elimination): one Cl⁻ departs from the SAME C → :CCl₂",
-      "firing_condition": null,
-      "chapter": "Reaction Mechanisms",
-      "archetype": [
-        "I",
-        "III"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        317
-      ],
-      "meta_tags": {
-        "question_length_scope": 3,
-        "model_solution_length": 3,
-        "conceptual_fragility": 3,
-        "number_of_exceptions": 1,
-        "semantic_obfuscation": 3,
-        "distractor_plausibility": 3
-      },
-      "notes": "Elimination: specify Saytzeff (small base, more substituted) vs Hofmann (bulky base/Hofmann exhaustive/N-oxide, less substituted) product."
     },
     {
       "id": "carbene_to_carbene_uvhvfordiazo",
@@ -6432,39 +6237,6 @@
       "notes": "DIBALH (diisobutylaluminium hydride) reduces ester to ALDEHYDE (stops at aldehyde, does NOT over-reduce to alcohol); ethyl ethanoate + DIBALH → ethanal (acetaldehyde); DIBALH is the MOST PREFERRED reagent for ester → aldehyde conversion; also: nitrile + DIBALH → aldehyde (after hydrolysis); amide + DIBALH → aldehyde (good yield); acyl halide + DIBALH → aldehyde; key: DIBALH stops at aldehyde stage because the aluminum alkoxide product is stable at -78°C and does not allow further reduction until workup"
     },
     {
-      "id": "ester_to_alkyl_halide_i2",
-      "from": "ester",
-      "to": "alkyl_halide",
-      "reagents": [
-        "I2",
-        "NaOH"
-      ],
-      "conditions": "I₂ + NaOH (aq, excess); reflux. First: saponification of ethyl acetate (NaOH, reflux) → ethanol + acetate. Then: ethanol (CH₃CH₂OH) undergoes iodoform test positive (CH₃CH₂OH → CH₃CHO → CH₃CO- → CHI₃ + formate) — or NaOI oxidises EtOH → acetaldehyde → CH₃CO- → CHI₃. Net: ethyl acetate → acetate (from saponification) + iodoform (from ethanol fragment).",
-      "firing_condition": null,
-      "chapter": "Carboxylic Acids & Derivatives",
-      "archetype": [
-        "II",
-        "III"
-      ],
-      "chemoselectivity": {
-        "requires_absent": [],
-        "node_redirect": {},
-        "priority_ref": null
-      },
-      "tx_ids": [
-        218
-      ],
-      "meta_tags": {
-        "question_length_scope": 2,
-        "model_solution_length": 2,
-        "conceptual_fragility": 2,
-        "number_of_exceptions": 1,
-        "semantic_obfuscation": 2,
-        "distractor_plausibility": 2
-      },
-      "notes": "Archetype ['II', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
-    },
-    {
       "id": "ester_to_carboxylic_acid_h3odiluteaci",
       "from": "ester",
       "to": "carboxylic_acid",
@@ -7074,12 +6846,12 @@
     {
       "id": "ketone_to_alkyl_halide_i2",
       "from": "ketone",
-      "to": "alkyl_halide",
+      "to": "carboxylic_acid",
       "reagents": [
         "I2",
-        "NaOH"
+        "NaOH (aq, excess)"
       ],
-      "conditions": "I₂ + NaOH (aq, excess); RT. Cyclohexanone: does NOT have CH₃CO- directly → NaOH opens ring? No: cyclohexanone oxidised by NaOI → 6-iodohexan-2-one chain? Actually: NaOI (in situ from I₂/NaOH) oxidises cyclohexanone → ring-opened dicarboxylic acid (adipic acid monosodium salt) + iodoform. The mechanism involves oxidative ring opening by iodine/base.",
+      "conditions": "I2/NaOH (aq): iodoform reaction. Only methyl ketones (CH3COR) react. Product: RCOO⁻ (carboxylate/carboxylic acid after acidification) + CHI3 (iodoform, yellow precipitate). Iodoform test is qualitative test for CH3CO- group.",
       "firing_condition": null,
       "chapter": "Aldehydes & Ketones",
       "archetype": [
@@ -7115,7 +6887,7 @@
           "note": "Archetype ['II', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
         }
       },
-      "notes": "Archetype ['II', 'III'] transformation. Verify conditions carefully; the reagent identity determines mechanism and hence product regiochemistry/stereochemistry."
+      "notes": "Iodoform reaction: CH3-CO-R + 3I2 + 4NaOH → R-COO⁻Na⁺ + CHI3↓ + 3NaI + 3H2O. Also positive for secondary alcohols with -CHOH-CH3 group (oxidised to methyl ketone in situ). CHI3 is yellow solid with antiseptic smell."
     },
     {
       "id": "ketone_to_amine_hheat",
@@ -8258,10 +8030,10 @@
       "from": "phenol",
       "to": "diol",
       "reagents": [
-        "K₂S₂O₈",
-        "KOH"
+        "K2S2O8",
+        "KOH (aq)"
       ],
-      "conditions": "Elbs persulphate oxidation: K₂S₂O₈ (potassium persulphate); alkaline KOH (aq); 60–80°C. Mechanism: PhO⁻ + S₂O₈²⁻ → phenyl persulphate ester → rearrangement → para-hydroxyphenyl sulphate → base hydrolysis → hydroquinone (para-diphenol). Boyland-Sims (acid conditions): gives ortho sulphate → catechol (1,2-diphenol). Note: Elbs → para-product (hydroquinone); Boyland-Sims → ortho-product (catechol).",
+      "conditions": "K2S2O8 (potassium persulfate), alkaline (KOH) solution, then acidification. Elbs persulfate oxidation: phenol → para-hydroxyphenol (hydroquinone). Electrophilic substitution at para position by persulfate.",
       "firing_condition": null,
       "chapter": "Alcohols, Phenols & Ethers",
       "archetype": [
@@ -8284,7 +8056,7 @@
         "semantic_obfuscation": 3,
         "distractor_plausibility": 4
       },
-      "notes": "EAS: product regiochemistry determined by existing substituent(s). Check for conflicting or cooperating directors before assigning major product."
+      "notes": "Elbs oxidation: PhOH + K2S2O8/KOH → p-HO-C6H4-OH (hydroquinone/para-dihydroxybenzene). Product is aromatic diol (catechol at ortho if Boyland-Sims oxidation with ammonium persulfate). Not a geminal dihalide — the original edge label was incorrect."
     },
     {
       "id": "phenol_to_ketone_kmnoornacroh",
@@ -9010,6 +8782,189 @@
         "distractor_plausibility": 3
       },
       "notes": "Isocyanide hydrolysis: R-NC + H₂O → R-NH₂ + HCOOH. Gives primary amine + formic acid. Useful in synthesis to purify primary amines (form isocyanide, purify by smell/bp, then hydrolyze back)."
+    },
+    {
+      "id": "alkyl_halide_to_acid_chloride_o2",
+      "from": "alkyl_halide",
+      "to": "carboxylic_acid",
+      "reagents": [
+        "O2",
+        "hv (UV)"
+      ],
+      "conditions": "Autoxidation: O2/hv on benzylic or allylic C-H bonds adjacent to halide. Not a standard JEE named reaction. Radical chain: R-CH2-X + O2 → R-CHX-OO· → eventually → R-COOH (via hydroperoxide). REFERENCE ONLY — not a primary JEE transformation.",
+      "firing_condition": null,
+      "chapter": "Hydrocarbons",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 1,
+        "model_solution_length": 1,
+        "conceptual_fragility": 1,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 1,
+        "distractor_plausibility": 1
+      },
+      "notes": "Corrected from incorrect acid_chloride product. O2/hv gives autoxidation (radical mechanism) on activated positions → carboxylic acid via hydroperoxide. NOT a standard JEE reaction. Marked for awareness only."
+    },
+    {
+      "id": "alkyl_halide_to_geminal_dihalide_rliorganolit",
+      "from": "alkyl_halide",
+      "to": "carbanion",
+      "reagents": [
+        "n-BuLi",
+        "RLi (organolithium)",
+        "PhLi"
+      ],
+      "conditions": "Lithium-halogen exchange: R-X + n-BuLi → R-Li (organolithium/carbanion) + n-Bu-X. Requires aryl or vinyl halides (or activated alkyl halides). Very rapid at -78°C in THF. R-Li behaves as carbanion nucleophile.",
+      "firing_condition": null,
+      "chapter": "Hydrocarbons",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 2,
+        "model_solution_length": 2,
+        "conceptual_fragility": 2,
+        "number_of_exceptions": 1,
+        "semantic_obfuscation": 2,
+        "distractor_plausibility": 3
+      },
+      "notes": "Corrected from incorrect gem-dihalide product. n-BuLi/RLi + R-X → R-Li (organolithium) via Li-halogen exchange. Product is a carbanion/organolithium. Used to make reactive organolithium nucleophiles. Distinct from Grignard formation (Mg/ether)."
+    },
+    {
+      "id": "ester_to_alkyl_halide_i2",
+      "from": "ester",
+      "to": "carboxylic_acid",
+      "reagents": [
+        "I2",
+        "NaOH (aq, excess)"
+      ],
+      "conditions": "Iodoform-type cleavage of methyl esters: CH3-CO-OR + I2/NaOH → CHI3 (iodoform) + RCOO⁻ + ROH. Restricted to methyl esters (CH3COO-R). Alkaline hydrolysis (saponification) competes. After acidification, carboxylic acid RCOOH is the organic product.",
+      "firing_condition": null,
+      "chapter": "Aldehydes, Ketones, Carboxylic Acids",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 2,
+        "model_solution_length": 2,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 2,
+        "semantic_obfuscation": 2,
+        "distractor_plausibility": 3
+      },
+      "notes": "Corrected from incorrect alkyl_halide product. Only methyl esters react with I2/NaOH via iodoform mechanism; general esters undergo saponification (aq NaOH) → RCOO⁻ + ROH. Product after acidification is carboxylic acid."
+    },
+    {
+      "id": "aldehyde_to_phenol_hcatalystnov",
+      "from": "aldehyde",
+      "to": "polymer",
+      "reagents": [
+        "H⁺ catalyst (→ Novolac, linear)",
+        "OH⁻ / excess HCHO (→ Bakelite, cross-linked)",
+        "H₂O eliminated"
+      ],
+      "conditions": "Formaldehyde (HCHO, an aldehyde) + phenol → condensation polymer. H⁺ catalyst + phenol excess: Novolac (linear, thermoplastic). OH⁻ + HCHO excess: Resole → Bakelite (cross-linked, thermoset). Reaction: electrophilic aromatic substitution at o/p positions of phenol ring.",
+      "firing_condition": null,
+      "chapter": "Polymers",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 3,
+        "model_solution_length": 2,
+        "conceptual_fragility": 2,
+        "number_of_exceptions": 2,
+        "semantic_obfuscation": 2,
+        "distractor_plausibility": 3
+      },
+      "notes": "Corrected from incorrect phenol as product. HCHO (formaldehyde) is the aldehyde SM; phenol is the co-reactant; polymer (Bakelite/Novolac) is the product. Phenol is NOT produced from this reaction — it is consumed."
+    },
+    {
+      "id": "alkane_to_carboxylic_acid_conch2so4",
+      "from": "alkane",
+      "to": "sulfonate",
+      "reagents": [
+        "conc H2SO4",
+        "delta (heat)"
+      ],
+      "conditions": "Conc H₂SO₄; Δ. Sulfonation of branched alkanes at tertiary C-H positions: (CH₃)₃CH + H₂SO₄ → (CH₃)₃C-SO₃H (tert-butylsulfonic acid). Not applicable to straight-chain alkanes. Reed reaction (SO₂Cl₂/hv) gives alkanesulfonyl chloride from straight-chain alkanes.",
+      "firing_condition": null,
+      "chapter": "Hydrocarbons",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 1,
+        "model_solution_length": 1,
+        "conceptual_fragility": 1,
+        "number_of_exceptions": 2,
+        "semantic_obfuscation": 2,
+        "distractor_plausibility": 1
+      },
+      "notes": "Corrected: to field was wrongly 'substituted_benzene'. Product of alkane + conc H2SO4 is a sulfonate (alkanesulfonic acid), not a substituted benzene. Reaction limited to branched alkanes at tertiary positions. Not a primary JEE transformation."
+    },
+    {
+      "id": "carbene_to_carbanion_naohstrongba",
+      "from": "carbanion",
+      "to": "carbene",
+      "reagents": [
+        "NaOH (strong base)",
+        "KOH",
+        "t-BuOK"
+      ],
+      "conditions": "α-Elimination of carbanion intermediate → carbene. Example: CHCl3 + t-BuOK → CHCl2⁻ (carbanion) → :CCl2 (dichlorocarbene) + Cl⁻. Dichlorocarbene reacts with alkenes → gem-dichlorocyclopropane (Reimer-Tiemann also proceeds via carbene). Strong base required (t-BuOK preferred over NaOH for carbene generation).",
+      "firing_condition": null,
+      "chapter": "Hydrocarbons",
+      "archetype": [
+        "I"
+      ],
+      "chemoselectivity": {
+        "requires_absent": [],
+        "node_redirect": {},
+        "priority_ref": null
+      },
+      "tx_ids": [],
+      "meta_tags": {
+        "question_length_scope": 2,
+        "model_solution_length": 2,
+        "conceptual_fragility": 3,
+        "number_of_exceptions": 2,
+        "semantic_obfuscation": 3,
+        "distractor_plausibility": 3
+      },
+      "notes": "This represents the α-elimination step: carbanion (CHCl2⁻) → carbene (:CCl2) + Cl⁻. Mechanistically correct. The overall sequence is CHCl3 + strong base → carbanion intermediate → carbene. Not a general carbanion reaction — specific to haloform substrates."
     }
   ]
 }

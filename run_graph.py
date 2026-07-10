@@ -46,23 +46,19 @@ _key_idx = 0
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY", "")
 
-def samba_client():
-    return OpenAI(api_key=SAMBANOVA_KEYS[_key_idx], base_url="https://api.sambanova.ai/v1")
-
 def openrouter_client():
     return OpenAI(api_key=OPENROUTER_KEY, base_url="https://openrouter.ai/api/v1")
 
 weak_client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")
 
 # ── Model assignments — deliberately different families per role ───────────────
-# Generator:     DeepSeek-V3.2                — best at creative instruction-following
-# Verifier:      DeepSeek-R1                  — reasoning model; independent blind-solver
-# Strong solver: Meta-Llama-3.1-405B-Instruct — different family (Meta dense 405B vs
-#                                               DeepSeek MoE); genuinely 400B+ active params
-# Weak solver:   llama3.2 (Ollama local)      — free, stays local
-GENERATOR_MODEL     = "DeepSeek-V3.2"
-VERIFIER_MODEL      = "DeepSeek-V3.2"
-STRONG_SOLVER_MODEL = "DeepSeek-V3.2"
+# Generator:     DeepSeek V3.2 (OpenRouter)       — best at creative instruction-following
+# Verifier:      DeepSeek V3.2 (OpenRouter)       — independent blind-solver
+# Strong solver: Hermes-3 Llama-3.1-405B (free)  — different family; 405B dense active params
+# Weak solver:   llama3.2 (Ollama local)          — free, stays local
+GENERATOR_MODEL     = "deepseek/deepseek-v3.2"
+VERIFIER_MODEL      = "deepseek/deepseek-v3.2"
+STRONG_SOLVER_MODEL = "meta-llama/llama-4-maverick"
 WEAK_MODEL          = "llama3.2"
 
 # Keep STRONG_MODEL alias for meta_tags / blackboard calls that still use it
@@ -71,26 +67,27 @@ STRONG_FLOOR = 85
 WEAK_CEILING = 60
 
 
-def api_call(fn, retries=3, base_wait=65):
-    """4-key rotation on 429; exponential backoff when all keys exhausted."""
-    global _key_idx
-    for attempt in range(retries * len(SAMBANOVA_KEYS)):
+def api_call(fn, retries=5, base_wait=10):
+    """Retry wrapper with exponential backoff on 429 or empty-content responses."""
+    for attempt in range(retries):
         try:
-            return fn()
+            result = fn()
+            # Some models return a response with empty content instead of raising an error
+            content = (result.choices[0].message.content or "").strip() if result.choices else ""
+            if not content:
+                wait = base_wait * (2 ** attempt)
+                print(f"    [empty response] waiting {wait}s (attempt {attempt+1}/{retries})...")
+                time.sleep(wait)
+                continue
+            return result
         except Exception as e:
             if "429" in str(e) or "rate_limit" in str(e).lower():
-                next_idx = (_key_idx + 1) % len(SAMBANOVA_KEYS)
-                if next_idx != _key_idx:
-                    _key_idx = next_idx
-                    print(f"    [rate limit] → rotating to key {_key_idx + 1}")
-                    time.sleep(2)
-                else:
-                    wait = base_wait * (2 ** (attempt // len(SAMBANOVA_KEYS)))
-                    print(f"    [all keys limited] waiting {wait}s...")
-                    time.sleep(wait)
+                wait = base_wait * (2 ** attempt)
+                print(f"    [rate limit] waiting {wait}s (attempt {attempt+1}/{retries})...")
+                time.sleep(wait)
             else:
                 raise
-    raise RuntimeError("SambaNova: exhausted all keys and retries")
+    raise RuntimeError("OpenRouter: exhausted retries (rate limit or empty response)")
 
 
 # ── Graph-based path sampling ─────────────────────────────────────────────────
@@ -100,6 +97,25 @@ HYDRO_START_NODES = [
     "alkane", "alkene", "alkyne", "diene_conjugated",
     "cycloalkane", "cycloalkene",
 ]
+
+def _parse_json_response(resp) -> dict:
+    """Extract JSON from an API response, handling None content and markdown fences."""
+    content = resp.choices[0].message.content
+    if not content:
+        raise ValueError("Empty content in API response — model returned no text")
+    content = content.strip()
+    # Strip markdown code fences if present
+    if content.startswith("```"):
+        content = re.sub(r"^```(?:json)?\s*", "", content)
+        content = re.sub(r"\s*```$", "", content)
+        content = content.strip()
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        # Fix invalid JSON escape sequences (e.g. \C, \H from chemical formulas)
+        content = re.sub(r'\\(?!["\\/bfnrtu])', r'\\\\', content)
+        return json.loads(content)
+
 
 def _edge_label(edge: dict) -> str:
     reagents = edge.get("reagents", [])
@@ -232,17 +248,17 @@ Return JSON:
   "reasoning": "brief reasoning for your choice"
 }}"""
 
-    resp = api_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry reasoning model. Output JSON only."},
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=1.0
     ))
-    return json.loads(resp.choices[0].message.content.strip())
+    return _parse_json_response(resp)
 
 
 def generator(blackboard: Blackboard, selected_txs: list, chain_desc: str, attempt_num: int) -> dict:
@@ -327,17 +343,17 @@ Return JSON:
   "reasoning": "brief note on what makes this hard"
 }}"""
 
-    resp = api_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are a chemistry problem generator. Output JSON only."},
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=0.7
     ))
-    return json.loads(resp.choices[0].message.content.strip())
+    return _parse_json_response(resp)
 
 
 def verifier(problem: str, solution: str) -> dict:
@@ -357,7 +373,7 @@ Return JSON:
   "final_answer": "IUPAC name or formula of the final product"
 }}"""
 
-    blind_resp = api_call(lambda: samba_client().chat.completions.create(
+    blind_resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=VERIFIER_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert organic chemist. Output JSON only. Be concise."},
@@ -367,7 +383,7 @@ Return JSON:
         max_tokens=8192,
         temperature=0.0
     ))
-    blind = json.loads(blind_resp.choices[0].message.content.strip())
+    blind = _parse_json_response(blind_resp)
 
     # Pass 2: compare blind solution to candidate, run mechanical invariant checks
     compare_prompt = f"""You are an expert organic chemistry verifier. You have already solved
@@ -428,17 +444,17 @@ Return JSON:
   "feedback_for_generator": "specific actionable fix if FAIL, else empty string"
 }}"""
 
-    compare_resp = api_call(lambda: samba_client().chat.completions.create(
+    compare_resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=VERIFIER_MODEL,
         messages=[
-            {"role": "system", "content": "You are a chemistry verifier. Output JSON only."},
+            {"role": "system", "content": "You are a chemistry verifier. Output JSON only. Be concise."},
             {"role": "user",   "content": compare_prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=0.0
     ))
-    result = json.loads(compare_resp.choices[0].message.content.strip())
+    result = _parse_json_response(compare_resp)
     # Carry through the blind solution for the record
     result["independent_solution"] = blind.get("independent_solution", "")
     result["blind_formula_trace"]  = blind.get("formula_trace", [])
@@ -470,10 +486,10 @@ Return JSON:
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=0.7
     )
-    return json.loads(resp.choices[0].message.content.strip())
+    return _parse_json_response(resp)
 
 
 def strong_solver(problem: str, solution: str) -> dict:
@@ -492,17 +508,17 @@ Return JSON:
   "formula_trace": ["molecular formula at each step"]
 }}"""
 
-    blind_resp = api_call(lambda: samba_client().chat.completions.create(
+    blind_resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_SOLVER_MODEL,
         messages=[
-            {"role": "system", "content": "You are an expert organic chemist. Output JSON only. Be concise."},
+            {"role": "system", "content": "You are an expert organic chemist. Output valid JSON only. Be concise."},
             {"role": "user",   "content": blind_prompt}
         ],
         response_format={"type": "json_object"},
         max_tokens=8192,
         temperature=0.0
     ))
-    blind = json.loads(blind_resp.choices[0].message.content.strip())
+    blind = _parse_json_response(blind_resp)
 
     # Step 2: compare to reference, produce a score AND flag if reference is wrong
     score_prompt = f"""You are scoring a JEE Advanced chemistry problem answer.
@@ -528,20 +544,23 @@ Return JSON:
   "reasoning": "brief explanation of the score"
 }}"""
 
-    score_resp = api_call(lambda: samba_client().chat.completions.create(
+    score_resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=STRONG_SOLVER_MODEL,
         messages=[
-            {"role": "system", "content": "You are a chemistry scorer. Output JSON only."},
+            {"role": "system", "content": "You are a chemistry scorer. Output valid JSON only."},
             {"role": "user",   "content": score_prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=0.0
     ))
-    scored = json.loads(score_resp.choices[0].message.content.strip())
+    scored = _parse_json_response(score_resp)
 
+    attempted = blind.get("attempted_solution", "")
+    if not isinstance(attempted, str):
+        attempted = json.dumps(attempted)  # model sometimes returns a structured dict
     return {
-        "attempted_solution":       blind.get("attempted_solution", ""),
+        "attempted_solution":       attempted,
         "blind_final_answer":       blind.get("final_answer", ""),
         "blind_formula_trace":      blind.get("formula_trace", []),
         "score":                    scored.get("score", 0),
@@ -568,17 +587,17 @@ Return JSON:
   "reasoning": "explanation of score and any discrepancies"
 }}"""
 
-    resp = api_call(lambda: samba_client().chat.completions.create(
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
         model=GENERATOR_MODEL,
         messages=[
             {"role": "system", "content": "You are an expert chemist. Output JSON only."},
             {"role": "user",   "content": prompt}
         ],
         response_format={"type": "json_object"},
-        max_tokens=4096,
+        max_tokens=8192,
         temperature=0.0
     ))
-    return json.loads(resp.choices[0].message.content.strip())
+    return _parse_json_response(resp)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -658,12 +677,12 @@ def main():
         print(f"  Check5 agree:   {ver.get('check5_agreement','?')[:60]}")
         if ver.get("check6_levers"):
             print(f"  Check6 levers:  {ver['check6_levers'][:80]}")
-        if ver["verdict"] == "FAIL":
+        if not ver["verdict"].startswith("PASS"):
             print(f"  Flaw: {ver.get('semantic_flaws','')[:120]}")
             print(f"  Fix: {ver.get('feedback_for_generator','')[:120]}")
 
         # Skip strong solver (expensive API call) if verifier already rejected
-        if ver["verdict"] == "FAIL":
+        if not ver["verdict"].startswith("PASS"):
             blackboard.record_attempt(
                 problem          = gen["problem"],
                 solution         = gen["solution"],
@@ -702,7 +721,7 @@ def main():
         )
 
         # Gate: verifier PASS + strong ≥85% + weak ≤60% + reference key not flagged wrong
-        gate_verifier = ver["verdict"] == "PASS"
+        gate_verifier = ver["verdict"].startswith("PASS")
         gate_strong   = strong_score >= STRONG_FLOOR
         gate_weak     = weak_score   <= WEAK_CEILING
         gate_ref_ok   = ref_correct  # fail if strong solver flagged the reference key as wrong
