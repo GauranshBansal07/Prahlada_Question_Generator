@@ -266,29 +266,7 @@ Return JSON:
     return _parse_json_response(resp)
 
 
-def generator(blackboard: Blackboard, selected_txs: list, chain_desc: str, attempt_num: int) -> dict:
-    last = blackboard.last_attempt()
-
-    if last:
-        refine_block = f"""
---- REFINE IN PLACE (Attempt {attempt_num}) ---
-Do NOT start over. Take the problem below and fix ONLY what was flagged.
-
-Previous Problem:
-{last['problem']}
-
-Previous Solution:
-{last['solution']}
-
-Verifier Feedback: {last['verifier_feedback']}
-Weak Solver Score: {last['weak_score']}%  (target ≤{WEAK_CEILING}%)
-Strong Solver Score: {last['strong_score']}%  (target ≥{STRONG_FLOOR}%)
-
-Fix the specific issue flagged. Keep all other elements identical.
-"""
-    else:
-        refine_block = ""
-
+def generator(blackboard: Blackboard, selected_txs: list, chain_desc: str, attempt_num: int = 1) -> dict:
     tx_detail = json.dumps(selected_txs, indent=2)
 
     # Build per-step difficulty guidance from edge difficulty_notes
@@ -362,8 +340,6 @@ Question format:
 - Use IUPAC nomenclature throughout. Represent structures as IUPAC names or condensed formulas.
 - Do NOT include diagrams — text only.
 - Difficulty target: a JEE Advanced student who hasn't seen this exact chain should find it tricky.
-
-{refine_block}
 
 STEREOCHEMISTRY RULES — CRITICAL:
 - Only invoke chirality, racemic mixtures, or R/S descriptors if the relevant carbon
@@ -506,6 +482,62 @@ Return JSON:
     result["blind_formula_trace"]  = blind.get("formula_trace", [])
     result["blind_final_answer"]   = blind.get("final_answer", "")
     return result
+
+
+def reviser(problem: str, solution: str, feedback: str, revision_num: int) -> dict:
+    """
+    Targeted revision: fix ONLY the specific flaws in feedback.
+    Same JSON schema as generator. Does NOT repick the reaction path.
+    """
+    prompt = f"""You are an expert JEE Advanced chemistry problem editor.
+
+A question was written and reviewed. The reviewer found specific flaws.
+Your job: fix ONLY those flaws. Keep the reaction chain, the starting material,
+and the overall structure identical. Do not rewrite the whole question.
+
+CURRENT QUESTION:
+{problem}
+
+CURRENT SOLUTION:
+{solution}
+
+REVIEWER FEEDBACK (fix these and only these):
+{feedback}
+
+REVISION NUMBER: {revision_num} of 3.
+
+Rules:
+- Fix the identified flaws precisely. Do not change anything not mentioned.
+- If the flaw is a phantom stereocenter: remove all stereochemistry language for that carbon.
+- If the flaw is decorative E/Z: remove the E/Z descriptor from the starting material.
+- If the flaw is a mechanistic contradiction: correct the mechanism label.
+- If the flaw is a formula error: fix the atom count and recheck all subsequent steps.
+- The answer must remain unique and unambiguous after your fix.
+- IUPAC nomenclature throughout.
+
+Return the same JSON schema as the original generator:
+{{
+  "problem": "corrected question text",
+  "solution": "corrected step-by-step solution",
+  "formula_trace": ["CₙHₘ (start)", "... after step 1", "..."],
+  "smiles_trace": ["SMILES of each intermediate"],
+  "active_fgs_per_step": ["FGs at each step"],
+  "difficulty_levers": ["lever: condition X → product A; without X → product B"],
+  "operators_applied": ["list of reaction names used"],
+  "reasoning": "what was fixed and why"
+}}"""
+
+    resp = api_call(lambda: openrouter_client().chat.completions.create(
+        model=GENERATOR_MODEL,
+        messages=[
+            {"role": "system", "content": "You are a chemistry problem editor. Output JSON only."},
+            {"role": "user",   "content": prompt}
+        ],
+        response_format={"type": "json_object"},
+        max_tokens=8192,
+        temperature=0.3
+    ))
+    return _parse_json_response(resp)
 
 
 def weak_solver(problem: str, solution: str) -> dict:
@@ -694,187 +726,203 @@ def main():
         print(f"    Path {p['idx']} (w={p['weight']:.4f}): {p['description']}")
     print()
 
-    selected_path = None  # will be set on first accepted concept_reasoner response
-    accepted = False
+    MAX_PATH_ATTEMPTS = MAX_RETRIES          # how many distinct paths to try
+    MAX_REVISIONS     = 3                    # how many revision rounds per path
 
-    for attempt in range(1, MAX_RETRIES + 2):
-        print(f"── Attempt {attempt} ─────────────────────────────────")
+    selected_path = None
+    accepted      = False
+    path_attempt  = 0
+
+    # ── Outer loop: pick a new path each time ─────────────────────────────────
+    for path_attempt in range(1, MAX_PATH_ATTEMPTS + 1):
+        print(f"\n══ Path attempt {path_attempt}/{MAX_PATH_ATTEMPTS} ══")
 
         print("Concept reasoner (RLM)...")
         cr = concept_reasoner(blackboard, path_options)
         path_idx = cr.get("selected_path_idx", 0)
-
-        # Guard against out-of-range idx
         if not isinstance(path_idx, int) or path_idx >= len(path_options):
             path_idx = 0
 
         selected_path = path_options[path_idx]
         chain_desc    = cr.get("chain_description", selected_path["description"])
         selected_txs  = edges_to_tx_format(selected_path["edges"])
-
-        print(f"  Selected Path {path_idx}: {selected_path['description']}")
+        print(f"  Path {path_idx}: {selected_path['description']}")
         print(f"  Chain: {chain_desc}")
 
-        print("Generator...")
-        gen = generator(blackboard, selected_txs, chain_desc, attempt)
+        print("Generator (initial draft)...")
+        gen = generator(blackboard, selected_txs, chain_desc, attempt_num=path_attempt)
 
-        print("Verifier (blind pass 1 + invariant checks pass 2)...")
-        ver = verifier(gen["problem"], gen["solution"])
-        print(f"  Verdict: {ver['verdict']} | Difficulty: {ver.get('difficulty_rating','?')}")
-        print(f"  Check1 formula: {ver.get('check1_formula','?')[:60]}")
-        print(f"  Check2 FGs:     {ver.get('check2_fgs','?')[:60]}")
-        print(f"  Check3 stereo:  {ver.get('check3_stereo','?')[:60]}")
-        print(f"  Check4 circular:{ver.get('check4_circularity','?')[:60]}")
-        print(f"  Check5 agree:   {ver.get('check5_agreement','?')[:60]}")
-        if ver.get("check6_levers"):
-            print(f"  Check6 levers:  {ver['check6_levers'][:80]}")
-        if not ver["verdict"].startswith("PASS"):
-            print(f"  Flaw: {ver.get('semantic_flaws','')[:120]}")
-            print(f"  Fix: {ver.get('feedback_for_generator','')[:120]}")
+        # ── Inner loop: up to MAX_REVISIONS revision rounds on this draft ─────
+        for revision in range(MAX_REVISIONS):
+            label = f"  [rev {revision+1}/{MAX_REVISIONS}]"
 
-        # Skip strong solver (expensive API call) if verifier already rejected
-        if not ver["verdict"].startswith("PASS"):
+            print(f"{label} Verifier...")
+            ver = verifier(gen["problem"], gen["solution"])
+            print(f"{label}   Verdict: {ver['verdict']} | Difficulty: {ver.get('difficulty_rating','?')}")
+            print(f"{label}   Check1 formula: {ver.get('check1_formula','?')[:60]}")
+            print(f"{label}   Check2 FGs:     {ver.get('check2_fgs','?')[:60]}")
+            print(f"{label}   Check3 stereo:  {ver.get('check3_stereo','?')[:60]}")
+            print(f"{label}   Check4 circular:{ver.get('check4_circularity','?')[:60]}")
+            print(f"{label}   Check5 agree:   {ver.get('check5_agreement','?')[:60]}")
+            if ver.get("check6_levers"):
+                print(f"{label}   Check6 levers:  {ver['check6_levers'][:80]}")
+
+            if not ver["verdict"].startswith("PASS"):
+                flaw     = ver.get("semantic_flaws", "")
+                fix_hint = ver.get("feedback_for_generator", "")
+                print(f"{label}   Flaw: {flaw[:120]}")
+                print(f"{label}   Fix:  {fix_hint[:120]}")
+                blackboard.record_attempt(
+                    problem        = gen["problem"],
+                    solution       = gen["solution"],
+                    operators_used = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
+                    verifier_result= ver,
+                    weak_score     = 0,
+                    strong_score   = 0,
+                )
+                if revision < MAX_REVISIONS - 1:
+                    print(f"{label}   → Verifier FAIL. Revising draft...")
+                    feedback = f"VERIFIER FLAWS:\n{flaw}\n\nSPECIFIC FIX REQUIRED:\n{fix_hint}"
+                    gen = reviser(gen["problem"], gen["solution"], feedback, revision + 1)
+                    continue
+                else:
+                    print(f"{label}   → Verifier FAIL after {MAX_REVISIONS} revisions. Trying new path.")
+                    break  # exit inner loop → pick new path
+
+            # Verifier passed — run premise validators
+            print(f"{label} Premise validators...")
+            smiles_trace = gen.get("smiles_trace", [])
+            smiles_map   = {f"step_{i}": s for i, s in enumerate(smiles_trace) if s}
+            val_result   = run_validators(gen["problem"], gen["solution"], smiles_map or None)
+
+            if not val_result["all_pass"]:
+                for fail in val_result["failures"]:
+                    print(f"{label}   Premise FAIL: {fail[:120]}")
+                blackboard.record_attempt(
+                    problem        = gen["problem"],
+                    solution       = gen["solution"],
+                    operators_used = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
+                    verifier_result= {**ver, "premise_failures": val_result["failures"]},
+                    weak_score     = 0,
+                    strong_score   = 0,
+                )
+                if revision < MAX_REVISIONS - 1:
+                    print(f"{label}   → Premise FAIL. Revising draft...")
+                    feedback = f"PREMISE VALIDITY FAILURES:\n{val_result['feedback']}"
+                    gen = reviser(gen["problem"], gen["solution"], feedback, revision + 1)
+                    continue
+                else:
+                    print(f"{label}   → Premise FAIL after {MAX_REVISIONS} revisions. Trying new path.")
+                    break
+            else:
+                print(f"{label}   Premises: all PASS")
+
+            # Both gates passed — run solvers (expensive; only once per draft that clears both)
+            print(f"{label} Weak solver...")
+            try:
+                wk         = weak_solver(gen["problem"], gen["solution"])
+                weak_score = wk.get("score", 0)
+            except Exception as e:
+                print(f"{label}   Weak solver error: {e}")
+                weak_score = 0
+            print(f"{label}   Weak score: {weak_score}%")
+
+            print(f"{label} Strong solver (blind)...")
+            st           = strong_solver(gen["problem"], gen["solution"])
+            strong_score = st.get("score", 0)
+            ref_correct  = st.get("reference_correct", True)
+            print(f"{label}   Strong score: {strong_score}% | reference_correct: {ref_correct}")
+            if not ref_correct:
+                print(f"{label}   !! Reference flagged wrong: {st.get('disagreement_explanation','')[:120]}")
+
             blackboard.record_attempt(
-                problem          = gen["problem"],
-                solution         = gen["solution"],
-                operators_used   = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
-                verifier_result  = ver,
-                weak_score       = 0,
-                strong_score     = 0,
-            )
-            print("  → Skipping solvers (verifier FAIL). Next attempt.")
-            continue
-
-        # Premise-validity gate — runs independently of formula/answer correctness
-        print("Premise validators (stereocenters, E/Z, mechanism, conditions)...")
-        smiles_trace = gen.get("smiles_trace", [])
-        smiles_map = {f"step_{i}": s for i, s in enumerate(smiles_trace) if s}
-        val_result = run_validators(gen["problem"], gen["solution"], smiles_map or None)
-        if val_result["all_pass"]:
-            print("  Premise validators: all PASS")
-        else:
-            for fail in val_result["failures"]:
-                print(f"  Premise FAIL: {fail[:120]}")
-            blackboard.record_attempt(
-                problem          = gen["problem"],
-                solution         = gen["solution"],
-                operators_used   = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
-                verifier_result  = {**ver, "premise_failures": val_result["failures"]},
-                weak_score       = 0,
-                strong_score     = 0,
-            )
-            print("  → Premise validation FAIL. Next attempt.")
-            continue
-
-        print("Weak solver (llama3.2)...")
-        try:
-            wk = weak_solver(gen["problem"], gen["solution"])
-            weak_score = wk.get("score", 0)
-        except Exception as e:
-            print(f"  Weak solver error: {e}")
-            weak_score = 0
-        print(f"  Weak score: {weak_score}%")
-
-        print("Strong solver (DeepSeek-V3.2) — blind first...")
-        st = strong_solver(gen["problem"], gen["solution"])
-        strong_score = st.get("score", 0)
-        ref_correct  = st.get("reference_correct", True)
-        print(f"  Strong score: {strong_score}%  |  reference_correct: {ref_correct}")
-        if not ref_correct:
-            print(f"  !! Reference key flagged wrong: {st.get('disagreement_explanation','')[:120]}")
-
-        blackboard.record_attempt(
-            problem          = gen["problem"],
-            solution         = gen["solution"],
-            operators_used   = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
-            verifier_result  = ver,
-            weak_score       = weak_score,
-            strong_score     = strong_score,
-        )
-
-        # Gate: verifier PASS + strong ≥85% + weak ≤60% + reference key not flagged wrong
-        gate_verifier = ver["verdict"].startswith("PASS")
-        gate_strong   = strong_score >= STRONG_FLOOR
-        gate_weak     = weak_score   <= WEAK_CEILING
-        gate_ref_ok   = ref_correct  # fail if strong solver flagged the reference key as wrong
-
-        print(f"  Gates: verifier={'✓' if gate_verifier else '✗'}  "
-              f"strong={'✓' if gate_strong else '✗'} ({strong_score}% vs ≥{STRONG_FLOOR})  "
-              f"weak={'✓' if gate_weak else '✗'} ({weak_score}% vs ≤{WEAK_CEILING})  "
-              f"ref_ok={'✓' if gate_ref_ok else '✗'}")
-
-        if gate_verifier and gate_strong and gate_weak and gate_ref_ok:
-            accepted = True
-
-            meta = compute_meta_tags(
-                question_text    = gen["problem"],
-                archetype_code   = "I",
-                solver_trace     = st.get("attempted_solution", ""),
-                fragility_weight = None,
+                problem        = gen["problem"],
+                solution       = gen["solution"],
+                operators_used = gen.get("operators_applied", [t["from"]+"→"+t["to"] for t in selected_txs]),
+                verifier_result= ver,
+                weak_score     = weak_score,
+                strong_score   = strong_score,
             )
 
-            # Update coverage — this path is now used
-            coverage.on_acceptance(
-                archetype = "I",
-                chapter   = "Hydrocarbons",
-                edges     = selected_path["edges"],
-                concepts  = [],
-            )
-            coverage.save()
-            print(f"  Coverage updated. Total accepted: {coverage.total_accepted()}")
+            gate_strong = strong_score >= STRONG_FLOOR
+            gate_weak   = weak_score   <= WEAK_CEILING
+            gate_ref_ok = ref_correct
 
-            record = {
-                "question_id":       f"GRAPH_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}",
-                "seed_id":           "GRAPH_HYDRO",
-                "generation_mode":   "graph_wired",
-                "chapter":           "Hydrocarbons",
-                "archetype":         "Long Reaction Chains",
-                "archetype_code":    "I",
-                "graph_path":        selected_path["nodes"],
-                "graph_edges":       selected_path["edges"],
-                "coverage_weight":   selected_path["weight"],
-                "question":          gen["problem"],
-                "solution":          gen["solution"],
-                "operators_applied": gen.get("operators_applied", []),
-                "chain_description": chain_desc,
-                "loops_run":         attempt,
-                "strong_score":      strong_score,
-                "weak_score":        weak_score,
-                "verifier_verdict":  ver["verdict"],
-                "verifier_difficulty": ver.get("difficulty_rating", "?"),
-                "meta_tags":         meta,
-                "attempt_history":   blackboard.history(),
-                "generated_at":      datetime.now(timezone.utc).isoformat(),
-            }
+            print(f"{label}   Gates: "
+                  f"strong={'✓' if gate_strong else '✗'} ({strong_score}% vs ≥{STRONG_FLOOR})  "
+                  f"weak={'✓' if gate_weak else '✗'} ({weak_score}% vs ≤{WEAK_CEILING})  "
+                  f"ref_ok={'✓' if gate_ref_ok else '✗'}")
 
-            existing = []
-            if os.path.exists(OUTPUT_FILE):
-                with open(OUTPUT_FILE) as f:
-                    existing = json.load(f)
-            existing.append(record)
-            with open(OUTPUT_FILE, "w") as f:
-                json.dump(existing, f, indent=2)
+            if gate_strong and gate_weak and gate_ref_ok:
+                accepted = True
 
-            print(f"\n✓ ACCEPTED on attempt {attempt}")
-            print(f"  Meta-tags: {meta}")
-            print(f"\n{'='*60}")
-            print("QUESTION:")
-            print('='*60)
-            print(gen["problem"])
-            print(f"\n{'='*60}")
-            print("SOLUTION:")
-            print('='*60)
-            print(gen["solution"])
-            print(f"\nVerifier difficulty: {ver.get('difficulty_rating','?')}")
-            print(f"Strong: {strong_score}% | Weak: {weak_score}%")
-            print(f"Saved to {OUTPUT_FILE}")
-            break
+                meta = compute_meta_tags(
+                    question_text    = gen["problem"],
+                    archetype_code   = "I",
+                    solver_trace     = st.get("attempted_solution", ""),
+                    fragility_weight = None,
+                )
+                coverage.on_acceptance(
+                    archetype = "I",
+                    chapter   = "Hydrocarbons",
+                    edges     = selected_path["edges"],
+                    concepts  = [],
+                )
+                coverage.save()
+                print(f"{label}   Coverage updated. Total accepted: {coverage.total_accepted()}")
 
-        if attempt > MAX_RETRIES:
-            print(f"\n✗ Max retries ({MAX_RETRIES}) reached without acceptance.")
-            break
+                record = {
+                    "question_id":         f"GRAPH_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}",
+                    "seed_id":             "GRAPH_HYDRO",
+                    "generation_mode":     "graph_wired",
+                    "chapter":             "Hydrocarbons",
+                    "archetype":           "Long Reaction Chains",
+                    "archetype_code":      "I",
+                    "graph_path":          selected_path["nodes"],
+                    "graph_edges":         selected_path["edges"],
+                    "coverage_weight":     selected_path["weight"],
+                    "question":            gen["problem"],
+                    "solution":            gen["solution"],
+                    "operators_applied":   gen.get("operators_applied", []),
+                    "chain_description":   chain_desc,
+                    "path_attempt":        path_attempt,
+                    "revision_rounds":     revision + 1,
+                    "strong_score":        strong_score,
+                    "weak_score":          weak_score,
+                    "verifier_verdict":    ver["verdict"],
+                    "verifier_difficulty": ver.get("difficulty_rating", "?"),
+                    "meta_tags":           meta,
+                    "attempt_history":     blackboard.history(),
+                    "generated_at":        datetime.now(timezone.utc).isoformat(),
+                }
 
-        print("  → Refining...\n")
+                existing = []
+                if os.path.exists(OUTPUT_FILE):
+                    with open(OUTPUT_FILE) as f:
+                        existing = json.load(f)
+                existing.append(record)
+                with open(OUTPUT_FILE, "w") as f:
+                    json.dump(existing, f, indent=2)
+
+                print(f"\n✓ ACCEPTED (path {path_attempt}, revision {revision+1})")
+                print(f"  Meta-tags: {meta}")
+                print(f"\n{'='*60}\nQUESTION:\n{'='*60}")
+                print(gen["problem"])
+                print(f"\n{'='*60}\nSOLUTION:\n{'='*60}")
+                print(gen["solution"])
+                print(f"\nVerifier difficulty: {ver.get('difficulty_rating','?')}")
+                print(f"Strong: {strong_score}% | Weak: {weak_score}%")
+                print(f"Saved to {OUTPUT_FILE}")
+                break  # exit inner loop
+
+            else:
+                # Solver gates failed — difficulty calibration issue, not a fixable flaw
+                # Pick a new path rather than revising (revision can't change difficulty profile)
+                print(f"{label}   → Solver gates failed. Trying new path.")
+                break  # exit inner loop → pick new path
+
+        if accepted:
+            break  # exit outer loop
 
     if not accepted:
         last = blackboard.last_attempt()
