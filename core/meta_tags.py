@@ -45,15 +45,6 @@ _IUPAC_PATTERN = re.compile(
     re.IGNORECASE
 )
 
-# Exception/distractor keywords in solver traces
-_EXCEPTION_PATTERN = re.compile(
-    r'\b(however|but not|cannot|incorrect|wrong|not applicable|'
-    r'anomalous|atypical|irregular|abnormal|unusual|special case|'
-    r'exception|except|excluding|unless|would not|does not|'
-    r'rejected|ruled out|discarded|eliminated|not the answer)\b',
-    re.IGNORECASE
-)
-
 
 def _zscore_to_15(z: float) -> int:
     """Map z-score to 1–5 scale: mean→3, ±1σ→1.5 steps."""
@@ -79,9 +70,9 @@ def iupac_density(text: str) -> float:
     return len(_IUPAC_PATTERN.findall(text)) / len(words)
 
 
-def extract_exception_count(solver_trace: str) -> int:
-    """Count exception/rejection signals in strong solver reasoning trace."""
-    return len(_EXCEPTION_PATTERN.findall(solver_trace))
+def extract_exception_count(path_edges: list) -> int:
+    """Count edges on the sampled path that are flagged as is_exception=True."""
+    return sum(1 for e in path_edges if e.get("is_exception", False))
 
 
 def extract_distractor_count(solver_trace: str) -> int:
@@ -103,6 +94,7 @@ def compute_meta_tags(
     archetype_code: str,
     solver_trace: str = None,
     fragility_weight: float = None,
+    path_edges: list = None,
 ) -> dict:
     """
     Compute all 6 meta-tags for a question.
@@ -145,7 +137,7 @@ def compute_meta_tags(
         sl_mean, sl_std = _archetype_stats(ns, archetype_code, "model_solution_length")
         tag_msl = _zscore_to_15(_zscore(trace_words, sl_mean, sl_std))
 
-        ex_count = extract_exception_count(solver_trace)
+        ex_count = extract_exception_count(path_edges or [])
         ex_mean, ex_std = _archetype_stats(ns, archetype_code, "number_of_exceptions")
         tag_ex = _zscore_to_15(_zscore(ex_count, ex_mean, ex_std))
 

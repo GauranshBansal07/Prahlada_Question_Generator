@@ -158,7 +158,7 @@ def main():
     with open(CBOOK_FILE) as f:
         cb = json.load(f)
 
-    txs_by_index = {t["tx_index"]: t for t in cb["structural_operators"]["add_reaction_step"]["valid_transformations"]}
+    txs_by_index = {i: t for i, t in enumerate(cb["structural_operators"]["add_reaction_step"]["valid_transformations"])}
 
     if os.path.exists(PROGRESS_FILE):
         with open(PROGRESS_FILE) as f:

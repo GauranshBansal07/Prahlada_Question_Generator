@@ -207,7 +207,55 @@ comparison was too strict.
 
 ---
 
-## Pipeline State as of 2026-07-10
+---
+
+## 12. number_of_exceptions Meta-Tag Was Broken
+
+**Observed:** `number_of_exceptions` was computed by counting regex keyword matches (however,
+rejected, ruled out, anomalous, etc.) in the strong solver's reasoning trace. This is wrong for
+two reasons:
+
+1. The norm stats were fit on this proxy and had mean=0.03, std=0.25 — every generated question
+   scored 3 (the z-score mean fallback) regardless of how many exceptions appeared on the path.
+2. The solver's reasoning trace may use rejection language when exploring alternatives, which is
+   not the same as the question actually involving a chemical exception.
+
+**Fix:** `extract_exception_count()` now takes `path_edges` (the list of TX dicts sampled from the
+graph) and counts edges where `is_exception=True`. This is the correct source of truth — `is_exception`
+was assigned by `link_exceptions.py` using named-reagent matching against the 502 exceptions in
+`concept_book.json`.
+
+**Calibration:** New norm stats derived from 10,000 random walks through the expanded graph
+(390 edges, 43.8% exception rate): mean=0.86, std=1.23. Scale: 0 exceptions→tag 2, 1→3, 2→4, 3+→5.
+
+**Implication for paper:** Difficulty meta-tags that use solver traces as proxies for graph-level
+properties are doubly unreliable — the proxy is noisy AND the calibration corpus mirrors the noise.
+Sourcing each meta-tag from its canonical ground truth (graph structure, IUPAC density, actual
+concept_book data) is strictly preferable even when the proxy is cheaper.
+
+---
+
+## 13. Graph Recovery: 288 Unmapped TXs
+
+**Observed:** 288 of 657 transformations in `concept_book.json` failed normalization during graph
+construction. They were stored in `graph_unmapped.json`. Investigation showed the failures were
+mostly label format issues (e.g., "propene (CH₂=CH-CH₃)" didn't match canonical "alkene") rather
+than genuinely exotic chemistry.
+
+**Fix:** `tools/recover_unmapped.py` used DeepSeek V3.2 to map each unmapped TX's raw labels to
+canonical node IDs. Result: 199 edges recovered, 89 skipped (test results, indicators, no-reaction,
+exotic intermediates), 34 new nodes auto-added (24 legitimate, 10 garbage — later removed).
+
+**Graph before:** 199 edges, 57 nodes.
+**Graph after:** 390 edges, 81 nodes — nearly doubled.
+
+**Implication for paper:** Strict string-matching during knowledge-graph construction discards a
+substantial fraction of source data. An LLM-assisted normalization pass recovers most of it with
+low error rate, since the underlying chemistry is standard — only the label format differs.
+
+---
+
+## Pipeline State as of 2026-07-11
 
 | Role | Model |
 |---|---|

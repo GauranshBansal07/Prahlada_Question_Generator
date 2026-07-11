@@ -16,9 +16,9 @@
         "metric": "1_minus_pct_full_marks_div_100"
       },
       "number_of_exceptions": {
-        "mean": 0.030303030303030304,
-        "std": 0.24618298195866548,
-        "metric": "exception_keyword_count_proxy"
+        "mean": 0.86,
+        "std": 1.23,
+        "metric": "is_exception_edge_count_on_sampled_path"
       },
       "model_solution_length": {
         "mean": 1050.8846153846155,
@@ -45,9 +45,9 @@
         "metric": "1_minus_pct_full_marks_div_100"
       },
       "number_of_exceptions": {
-        "mean": 0.0,
-        "std": 1.0,
-        "metric": "exception_keyword_count_proxy"
+        "mean": 0.86,
+        "std": 1.23,
+        "metric": "is_exception_edge_count_on_sampled_path"
       },
       "model_solution_length": {
         "mean": 1662.235294117647,
@@ -74,9 +74,9 @@
         "metric": "1_minus_pct_full_marks_div_100"
       },
       "number_of_exceptions": {
-        "mean": 0.04081632653061224,
-        "std": 0.199914947901746,
-        "metric": "exception_keyword_count_proxy"
+        "mean": 0.86,
+        "std": 1.23,
+        "metric": "is_exception_edge_count_on_sampled_path"
       },
       "model_solution_length": {
         "mean": 1030.88,
@@ -103,9 +103,9 @@
         "metric": "1_minus_pct_full_marks_div_100"
       },
       "number_of_exceptions": {
-        "mean": 0.0,
-        "std": 1.0,
-        "metric": "exception_keyword_count_proxy"
+        "mean": 0.86,
+        "std": 1.23,
+        "metric": "is_exception_edge_count_on_sampled_path"
       },
       "model_solution_length": {
         "mean": 1148.6666666666667,

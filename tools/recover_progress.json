@@ -1,0 +1,2018 @@
+{
+  "82": {
+    "from_node": "isocyanide",
+    "to_node": "amine",
+    "firing_condition": "alkyl_halide_present",
+    "skip": false,
+    "reasoning": "The transformation describes the alkylation of an isocyanide to form a secondary amine, which is a standard reaction."
+  },
+  "92": {
+    "from_node": "NEW:hydroxamic_acid",
+    "to_node": "amine",
+    "firing_condition": "lossen_rearrangement",
+    "skip": false,
+    "reasoning": "The starting material is a hydroxamic acid, which is not in the canonical list, and the product is a primary amine via the Lossen rearrangement through an isocyanate intermediate."
+  },
+  "93": {
+    "from_node": "phthalimide_potassium_salt",
+    "to_node": "amine",
+    "firing_condition": "primary_alkyl_halide",
+    "skip": false,
+    "reasoning": "The Gabriel synthesis uses a phthalimide salt to alkylate and then hydrolyze to produce a primary amine, with the key intermediate being a new, distinct N-alkylphthalimide."
+  },
+  "96": {
+    "from_node": "hydrazone",
+    "to_node": "substituted_benzene",
+    "firing_condition": "acid_catalyzed",
+    "skip": false,
+    "reasoning": "Hydrazobenzene is a 1,2-diarylhydrazine, which is a type of hydrazone, and undergoes an acid-catalyzed benzidine rearrangement to produce diaminobiphenyls, which are substituted benzenes."
+  },
+  "105": {
+    "from_node": "amine",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' field is 'no reaction', which according to the rules requires setting to_node to 'NO_REACTION' and skip to true."
+  },
+  "112": {
+    "from_node": "substituted_benzene",
+    "to_node": "aldehyde",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Diphenylmethane is a substituted benzene derivative, and the reaction produces benzaldehyde (an aldehyde) and phenol."
+  },
+  "113": {
+    "from_node": "substituted_benzene",
+    "to_node": "aldehyde",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The starting material is a diarylmethane derivative with specific substituents, which is best represented as a substituted benzene, and the product is a clear aldehyde."
+  },
+  "134": {
+    "from_node": "alcohol",
+    "to_node": "ether",
+    "firing_condition": "unhindered_primary_alkyl_halide",
+    "skip": false,
+    "reasoning": "The alkoxide is derived from an alcohol, and the Williamson ether synthesis converts an alcohol (via its alkoxide) and an alkyl halide to an ether, with a preference for unhindered primary alkyl halides to avoid elimination."
+  },
+  "153": {
+    "from_node": "alcohol",
+    "to_node": "alkene",
+    "firing_condition": "Hofmann_anti_Saytzeff_E1cb",
+    "skip": false,
+    "reasoning": "The reaction is a dehydration of an alcohol to form an alkene under specific Hofmann/anti-Saytzeff and E1cb conditions, which is a standard transformation."
+  },
+  "158": {
+    "from_node": "ester",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "base_hydrolysis",
+    "skip": false,
+    "reasoning": "The starting material is a specific ester (mesitoate), and the reaction is a base-catalyzed hydrolysis (BAL2) producing a carboxylic acid and an alcohol."
+  },
+  "160": {
+    "from_node": "ester",
+    "to_node": "NEW:soap",
+    "firing_condition": "basic_hydrolysis_saponification",
+    "skip": false,
+    "reasoning": "The starting material is a triglyceride, which is a triester, and the products are glycerol (a triol) and soap molecules (carboxylate salts), which are not directly in the canonical list."
+  },
+  "169": {
+    "from_node": "diol",
+    "to_node": "alkene",
+    "firing_condition": "vicinal_dihalide",
+    "skip": false,
+    "reasoning": "The reaction describes the conversion of a vicinal diiodide (derived from a diol) to an alkene via dehalogenation, which is a standard elimination reaction."
+  },
+  "171": {
+    "from_node": "alkene",
+    "to_node": "diol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The starting material propene is an alkene, and the described sequence (allyl chloride \u2192 allyl alcohol \u2192 glycerol) ultimately yields glycerol, which is a triol, best mapped to the canonical 'diol' node as a general polyol representation."
+  },
+  "177": {
+    "from_node": "alkene",
+    "to_node": "NEW:pyrazoline",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The reaction is a 1,3-dipolar cycloaddition with diazomethane, producing pyrazoline (a distinct heterocycle not in the canonical list) and cyclopropane, but the mechanistic pathway is considered exotic for general synthesis chains."
+  },
+  "178": {
+    "from_node": "alkyne",
+    "to_node": "NEW:pyrazole",
+    "firing_condition": "diazomethane_cycloaddition",
+    "skip": false,
+    "reasoning": "The reaction is a [3+2] cycloaddition between an alkyne (acetylene) and diazomethane to form a pyrazole, which is a distinct aromatic heterocycle not in the canonical list."
+  },
+  "179": {
+    "from_node": "alcohol",
+    "to_node": "NO_REACTION",
+    "firing_condition": "primary_or_secondary_alcohol",
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a positive colorimetric test result (CAN test), which indicates the presence of an alcohol but is not a transformation to a new functional group for synthesis."
+  },
+  "180": {
+    "from_node": "alcohol",
+    "to_node": "NO_REACTION",
+    "firing_condition": "primary",
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a color test result (red color from aci-form) for a nitroalkane, which is a qualitative indicator, not a synthesis step."
+  },
+  "181": {
+    "from_node": "alcohol",
+    "to_node": "NO_REACTION",
+    "firing_condition": "secondary_alcohol",
+    "skip": true,
+    "reasoning": "The 'blue/insoluble product with NaOH' is a qualitative test result (Victor Meyer test) indicating a positive outcome for a secondary nitroalkane, so the transformation is a test observation, not a synthetic step."
+  },
+  "188": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "retention_SNi",
+    "skip": false,
+    "reasoning": "The transformation of an alcohol to an alkyl halide with retention of configuration is a specific reaction, typically involving an SNi mechanism."
+  },
+  "189": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "SNi_retention",
+    "skip": false,
+    "reasoning": "The transformation of an alcohol to an alkyl halide via an SNi mechanism with retention of configuration is a known reaction."
+  },
+  "201": {
+    "from_node": "aldehyde",
+    "to_node": "alkyl_halide",
+    "firing_condition": "strong_base",
+    "skip": false,
+    "reasoning": "Chloral is a trichloro-substituted aldehyde, and its reaction with strong base (e.g., NaOH) via the haloform reaction yields chloroform, which is an alkyl halide."
+  },
+  "207": {
+    "from_node": "geminal_dihalide",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "strong_base_hydrolysis",
+    "skip": false,
+    "reasoning": "Chloroform (CHCl3) is a geminal trihalide, which under strong basic hydrolysis (e.g., with NaOH) yields a carboxylate salt, here sodium formate, which maps to carboxylic acid."
+  },
+  "209": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkyl_halide",
+    "firing_condition": "free_radical_halogenation",
+    "skip": false,
+    "reasoning": "Chloroform (CHCl3) is a trihalomethane, which is a type of alkyl halide, and its conversion to carbon tetrachloride (CCl4), another alkyl halide, is a free radical halogenation reaction."
+  },
+  "212": {
+    "from_node": "ketone",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "methyl_ketone",
+    "skip": false,
+    "reasoning": "Chloroacetone is a methyl ketone undergoing the haloform reaction, which cleaves it to yield a carboxylic acid (acetate) and a trihalomethane (CHClI2)."
+  },
+  "213": {
+    "from_node": "carboxylic_acid",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description 'oxalate + iodoform (CHI3)' refers to the products of a positive iodoform test for methyl ketones, indicating pyruvic acid (an \u03b1-keto acid) reacts to give a color/indicator result."
+  },
+  "219": {
+    "from_node": "ketone",
+    "to_node": "NEW:tropylium_enolate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Tropone is a cyclic ketone, and its transformation yields a tropylium-enolate resonance hybrid, which is a distinct, stable aromatic intermediate not covered by the canonical list."
+  },
+  "220": {
+    "from_node": "NEW:squaric_acid",
+    "to_node": "NEW:squarate_dianion",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Squaric acid and its dianion are unique, highly symmetric 4-membered ring structures not represented by standard functional group nodes like carboxylic_acid."
+  },
+  "221": {
+    "from_node": "diene_conjugated",
+    "to_node": "carbanion",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Cyclopentadiene is a conjugated diene, and its deprotonation yields a cyclopentadienyl anion, which is a stabilized carbanion."
+  },
+  "222": {
+    "from_node": "NEW:cyclobutadiene",
+    "to_node": "NEW:cyclobutadienyl_dianion",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Cyclobutadiene is a specific, highly reactive antiaromatic hydrocarbon not covered by standard alkene or diene nodes, and its two-electron reduction to a dianion is a distinct transformation."
+  },
+  "223": {
+    "from_node": "cycloalkene",
+    "to_node": "NEW:cyclooctatetraene_dianion",
+    "firing_condition": "strong_base_reduction",
+    "skip": false,
+    "reasoning": "Cyclooctatetraene is a non-aromatic cyclic polyene best mapped to cycloalkene, and its two-electron reduction to a planar, aromatic 10\u03c0 dianion is a distinct, known intermediate not covered by existing canonical nodes."
+  },
+  "224": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "primary_carbocation",
+    "skip": false,
+    "reasoning": "Both the starting and ending materials are carbocations, with the reaction being a specific rearrangement (1,2-hydride shift) that changes the substitution level."
+  },
+  "225": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "secondary_carbocation",
+    "skip": false,
+    "reasoning": "The transformation is a carbocation rearrangement (hydride or alkyl shift) within the carbocation class, changing the substitution level but not the fundamental node type."
+  },
+  "227": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "neopentyl_primary_carbocation",
+    "skip": false,
+    "reasoning": "The reaction is a 1,2-methyl shift rearrangement of a primary neopentyl carbocation to form a more stable tertiary carbocation, both of which are canonical carbocation nodes."
+  },
+  "228": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "secondary_benzylic_carbocation",
+    "skip": false,
+    "reasoning": "The reaction is a carbocation rearrangement (1,2-phenyl shift) converting a secondary benzylic carbocation to a more stable tertiary benzylic carbocation."
+  },
+  "229": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "secondary_or_tertiary_carbocation_with_adjacent_hydrogen",
+    "skip": false,
+    "reasoning": "This describes a 1,2-hydride shift, a standard carbocation rearrangement that does not change the canonical functional group."
+  },
+  "230": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "ring_expansion_cyclobutyl_to_cyclopentyl",
+    "skip": false,
+    "reasoning": "Both the starting material and product are carbocations, differing only in ring size due to a 1,2-bond shift ring expansion."
+  },
+  "231": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "secondary_alkyl_carbocation",
+    "skip": false,
+    "reasoning": "This is a standard carbocation rearrangement (ring expansion via 1,2-alkyl shift), mapping both states to the canonical carbocation node with a substrate-specific condition."
+  },
+  "233": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": "secondary_cycloalkyl_carbocation",
+    "skip": false,
+    "reasoning": "Both the starting material and product are carbocations, specifically secondary cycloalkyl carbocations undergoing a ring contraction via a 1,2-alkyl shift."
+  },
+  "234": {
+    "from_node": "alkyl_halide",
+    "to_node": "radical",
+    "firing_condition": "photolysis_or_thermolysis",
+    "skip": true,
+    "reasoning": "The transformation describes a homolytic cleavage of an alkyl halide to generate radicals, which is a mechanistic step rather than a typical synthetic transformation for building molecular complexity."
+  },
+  "236": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "ortho_substituent_G",
+    "skip": false,
+    "reasoning": "The transformation describes the enhanced acidity of a benzoic acid derivative due to stabilization of its conjugate base by an ortho substituent, representing a property change within the same canonical node."
+  },
+  "237": {
+    "from_node": "NEW:nitrene",
+    "to_node": "NEW:nitrene_insertion_product",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "Nitrenes are highly reactive, exotic intermediates with distinct electronic states (singlet/triplet) and lead to mechanistically complex, non-general insertion or rearrangement products unsuitable for multi-step synthesis chains."
+  },
+  "238": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "dicarboxylic_acid",
+    "skip": false,
+    "reasoning": "The reaction describes the first deprotonation of a dicarboxylic acid to form its mono-carboxylate conjugate base, which is still fundamentally a carboxylic acid functional group."
+  },
+  "239": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "dicarboxylic_acid",
+    "skip": false,
+    "reasoning": "The reaction describes the second deprotonation of a dicarboxylic acid, which is a property of the carboxylic acid functional group, with the specific condition that it applies to dicarboxylic acids and their relative acidities."
+  },
+  "241": {
+    "from_node": "phenol",
+    "to_node": "phenol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes the deprotonation of phenol to form its conjugate base (phenoxide), which is not a distinct canonical node but a derivative of phenol, so the node remains phenol."
+  },
+  "243": {
+    "from_node": "alkyl_halide",
+    "to_node": "carbocation",
+    "firing_condition": "cyclopropylcarbinyl_substrate",
+    "skip": false,
+    "reasoning": "The reaction describes the ionization of a cyclopropylcarbinyl halide to form a carbocation, which is a specific subclass of a general alkyl halide to carbocation transformation."
+  },
+  "244": {
+    "from_node": "sulfonate",
+    "to_node": "sulfonate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction is a simple acid-base neutralization of a sulfonic acid to form its sodium salt, which is already represented by the canonical node 'sulfonate'."
+  },
+  "248": {
+    "from_node": "sulfonate",
+    "to_node": null,
+    "firing_condition": "SN2_conditions",
+    "skip": false,
+    "reasoning": "Sulfonate esters (OMs, OTs, OTf) are excellent leaving groups for SN2 substitution with a nucleophile, producing a variety of substitution products."
+  },
+  "251": {
+    "from_node": "alcohol",
+    "to_node": "NEW:protonated_alcohol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The product is a protonated alcohol, a distinct activated intermediate not in the canonical list, but chemically relevant for SN1/SN2 pathways."
+  },
+  "253": {
+    "from_node": "amine",
+    "to_node": "alcohol",
+    "firing_condition": "primary_amine_cyclopentylmethyl",
+    "skip": false,
+    "reasoning": "The starting material is a primary amine, and the described ring-expansion via diazonium salt intermediate ultimately yields a cyclohexanol, which is an alcohol."
+  },
+  "254": {
+    "from_node": "alkyl_halide",
+    "to_node": null,
+    "firing_condition": "primary_or_secondary_alkyl_halide_or_sulfonate",
+    "skip": false,
+    "reasoning": "The transformation describes a general SN2 substitution of an alkyl halide or sulfonate to yield a substitution product, which is too broad to map to a single canonical node."
+  },
+  "256": {
+    "from_node": "alcohol",
+    "to_node": "ether",
+    "firing_condition": "intramolecular_SN2",
+    "skip": false,
+    "reasoning": "The starting material is an omega-chloro alcohol, which undergoes intramolecular SN2 cyclization to form a cyclic ether."
+  },
+  "257": {
+    "from_node": "alcohol",
+    "to_node": null,
+    "firing_condition": "chiral_primary_or_secondary_alcohol",
+    "skip": false,
+    "reasoning": "The transformation describes a general two-step functional group conversion (alcohol to a substitution product) with stereochemical outcome, not a specific product node."
+  },
+  "260": {
+    "from_node": "alkyl_halide",
+    "to_node": "alcohol",
+    "firing_condition": "cyclobutylcarbinyl_halide",
+    "skip": false,
+    "reasoning": "The starting material is a specific alkyl halide (cyclobutylcarbinyl halide) which undergoes a ring-expanding SN1 rearrangement to form a cyclopentanol, which is an alcohol."
+  },
+  "261": {
+    "from_node": "alkyl_halide",
+    "to_node": "alcohol",
+    "firing_condition": "tertiary_benzylic_alkyl_halide_with_aryl_groups_capable_of_migration",
+    "skip": false,
+    "reasoning": "The starting material is a tertiary benzylic alkyl halide (carbinyl chloride), which undergoes an SN1 reaction with a 1,2-aryl shift to yield a rearranged tertiary alcohol."
+  },
+  "262": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "primary_or_secondary_chiral_alcohol_SNi_retention",
+    "skip": false,
+    "reasoning": "The transformation is a specific SNi reaction of chiral primary or secondary alcohols to alkyl chlorides with retention of configuration."
+  },
+  "263": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "primary_or_secondary_chiral_alcohol",
+    "skip": false,
+    "reasoning": "The reaction converts a chiral primary or secondary alcohol to an alkyl chloride with inversion of configuration using thionyl chloride and an amine base."
+  },
+  "264": {
+    "from_node": "aldehyde",
+    "to_node": "hemiacetal",
+    "firing_condition": "intramolecular_cyclization",
+    "skip": false,
+    "reasoning": "The starting \u03c9-hydroxyaldehyde is an aldehyde with a terminal hydroxyl group, and the product is an intramolecular cyclic hemiacetal formed via ring-chain tautomerism."
+  },
+  "267": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "homobenzylic_primary_alcohol",
+    "skip": false,
+    "reasoning": "The starting material is a primary alcohol, and the product is a brominated alkyl chain attached to a benzene ring, which is an alkyl halide, with the specific condition that the alcohol is homobenzylic to facilitate the described rearrangement."
+  },
+  "268": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "spiro_cyclic_secondary_alcohol_with_ring_expansion",
+    "skip": false,
+    "reasoning": "The starting material is a spirocyclic secondary alcohol, and the product is a brominated bicyclic compound formed via an SN1 mechanism with a 1,2-alkyl shift and ring expansion."
+  },
+  "270": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "inversion_of_configuration",
+    "skip": false,
+    "reasoning": "The reaction of an alcohol with PX3 is a standard method for converting alcohols to alkyl halides with inversion of configuration."
+  },
+  "274": {
+    "from_node": "ether",
+    "to_node": "alkyl_halide",
+    "firing_condition": "tertiary_alkyl_group_on_oxygen",
+    "skip": false,
+    "reasoning": "The reaction is an acid-catalyzed cleavage of an unsymmetrical ether via SN1 at the tertiary carbon, producing a tertiary alkyl halide and a secondary alcohol."
+  },
+  "276": {
+    "from_node": "ether",
+    "to_node": "alkyl_halide",
+    "firing_condition": "cyclic_ether",
+    "skip": false,
+    "reasoning": "The reaction describes the cleavage of a cyclic ether (e.g., THF) with HI to produce a diiodoalkane, which is a type of alkyl halide."
+  },
+  "277": {
+    "from_node": "substituted_benzene",
+    "to_node": "phenol",
+    "firing_condition": "acidic_cleavage",
+    "skip": false,
+    "reasoning": "The reaction describes the acid-catalyzed cleavage of a benzodioxole or benzodioxane acetal/ether bridge to regenerate the parent catechol (a di-substituted phenol) and a dihaloalkane."
+  },
+  "278": {
+    "from_node": "ether",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description states no reaction occurs for simple dialkyl ethers under dilute acid conditions."
+  },
+  "279": {
+    "from_node": "ether",
+    "to_node": "alcohol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes the acid-catalyzed hydrolysis of a dialkyl ether to yield two alcohol molecules, which maps cleanly from ether to alcohol."
+  },
+  "287": {
+    "from_node": "alkyl_halide",
+    "to_node": "ether",
+    "firing_condition": "anhydrous_conditions",
+    "skip": false,
+    "reasoning": "The reaction describes the formation of a symmetrical ether from an alkyl halide under anhydrous conditions, which maps directly to the canonical ether node."
+  },
+  "288": {
+    "from_node": "epoxide",
+    "to_node": "diol",
+    "firing_condition": "acidic_conditions_unsymmetrical",
+    "skip": false,
+    "reasoning": "The reaction describes the acid-catalyzed ring-opening of an unsymmetrical epoxide, leading to a diol (or amino alcohol) with specific regioselectivity."
+  },
+  "291": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkyl_halide",
+    "firing_condition": "beta_thioether_anti_periplanar",
+    "skip": false,
+    "reasoning": "The substrate is an alkyl halide with a beta-thioether group, and the reaction proceeds via an episulfonium ion intermediate to give a product with retention of configuration."
+  },
+  "292": {
+    "from_node": "alkyl_halide",
+    "to_node": "epoxide",
+    "firing_condition": "beta_OR_or_OH_neighboring_group_5_or_6_membered_ring",
+    "skip": false,
+    "reasoning": "The substrate is an alkyl halide with a neighboring beta-OR or beta-OH group that participates via anchimeric assistance to form a cyclic intermediate, leading to a product with retention of configuration, which is characteristic of epoxide formation or related cyclic ethers under these specific conditions."
+  },
+  "293": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "alpha_bromo_substituted",
+    "skip": false,
+    "reasoning": "The reaction transforms an alpha-bromo carboxylic acid into an alpha-hydroxy carboxylic acid, both of which are canonical carboxylic acids, with the specific condition that the substrate must be alpha-bromo substituted."
+  },
+  "295": {
+    "from_node": "substituted_benzene",
+    "to_node": "NEW:phenonium_ion",
+    "firing_condition": "aryl_ring_at_beta_position_with_leaving_group",
+    "skip": false,
+    "reasoning": "The from_raw describes a substituted benzene ring participating in neighboring group participation, which maps to substituted_benzene, while the to_raw describes a specific, non-canonical spiro-bicyclic bridged cation intermediate."
+  },
+  "296": {
+    "from_node": "alkyl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": "substrate_with_EWG_on_sigma_bond_for_NGP",
+    "skip": true,
+    "reasoning": "The description is a mechanistic comparison of reaction rates for sigma-bond participation (NGP), not a transformation to a new product, and the 'to_raw' indicates a dramatic rate reduction which is effectively a 'no reaction' outcome for the EWG-substituted case."
+  },
+  "297": {
+    "from_node": "alkyl_halide",
+    "to_node": "alcohol",
+    "firing_condition": "primary_allylic_halide_aqueous_conditions",
+    "skip": false,
+    "reasoning": "The reaction describes the SN1 and SN1' substitution of a primary allylic halide with aqueous hydroxide, producing allylic alcohols as the major and minor products."
+  },
+  "298": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkyl_halide",
+    "firing_condition": "allylic_secondary_or_tertiary_branched",
+    "skip": false,
+    "reasoning": "The reaction describes an SN2' substitution on a branched allylic halide, where the nucleophile attacks the gamma carbon, resulting in a rearranged alkyl halide product."
+  },
+  "299": {
+    "from_node": "alcohol",
+    "to_node": "alkyl_halide",
+    "firing_condition": "allylic_primary_secondary",
+    "skip": false,
+    "reasoning": "The reaction describes the conversion of an allylic alcohol to an allylic chloride via treatment with SOCl2, with the major product being a rearranged alkyl halide."
+  },
+  "300": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkyl_halide",
+    "firing_condition": "cyclic_allylic_halide_less_hindered",
+    "skip": false,
+    "reasoning": "The reaction describes SN2 and SN2' substitutions on a cyclic allylic halide, where both major and minor products are substituted alkyl halides (or nitriles if KCN is used), which map to the canonical alkyl_halide node."
+  },
+  "301": {
+    "from_node": "acid_chloride",
+    "to_node": "NEW:tetrahedral_intermediate",
+    "firing_condition": "nucleophilic_substitution_acid_derivative",
+    "skip": true,
+    "reasoning": "The description details the mechanism of nucleophilic acyl substitution, focusing on the formation of a tetrahedral intermediate, which is a transient species not a stable product in the canonical list."
+  },
+  "302": {
+    "from_node": "ester",
+    "to_node": "NEW:thioester",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes a comparative reactivity where an ester is the starting material, and the product of its reaction with a thiolate nucleophile is a thioester, which is a distinct functional group not in the canonical list."
+  },
+  "303": {
+    "from_node": "acid_chloride",
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description is a mechanistic comparison of leaving group ability for acyl halides, not a transformation into a distinct product node."
+  },
+  "304": {
+    "from_node": "substituted_benzene",
+    "to_node": "substituted_benzene",
+    "firing_condition": "EWG_ortho_or_para_to_leaving_group",
+    "skip": false,
+    "reasoning": "The reaction is a selective nucleophilic aromatic substitution (SNAr) on a substituted benzene, where an electron-withdrawing group activates a specific chlorine for methoxide substitution."
+  },
+  "306": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "substrate_has_adjacent_sp3_leaving_group",
+    "skip": false,
+    "reasoning": "The substrate is a carboxylic acid derivative (acyl group) with an adjacent alkyl halide site, and the reaction selectively substitutes the acyl carbon via SNth mechanism, leaving the sp3 carbon untouched."
+  },
+  "307": {
+    "from_node": "alcohol",
+    "to_node": "sulfonate",
+    "firing_condition": "secondary_or_tertiary_alcohol",
+    "skip": false,
+    "reasoning": "The reaction converts a secondary or tertiary alcohol to a tosylate ester, which is a type of sulfonate ester, with retention of configuration via an SNth mechanism at sulfur."
+  },
+  "310": {
+    "from_node": "aryl_halide",
+    "to_node": "substituted_benzene",
+    "firing_condition": "activated_by_two_ortho_para_nitro_groups",
+    "skip": false,
+    "reasoning": "The starting material is an activated aryl halide, and the product is a nucleophilic aromatic substitution (SNAr) product where the halide is replaced by a nucleophile, resulting in a substituted benzene."
+  },
+  "311": {
+    "from_node": "aryl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The substrate is an aryl halide, but the reaction fails due to the meta-position of the nitro groups, which cannot stabilize the Meisenheimer complex required for nucleophilic aromatic substitution."
+  },
+  "312": {
+    "from_node": "aryl_halide",
+    "to_node": null,
+    "firing_condition": "activated_by_EWG_ortho_para",
+    "skip": false,
+    "reasoning": "The input describes a comparison of aryl halides in an SNAr mechanism, focusing on the effect of the halogen on the rate-determining step, not a chemical transformation into a different product node."
+  },
+  "314": {
+    "from_node": "aryl_halide",
+    "to_node": "substituted_benzene",
+    "firing_condition": "activated_aryl_halide_asymmetric_substitution",
+    "skip": false,
+    "reasoning": "The reaction describes the benzyne mechanism from an asymmetric aryl halide, producing a mixture of substituted benzene isomers."
+  },
+  "315": {
+    "from_node": "aryl_halide",
+    "to_node": "amine",
+    "firing_condition": "activated_aryl_halide_ortho_or_para_to_EDG",
+    "skip": false,
+    "reasoning": "The reaction describes a benzyne-mediated amination of an activated aryl chloride, resulting in an amine via cine substitution as the major product."
+  },
+  "316": {
+    "from_node": "aryl_halide",
+    "to_node": "amine",
+    "firing_condition": "activated_aryl_halide_benzyne",
+    "skip": false,
+    "reasoning": "The reaction describes the nucleophilic aromatic substitution via a benzyne intermediate from an activated aryl chloride to yield an aniline derivative, which maps to an amine."
+  },
+  "321": {
+    "from_node": "alcohol",
+    "to_node": "alkene",
+    "firing_condition": "secondary_or_tertiary",
+    "skip": false,
+    "reasoning": "The reaction is a standard acid-catalyzed dehydration of secondary or tertiary alcohols to alkenes, which maps cleanly to canonical nodes."
+  },
+  "323": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_anti-periplanar",
+    "skip": false,
+    "reasoning": "The reaction describes the E2 elimination of an alkyl halide to form an alkene, specifically favoring the more substituted (Zaitsev) product."
+  },
+  "325": {
+    "from_node": "alkyl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": "rigid_bicyclic_alkyl_halide_no_antiperiplanar_beta_H",
+    "skip": true,
+    "reasoning": "The substrate is an alkyl halide in a rigid bicyclic system where no beta-hydrogen is anti-periplanar to the leaving group, preventing E2 elimination."
+  },
+  "326": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "cyclohexyl_halide_anti_periplanar_E2",
+    "skip": false,
+    "reasoning": "The reaction describes an E2 elimination from a cyclohexyl halide, where the product is an alkene determined by the anti-periplanar geometry of the beta-hydrogen and leaving group."
+  },
+  "327": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_elimination",
+    "skip": false,
+    "reasoning": "The reaction describes an E2 elimination from an alkyl halide to form an alkene, with the raw text focusing on mechanistic evidence via a kinetic isotope effect."
+  },
+  "328": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "acyclic_secondary_or_tertiary",
+    "skip": false,
+    "reasoning": "The reaction describes a standard E2 elimination on an acyclic alkyl halide, producing multiple alkene isomers with the Saytzeff product as major."
+  },
+  "331": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "secondary_acyclic_alkyl_halide_with_two_inequivalent_beta_H_on_same_carbon",
+    "skip": false,
+    "reasoning": "The reaction describes an E2 elimination from a specific secondary alkyl halide substrate, producing stereoisomeric alkene products."
+  },
+  "332": {
+    "from_node": "alkyl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": "rigid_substrate_no_antiperiplanar_beta_H",
+    "skip": true,
+    "reasoning": "The description explicitly states no reaction occurs due to the geometric impossibility of an E2 elimination in a rigid substrate lacking an anti-periplanar beta-hydrogen."
+  },
+  "334": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_elimination_with_conjugated_vs_saytzeff_alkene_competition",
+    "skip": false,
+    "reasoning": "The description is a rule for E2 elimination regioselectivity favoring a conjugated alkene over a more substituted Saytzeff alkene, mapping the substrate to alkyl_halide and the product to alkene."
+  },
+  "335": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "beta-deuterated_substrate",
+    "skip": false,
+    "reasoning": "The reaction is an E2 elimination of an alkyl halide with a deuterated beta-carbon, demonstrating stereospecific anti-periplanar elimination to yield either E or Z alkenes depending on the starting diastereomer."
+  },
+  "336": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_elimination",
+    "skip": false,
+    "reasoning": "The raw description is about applying E2 elimination rules to complex alkyl halide substrates to predict the number of alkene products."
+  },
+  "338": {
+    "from_node": "alkyl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": "cyclohexyl_halide_equatorial_LG",
+    "skip": true,
+    "reasoning": "The equatorial leaving group in a cyclohexane chair conformation lacks an anti-periplanar beta-hydrogen, making the E2 reaction geometrically impossible."
+  },
+  "339": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "erythro_diastereomer",
+    "skip": false,
+    "reasoning": "The starting material is a specific diastereomer of an alkyl halide, and the reaction is a stereospecific E2 elimination to form an alkene."
+  },
+  "340": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "anti_periplanar_elimination",
+    "skip": false,
+    "reasoning": "The starting material is a vicinal bromoalkane (alkyl halide) with a specific stereochemistry, and the product is a trans alkene formed via a stereospecific E2 elimination."
+  },
+  "341": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "bulky_base_hofmann",
+    "skip": false,
+    "reasoning": "The reaction describes an E2 elimination with a bulky base favoring the less substituted (Hofmann) alkene as the major product."
+  },
+  "342": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "poor_leaving_group_E2",
+    "skip": false,
+    "reasoning": "The reaction describes an E2 elimination on an alkyl substrate with a poor leaving group (e.g., fluoride, sulfonium, ammonium) under basic conditions, yielding the less substituted Hofmann alkene as the major product."
+  },
+  "343": {
+    "from_node": "amine",
+    "to_node": "alkene",
+    "firing_condition": "quaternary_ammonium_salt",
+    "skip": false,
+    "reasoning": "The reaction is the Hofmann elimination of a quaternary ammonium salt, which is a specific class of amine, to form an alkene."
+  },
+  "344": {
+    "from_node": "NEW:amine_n_oxide",
+    "to_node": "alkene",
+    "firing_condition": "tertiary_amine_n_oxide",
+    "skip": false,
+    "reasoning": "The reaction is the Cope elimination of a tertiary amine N-oxide to yield an alkene and a hydroxylamine derivative."
+  },
+  "346": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_elimination",
+    "skip": false,
+    "reasoning": "The description is about the regioselectivity (Saytzeff vs Hofmann) of the E2 elimination reaction from a substrate capable of forming two alkenes, which is a core property of alkyl halides (and similar substrates) undergoing elimination."
+  },
+  "347": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkene",
+    "firing_condition": "E2_stereoselective_trans_major",
+    "skip": false,
+    "reasoning": "The reaction describes the stereoselective E2 elimination of an acyclic alkyl bromide to form an alkene mixture where the trans isomer is the major product."
+  },
+  "348": {
+    "from_node": "alkyl_halide",
+    "to_node": "alkyl_halide",
+    "firing_condition": "chiral_secondary_or_primary_alkyl_substrate",
+    "skip": false,
+    "reasoning": "The reaction describes the stereochemical outcome (inversion vs. racemization) for SN2 and SN1 mechanisms on a chiral alkyl halide substrate, resulting in a product that is still an alkyl halide but with potentially altered stereochemistry."
+  },
+  "352": {
+    "from_node": "sulfonate",
+    "to_node": "alkene",
+    "firing_condition": "beta_leaving_group",
+    "skip": false,
+    "reasoning": "The reaction describes an E1cb elimination from a beta-phenoxy sulfone (a sulfonate ester) or a beta-hydroxy carbonyl compound, producing a vinyl sulfone (a type of alkene) or an enone (an alpha,beta-unsaturated ketone, also an alkene), respectively."
+  },
+  "353": {
+    "from_node": "ester",
+    "to_node": "alkene",
+    "firing_condition": "syn_periplanar_beta_hydrogen",
+    "skip": false,
+    "reasoning": "The reaction is a thermal syn elimination (Ei) of an ester to produce an alkene and a carboxylic acid, which are both canonical nodes."
+  },
+  "354": {
+    "from_node": "alcohol",
+    "to_node": "alkene",
+    "firing_condition": "syn_elimination_hofmann",
+    "skip": false,
+    "reasoning": "The Chugaev reaction is a specific pyrolysis of a xanthate ester, derived from an alcohol, to produce an alkene via syn elimination following the Hofmann rule."
+  },
+  "356": {
+    "from_node": "ester",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The substrate is a norbornyl ester, which is a specific type of ester, and the outcome is explicitly 'NO REACTION' due to geometric constraints preventing the syn-periplanar arrangement required for Ei pyrolysis."
+  },
+  "357": {
+    "from_node": "diol",
+    "to_node": "ketone",
+    "firing_condition": "vicinal_diol",
+    "skip": false,
+    "reasoning": "The reaction is the Pinacol rearrangement, which specifically converts a vicinal diol (1,2-diol) into a ketone via acid-catalyzed rearrangement."
+  },
+  "358": {
+    "from_node": "amine",
+    "to_node": "alkene",
+    "firing_condition": "secondary_amine_with_beta_H",
+    "skip": false,
+    "reasoning": "The substrate is a secondary amine (R-NMe2) undergoing two distinct elimination pathways to produce different alkene products based on stereospecificity."
+  },
+  "361": {
+    "from_node": "NEW:cyclopentyl_n_oxide_or_xanthate",
+    "to_node": "alkene",
+    "firing_condition": "cyclopentyl_substrate_with_beta_H_accessible_for_Ei",
+    "skip": false,
+    "reasoning": "The substrate is a specific cyclopentyl N-oxide or xanthate undergoing Ei elimination, favoring the Saytzeff (more substituted, endocyclic) alkene product due to transition state planarity in the 5-membered ring."
+  },
+  "362": {
+    "from_node": "amine",
+    "to_node": "alkene",
+    "firing_condition": "cyclic_amine_N-oxide_or_xanthate_ester_axial-equatorial_syn_alignment",
+    "skip": false,
+    "reasoning": "The from_raw describes a cyclohexyl substrate with an amine-derived N-oxide or xanthate ester group, which are specific elimination precursors, and the to_raw describes the formation of an alkene via Hofmann or Saytzeff regioselectivity depending on substrate geometry."
+  },
+  "363": {
+    "from_node": "amine",
+    "to_node": "alkene",
+    "firing_condition": "amine_oxide_syn_elimination",
+    "skip": false,
+    "reasoning": "The substrate is an amine oxide, which undergoes syn elimination (Cope elimination) to form an alkene with stereospecificity based on the erythro/threo configuration."
+  },
+  "364": {
+    "from_node": "amine",
+    "to_node": "alcohol",
+    "firing_condition": "quaternary_ammonium_equatorial_cyclohexyl",
+    "skip": false,
+    "reasoning": "The substrate is a quaternary ammonium salt (a substituted amine) which, under E2-blocked conditions, undergoes SN2 demethylation to yield methanol and a tertiary amine, with methanol being the primary alcohol product noted."
+  },
+  "367": {
+    "from_node": "amine",
+    "to_node": "amine",
+    "firing_condition": "intramolecular_SN2_cyclization",
+    "skip": false,
+    "reasoning": "The starting material is an omega-haloamine (amine and alkyl halide functional groups), undergoing intramolecular SN2 to form a cyclic amine, which is still an amine."
+  },
+  "370": {
+    "from_node": "alkyne",
+    "to_node": "benzene",
+    "firing_condition": "catalyst_heat",
+    "skip": false,
+    "reasoning": "Ethyne (acetylene) is an alkyne that can trimerize to benzene under catalytic conditions."
+  },
+  "372": {
+    "from_node": "sulfonate",
+    "to_node": "benzene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Benzenesulfonic acid is a sulfonate, and its conversion to benzene via desulfonation is a known reaction."
+  },
+  "375": {
+    "from_node": "phenol",
+    "to_node": "phenol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Naphthalen-2-ol is a phenol derivative, and the product 1-E-naphthalen-2-ol is a specific isomer of the same compound, so both map to the canonical 'phenol' node."
+  },
+  "383": {
+    "from_node": "aniline",
+    "to_node": "isocyanide",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Phenylamine is aniline, and the transformation to isocyanobenzene (phenyl isocyanide) is a known reaction (e.g., via carbylamine reaction)."
+  },
+  "384": {
+    "from_node": "naphthalene",
+    "to_node": "nitro_compound",
+    "firing_condition": "activated_arene",
+    "skip": false,
+    "reasoning": "Anthracene is a polycyclic aromatic hydrocarbon best mapped to naphthalene, and nitration yields a nitro-substituted aromatic compound."
+  },
+  "387": {
+    "from_node": "carboxylic_acid",
+    "to_node": "ester",
+    "firing_condition": "phenol_protection",
+    "skip": false,
+    "reasoning": "The reaction is a Fischer esterification of salicylic acid, converting the carboxylic acid group to a methyl ester while the phenol (2-hydroxy) group remains intact."
+  },
+  "389": {
+    "from_node": "ether",
+    "to_node": "phenol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction is a Claisen rearrangement, converting an allyl aryl ether to an ortho-allyl phenol."
+  },
+  "396": {
+    "from_node": "amino_acid",
+    "to_node": "aniline",
+    "firing_condition": "decarboxylation",
+    "skip": false,
+    "reasoning": "4-aminobenzoic acid is an aromatic amino acid, and its decarboxylation yields aniline (phenylamine)."
+  },
+  "400": {
+    "from_node": "alkene",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Ethene is an alkene, and its hydrogenation product ethane is an alkane."
+  },
+  "402": {
+    "from_node": "acid_chloride",
+    "to_node": "aldehyde",
+    "firing_condition": "rosenmund_reduction",
+    "skip": false,
+    "reasoning": "Benzenecarbonyl chloride (benzoyl chloride) is an acid chloride, and its reduction to benzaldehyde is a specific transformation known as the Rosenmund reduction."
+  },
+  "403": {
+    "from_node": "alkene",
+    "to_node": "alkane",
+    "firing_condition": "deuterium_gas_catalytic_hydrogenation",
+    "skip": false,
+    "reasoning": "The reaction describes the catalytic deuteration of an alkene to yield a deuterated alkane, specifically a meso compound."
+  },
+  "404": {
+    "from_node": "alkene",
+    "to_node": "alkane",
+    "firing_condition": "deuterium_gas_catalytic_hydrogenation",
+    "skip": false,
+    "reasoning": "The reaction describes the catalytic hydrogenation of an alkene (but-2-ene) with deuterium gas (D2) to yield an alkane (2,3-dideuterobutane)."
+  },
+  "405": {
+    "from_node": "carboxylic_acid",
+    "to_node": "alkane",
+    "firing_condition": "decarboxylation_of_alkanoate_salt",
+    "skip": false,
+    "reasoning": "Sodium ethanoate is the sodium salt of ethanoic acid (carboxylic acid), which can undergo decarboxylation to produce an alkane (ethane)."
+  },
+  "406": {
+    "from_node": "carboxylic_acid",
+    "to_node": "ester",
+    "firing_condition": "acid_catalysis_or_fischer_esterification",
+    "skip": false,
+    "reasoning": "Sodium propanoate is the salt of propanoic acid (carboxylic acid), which can be converted to ethyl propanoate (ester) via acid-catalyzed esterification with ethanol."
+  },
+  "408": {
+    "from_node": "carboxylic_acid",
+    "to_node": "substituted_benzene",
+    "firing_condition": "decarboxylative_coupling",
+    "skip": false,
+    "reasoning": "Sodium benzoate undergoes decarboxylative coupling (e.g., via pyrolysis or with a copper catalyst) to form biphenyl, which is a substituted benzene."
+  },
+  "410": {
+    "from_node": "aryl_halide",
+    "to_node": "substituted_benzene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Chlorobenzene is an aryl halide, and ethylbenzene is a substituted benzene derivative."
+  },
+  "411": {
+    "from_node": "organolithium",
+    "to_node": "alkane",
+    "firing_condition": "with_alkyl_halide",
+    "skip": false,
+    "reasoning": "Di-n-propylcuprate lithium is an organocopper reagent derived from an organolithium, and its reaction with an alkyl halide yields an alkane via coupling."
+  },
+  "431": {
+    "from_node": "carboxylic_acid",
+    "to_node": "alcohol",
+    "firing_condition": "reduction",
+    "skip": false,
+    "reasoning": "Benzoic acid is a carboxylic acid, and its reduction to benzyl alcohol is a standard transformation."
+  },
+  "444": {
+    "from_node": "aldehyde",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation of 2,2,2-trichloroacetaldehyde to trichloromethane (chloroform) is a specific haloform reaction test result, indicating a positive iodoform test for methyl ketones or acetaldehydes, which is a qualitative observation."
+  },
+  "448": {
+    "from_node": "aldehyde",
+    "to_node": "ester",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Benzaldehyde is an aldehyde, and phenylmethyl benzoate (benzyl benzoate) is an ester formed via the benzoin condensation followed by oxidation and esterification, but the direct mapping is from aldehyde to ester."
+  },
+  "449": {
+    "from_node": "ketone",
+    "to_node": "cycloalkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Cyclohexan-1-one is a ketone, and its reduction to cyclohexane is a standard transformation."
+  },
+  "452": {
+    "from_node": "aldehyde",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "alkaline_conditions",
+    "skip": false,
+    "reasoning": "Ethanal (acetaldehyde) is an aldehyde, and its oxidation under alkaline conditions (e.g., with Tollens' reagent) yields the carboxylate ion (ethanoate), which corresponds to the deprotonated form of a carboxylic acid."
+  },
+  "453": {
+    "from_node": "aldehyde",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation 'ethanal to silver' describes a positive result (silver mirror) in the Tollens' test for aldehydes, which is a qualitative indicator reaction."
+  },
+  "454": {
+    "from_node": "aldehyde",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'silver' product refers to the silver mirror test (Tollens' test) for aldehydes, which is a qualitative indicator result, not a useful synthetic transformation."
+  },
+  "455": {
+    "from_node": "ketone",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "haloform_reaction",
+    "skip": false,
+    "reasoning": "1-hydroxypropan-2-one (hydroxyacetone) is a ketone with a methyl group adjacent to the carbonyl, which under haloform reaction conditions (e.g., with halogen and base) cleaves to yield a carboxylate salt, here the ethanoate ion."
+  },
+  "456": {
+    "from_node": "carboxylic_acid",
+    "to_node": "lactone",
+    "firing_condition": "intramolecular_cyclization",
+    "skip": false,
+    "reasoning": "Butanedioic acid (succinic acid) is a dicarboxylic acid, and oxolane-2,5-dione (succinic anhydride) is a cyclic anhydride, which is a type of lactone formed via intramolecular dehydration."
+  },
+  "457": {
+    "from_node": "carboxylic_acid",
+    "to_node": "ketone",
+    "firing_condition": "alpha_omega_dicarboxylic_acid",
+    "skip": false,
+    "reasoning": "Hexanedioic acid (adipic acid) undergoes thermal decarboxylation to form cyclopentanone, a cyclic ketone."
+  },
+  "458": {
+    "from_node": "carboxylic_acid",
+    "to_node": "lactone",
+    "firing_condition": "intramolecular_anhydride_formation",
+    "skip": false,
+    "reasoning": "(Z)-but-2-enedioic acid (maleic acid) undergoes intramolecular dehydration to form a cyclic anhydride, furan-2,5(3H,4H)-dione (maleic anhydride), which is a type of lactone."
+  },
+  "461": {
+    "from_node": "aldehyde",
+    "to_node": "alkyne",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Prop-2-ynal is an aldehyde with a terminal alkyne group, and the transformation to ethyne (acetylene) involves decarboxylation or elimination from a propargylic aldehyde, which is a known reaction."
+  },
+  "464": {
+    "from_node": "grignard",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "with_CO2",
+    "skip": false,
+    "reasoning": "Ethylmagnesium bromide is a Grignard reagent, which reacts with carbon dioxide to form a carboxylic acid with one more carbon atom."
+  },
+  "467": {
+    "from_node": "ester",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "saponification",
+    "skip": false,
+    "reasoning": "Ethyl ethanoate is an ester, and its hydrolysis with sodium hydroxide yields the sodium salt of ethanoic acid (carboxylic acid)."
+  },
+  "474": {
+    "from_node": "alkyl_halide",
+    "to_node": "grignard",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Chloroethane is an alkyl halide, and its reaction with magnesium yields the Grignard reagent ethylmagnesium chloride."
+  },
+  "475": {
+    "from_node": "aryl_halide",
+    "to_node": "grignard",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Bromobenzene is an aryl halide, and its reaction with magnesium metal produces the Grignard reagent phenylmagnesium bromide."
+  },
+  "476": {
+    "from_node": "grignard",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Ethylmagnesium chloride is a Grignard reagent, and its reaction with a protic acid source (implied by the product ethane) is a standard protonolysis reaction."
+  },
+  "477": {
+    "from_node": "grignard",
+    "to_node": "alkane",
+    "firing_condition": "with D2O or other deuterated acid",
+    "skip": false,
+    "reasoning": "Ethylmagnesium chloride is a Grignard reagent, and its reaction with D2O (deuterated water) yields the deuterated alkane ethane-d1."
+  },
+  "478": {
+    "from_node": "alkyne",
+    "to_node": "grignard",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Prop-1-yne is a terminal alkyne, and its reaction with bromomagnesium (e.g., from ethylmagnesium bromide or similar) forms a Grignard reagent, specifically an alkynyl Grignard reagent."
+  },
+  "480": {
+    "from_node": "grignard",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Propylmagnesium bromide is a Grignard reagent, and its reaction with water (a common workup) yields the corresponding alkane, butane."
+  },
+  "481": {
+    "from_node": "grignard",
+    "to_node": "aryl_halide",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Phenylmagnesium bromide is a Grignard reagent, and bromobenzene is an aryl halide."
+  },
+  "482": {
+    "from_node": "vicinal_dihalide",
+    "to_node": "alkene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "1,2-dichloroethane is a vicinal dihalide, and its dehydrohalogenation to ethene (an alkene) is a standard elimination reaction."
+  },
+  "483": {
+    "from_node": "geminal_dihalide",
+    "to_node": "carbene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Diiodomethane is a geminal dihalide, and its reaction with zinc-copper couple (Simmons-Smith) generates a methylene carbene equivalent, which is a carbene species."
+  },
+  "485": {
+    "from_node": "alkyl_halide",
+    "to_node": "organolithium",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Chloroethane is an alkyl halide, and its reaction with lithium metal produces ethyllithium, an organolithium compound."
+  },
+  "486": {
+    "from_node": "alkyl_halide",
+    "to_node": "organolithium",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Cyclopentyl iodide is an alkyl halide, and its reaction with lithium metal forms an organolithium reagent, specifically a lithium cuprate complex."
+  },
+  "488": {
+    "from_node": "vinyl_halide",
+    "to_node": "alkene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "(Z)-1-bromobut-1-ene is a vinyl bromide, which maps to the canonical vinyl_halide node, and (Z)-hex-3-ene is a simple alkene."
+  },
+  "491": {
+    "from_node": "alcohol",
+    "to_node": "aldehyde",
+    "firing_condition": "primary_benzylic_alcohol",
+    "skip": false,
+    "reasoning": "Benzyl alcohol is a primary benzylic alcohol, which can be oxidized to benzaldehyde using selective oxidizing agents like PCC."
+  },
+  "494": {
+    "from_node": "ester",
+    "to_node": "alcohol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Ethyl propanoate is an ester, and its reduction yields the corresponding primary alcohol, propan-1-ol."
+  },
+  "495": {
+    "from_node": "amide",
+    "to_node": "amine",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Propanamide is an amide, and its reduction to propan-1-amine is a standard transformation."
+  },
+  "501": {
+    "from_node": "substituted_benzene",
+    "to_node": "ketone",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Diphenylmethane is a substituted benzene derivative, and diphenylmethanone (benzophenone) is a ketone."
+  },
+  "502": {
+    "from_node": "cycloalkene",
+    "to_node": "ketone",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Cyclohex-1-ene is a specific cycloalkene, and cyclohex-2-en-1-one is an \u03b1,\u03b2-unsaturated ketone (enone)."
+  },
+  "506": {
+    "from_node": "NEW:prochiral_tetrahedral_carbon",
+    "to_node": "NEW:stereocentre_cip_assigned",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a stereochemical assignment process, not a chemical reaction that transforms functional groups."
+  },
+  "507": {
+    "from_node": "NEW:cyclopropyl_group",
+    "to_node": "NEW:lower_priority_substituent",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a relative stereochemical priority (Cahn-Ingold-Prelog rules) for a substituent, not a chemical reaction transforming one functional group into another."
+  },
+  "508": {
+    "from_node": "alkene",
+    "to_node": "alkene",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a conceptual rule for assigning stereochemistry (Cahn-Ingold-Prelog priority) to an alkene substituent using a phantom atom, not a chemical transformation."
+  },
+  "509": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes an analytical assignment of stereochemistry from a Fischer projection, not a chemical reaction that changes the molecular structure."
+  },
+  "510": {
+    "from_node": "amine",
+    "to_node": "amine",
+    "firing_condition": "tertiary_amine_inversion",
+    "skip": false,
+    "reasoning": "The transformation describes the stereochemical inversion of a tertiary amine via a planar transition state, which is a known property of amine nitrogen inversion."
+  },
+  "511": {
+    "from_node": "epoxide",
+    "to_node": "epoxide",
+    "firing_condition": "aziridine",
+    "skip": false,
+    "reasoning": "Aziridines are nitrogen analogs of epoxides, and the reaction describes an inversion of stereochemistry, which is a characteristic transformation for these three-membered heterocycles."
+  },
+  "512": {
+    "from_node": "amine",
+    "to_node": "amine",
+    "firing_condition": "tertiary_amine_with_vinyl_substituents",
+    "skip": false,
+    "reasoning": "The transformation describes a change in the nitrogen's geometry and electronic structure (from pyramidal to planar sp2) due to conjugation and backbonding in a tertiary amine with vinyl groups, not a change to a different functional group."
+  },
+  "514": {
+    "from_node": "alkene",
+    "to_node": "alkene",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Both pent-1-ene and pent-2-ene are alkenes, representing an isomerization reaction."
+  },
+  "515": {
+    "from_node": "geminal_dihalide",
+    "to_node": "NEW:trichloropropane_isomers",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The starting material is a specific geminal dihalide (1,1,1-trichloropropane), and the product set is a group of structural isomers of trichloropropane, which are not individually represented in the canonical list."
+  },
+  "516": {
+    "from_node": "substituted_benzene",
+    "to_node": "substituted_benzene",
+    "firing_condition": "electrophilic_aromatic_substitution",
+    "skip": false,
+    "reasoning": "The transformation describes the generation of ortho, meta, and para positional isomers from a disubstituted benzene, which is a standard outcome of electrophilic aromatic substitution on an already substituted benzene ring."
+  },
+  "517": {
+    "from_node": "alkene",
+    "to_node": "alkene",
+    "firing_condition": "cis_alkene",
+    "skip": false,
+    "reasoning": "This is a cis-trans isomerization of an alkene, which is a standard reaction."
+  },
+  "520": {
+    "from_node": "NEW:allene_axial_chirality",
+    "to_node": "NEW:allene_enantiomers",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes the stereochemical concept of axial chirality in allenes, which is a specialized property and not a standard functional group interconversion useful for multi-step synthesis chains."
+  },
+  "521": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes the optical activity of a chiral compound, which is a physical property observation, not a chemical reaction."
+  },
+  "522": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description refers to a property (optical activity) of a chiral compound, not a chemical transformation to a different functional group."
+  },
+  "523": {
+    "from_node": "cycloalkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' label 'achiral_with_POS' describes a stereochemical property (achiral with a plane of symmetry) of the starting material, not a new chemical product, indicating no reaction occurred."
+  },
+  "524": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a stereochemical inversion at a single chiral center, which is not a transformation between distinct functional group classes represented in the canonical node list."
+  },
+  "525": {
+    "from_node": "carbohydrate",
+    "to_node": "carbohydrate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "D- and L-glyceraldehyde are stereoisomers of the same carbohydrate, glyceraldehyde."
+  },
+  "527": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description defines a property relationship (enantiomers) rather than a chemical transformation."
+  },
+  "528": {
+    "from_node": "NEW:racemic_mixture",
+    "to_node": "NEW:diastereomeric_pair",
+    "firing_condition": "requires_optically_active_resolving_agent",
+    "skip": true,
+    "reasoning": "This describes a physical resolution process for enantiomers, not a standard functional group transformation in a synthetic sequence."
+  },
+  "529": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes a physical rotation of a Fischer projection, not a chemical reaction."
+  },
+  "530": {
+    "from_node": "NEW:molecule_with_two_chiral_centres_and_internal_symmetry",
+    "to_node": "NEW:meso_compound",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a stereochemical property (meso compound formation) rather than a standard functional group transformation, and is too specific for the canonical list."
+  },
+  "531": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a stereochemical relationship (diastereomers) and their physical property differences, not a chemical reaction between functional groups."
+  },
+  "532": {
+    "from_node": "NEW:allene_substituted",
+    "to_node": "NEW:allene_axially_chiral",
+    "firing_condition": "allene_with_two_different_substituents_on_each_terminal_carbon",
+    "skip": false,
+    "reasoning": "The transformation describes the generation of axial chirality in a specific, substituted allene, which is a distinct structural motif not covered by the canonical 'alkene' or 'diene' nodes."
+  },
+  "533": {
+    "from_node": "substituted_benzene",
+    "to_node": "substituted_benzene",
+    "firing_condition": "ortho_substituted_biphenyl",
+    "skip": false,
+    "reasoning": "The reaction describes restricted rotation in a substituted biphenyl leading to atropisomers, which is a conformational property of the same substituted benzene core structure."
+  },
+  "534": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The input describes a mathematical relationship for counting stereoisomers, not a chemical reaction between functional groups."
+  },
+  "535": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The input describes a mathematical relationship for counting stereoisomers, not a chemical reaction between canonical molecular entities."
+  },
+  "536": {
+    "from_node": "NEW:multi_ring_compound_with_exocyclic_stereocenters",
+    "to_node": "NEW:multi_ring_compound_reduced_stereoisomers",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The description refers to a specific conformational/geometric constraint in a complex polycyclic system leading to a reduction in possible stereoisomers, which is not covered by any existing canonical node."
+  },
+  "537": {
+    "from_node": "alkane",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes a conformational change (staggered to eclipsed) within the same molecule (ethane), which is a physical rotation, not a chemical reaction that changes the functional group or identity of the compound."
+  },
+  "538": {
+    "from_node": "alkane",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a physical property (conformational isomerism) of alkanes, not a chemical transformation."
+  },
+  "539": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The input describes a physical organic chemistry concept (conformational energy analysis) rather than a chemical transformation between defined molecular entities."
+  },
+  "540": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The input describes a physical organic chemistry concept (torsional strain energy) and not a chemical transformation between molecular entities."
+  },
+  "541": {
+    "from_node": "alkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description refers to conformational analysis and symmetry equivalence, which is a physical property observation, not a chemical transformation."
+  },
+  "542": {
+    "from_node": "ketone",
+    "to_node": "enol",
+    "firing_condition": "alpha_hydrogen_present",
+    "skip": false,
+    "reasoning": "The 'carbonyl_compound_with_alpha_hydrogen' is a ketone or aldehyde, and the tautomerization produces an enol."
+  },
+  "543": {
+    "from_node": "ketone",
+    "to_node": "enol",
+    "firing_condition": "alpha_beta_unsaturated_with_gamma_hydrogen",
+    "skip": false,
+    "reasoning": "The starting material is an alpha,beta-unsaturated ketone with a specific gamma hydrogen, and the product is its tautomeric enol form resulting from base-catalyzed deprotonation."
+  },
+  "544": {
+    "from_node": "ketone",
+    "to_node": "ketone",
+    "firing_condition": "alpha_hydrogen_present",
+    "skip": false,
+    "reasoning": "The reaction describes base-catalyzed H/D exchange at the alpha position of a carbonyl compound via an enolate intermediate, which is a standard property of ketones and aldehydes with alpha hydrogens."
+  },
+  "545": {
+    "from_node": "ketone",
+    "to_node": "enol",
+    "firing_condition": "beta-diketone",
+    "skip": false,
+    "reasoning": "The transformation describes the keto-enol tautomerism of a 1,3-diketone (pentane-2,4-dione) to its highly stabilized, chelated enol form."
+  },
+  "546": {
+    "from_node": "ketone",
+    "to_node": "phenol",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the keto-enol tautomerization of cyclohexa-2,4-dien-1-one (a ketone) to its phenol form, which is overwhelmingly favored due to aromaticity."
+  },
+  "547": {
+    "from_node": "alkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes a naming convention (IUPAC systematic naming) for an existing alkane structure, not a chemical reaction."
+  },
+  "548": {
+    "from_node": "cycloalkane",
+    "to_node": null,
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes naming a substituted cycloalkane, which is a property of the same chemical entity, not a reaction to a different functional group."
+  },
+  "549": {
+    "from_node": "cycloalkane",
+    "to_node": "cycloalkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes naming a bicyclic alkane structure, which is a subclass of cycloalkane, without a chemical reaction occurring."
+  },
+  "550": {
+    "from_node": "NEW:spiro_compound",
+    "to_node": "NEW:spiro_alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "Spiro compounds are a distinct structural class not directly represented in the canonical node list, and the transformation is a naming convention rather than a functional group change."
+  },
+  "551": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'from_raw' and 'to_raw' labels describe a general naming or representation task, not a specific chemical transformation between functional groups."
+  },
+  "552": {
+    "from_node": "alkane",
+    "to_node": "NEW:systematic_iupac_name",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the IUPAC naming of a branched alkane, which is a conceptual mapping from a structural description to a systematic name, not a chemical reaction between functional groups."
+  },
+  "553": {
+    "from_node": "alkane",
+    "to_node": "alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the mapping of common alkyl group names (sec-butyl, isobutyl, tert-butyl) to their systematic IUPAC names (1-methylpropyl, 2-methylpropyl, 1,1-dimethylethyl), which is a nomenclature change within the same functional class of alkanes/alkyl groups."
+  },
+  "554": {
+    "from_node": "cycloalkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a naming convention (IUPAC nomenclature) and not a chemical transformation to a new compound."
+  },
+  "555": {
+    "from_node": "cycloalkane",
+    "to_node": "cycloalkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "This describes a naming convention for a substituted cycloalkane, not a chemical transformation, so the chemical identity remains a cycloalkane."
+  },
+  "556": {
+    "from_node": "alkane",
+    "to_node": "NEW:iupac_named_alkane",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The from_raw describes a complex alkane, which maps to 'alkane', and the to_raw describes the IUPAC naming of the same compound, which is a new, distinct conceptual node representing a named structure."
+  },
+  "557": {
+    "from_node": "amine",
+    "to_node": "amine",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the IUPAC naming of a primary amine, which is a change in representation, not a chemical reaction."
+  },
+  "558": {
+    "from_node": "amine",
+    "to_node": "amine",
+    "firing_condition": "secondary_or_tertiary_amine_with_different_N_substituents",
+    "skip": false,
+    "reasoning": "The transformation describes the IUPAC naming convention for an existing amine, not a chemical reaction that changes the functional group."
+  },
+  "559": {
+    "from_node": "aldehyde",
+    "to_node": "aldehyde",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the naming convention for an aldehyde functional group, not a chemical reaction, so the chemical identity remains an aldehyde."
+  },
+  "560": {
+    "from_node": "ketone",
+    "to_node": null,
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "This describes a naming convention for a ketone functional group, not a chemical transformation."
+  },
+  "561": {
+    "from_node": "amide",
+    "to_node": "amide",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the naming convention for amides with N-alkyl substituents, which does not change the fundamental chemical identity of the amide functional group."
+  },
+  "562": {
+    "from_node": "ester",
+    "to_node": "NEW:ester_substituent_nomenclature",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a naming convention (IUPAC prefix) for an ester group as a substituent, not a chemical transformation into a different functional group."
+  },
+  "563": {
+    "from_node": "NEW:heterocycle_or_heteroatom_chain",
+    "to_node": "NEW:iupac_heteroatom_named_compound",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The from_raw describes a general structural class not directly matching a canonical node, and the to_raw describes a specific IUPAC naming convention for such structures, indicating a transformation in representation rather than a chemical reaction."
+  },
+  "564": {
+    "from_node": "epoxide",
+    "to_node": "epoxide",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the IUPAC naming of an epoxide, which is a change in nomenclature, not a chemical reaction, so the chemical identity remains an epoxide."
+  },
+  "565": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the naming of an alpha,omega-dicarboxylic acid, which is a carboxylic acid, and does not represent a chemical reaction."
+  },
+  "566": {
+    "from_node": "NEW:formylamino_group",
+    "to_node": "NEW:formylamino_group",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes a naming convention (IUPAC prefix) for a formylamino (-NH-CHO) substituent, which is a specific functional group not directly matching any canonical node."
+  },
+  "567": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This entry describes a calculation (degree of unsaturation) rather than a chemical reaction or transformation."
+  },
+  "568": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a calculation method (degree of unsaturation) and not a chemical transformation to a new compound."
+  },
+  "569": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This entry describes a calculation method (degree of unsaturation) and not a chemical transformation between defined compounds."
+  },
+  "570": {
+    "from_node": "carboxylic_acid",
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a nomenclature convention for labeling carbon positions relative to a carbonyl, not a chemical transformation to a new compound."
+  },
+  "571": {
+    "from_node": "imine",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes IUPAC naming conventions for functional groups, which is a classification or test result, not a chemical transformation."
+  },
+  "573": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "aromatic_substrate",
+    "skip": false,
+    "reasoning": "This describes the IUPAC naming of an aromatic dicarboxylic acid, which is a carboxylic acid before and after the naming operation."
+  },
+  "574": {
+    "from_node": "carboxylic_acid",
+    "to_node": "carboxylic_acid",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the IUPAC naming of an aliphatic hydroxy-keto or dicarboxylic acid, which is a change in nomenclature, not a chemical reaction, so the chemical identity (carboxylic acid, ketone, alcohol) remains the same."
+  },
+  "575": {
+    "from_node": "NEW:heterocyclic_compound",
+    "to_node": "NEW:heterocyclic_compound",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This transformation describes a systematic naming convention for heterocycles, not a chemical reaction that alters the molecular structure."
+  },
+  "576": {
+    "from_node": "NEW:alpha_beta_unsaturated_carbonyl",
+    "to_node": "nitrile",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The from_raw describes a specific subclass of carbonyl compounds, not a canonical node, while the to_raw maps to the canonical nitrile node."
+  },
+  "577": {
+    "from_node": "carbohydrate",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "mild_oxidation_aldehyde",
+    "skip": false,
+    "reasoning": "The open-chain form of D-glucose contains an aldehyde group, which is oxidized to a carboxylic acid by a mild oxidizing agent like bromine water, confirming its aldehyde nature."
+  },
+  "578": {
+    "from_node": "carbohydrate",
+    "to_node": "carbohydrate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes the intramolecular cyclization of open-chain D-glucose (a carbohydrate) to form its cyclic pyranose anomers, which are also carbohydrates."
+  },
+  "579": {
+    "from_node": "carbohydrate",
+    "to_node": "carbohydrate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes the mutarotation of a specific carbohydrate (glucopyranose) between its anomeric forms, which is a fundamental property of reducing sugars."
+  },
+  "580": {
+    "from_node": "carbohydrate",
+    "to_node": "carbohydrate",
+    "firing_condition": "aldehyde_reduction",
+    "skip": false,
+    "reasoning": "The reaction is the reduction of the aldehyde group in an aldose (D-glucose) to a primary alcohol, producing the corresponding alditol (glucitol/sorbitol), which is still a carbohydrate."
+  },
+  "582": {
+    "from_node": "carbohydrate",
+    "to_node": "carbohydrate",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "This describes the classification/naming of a carbohydrate based on its Fischer projection, not a chemical transformation to a different functional group."
+  },
+  "585": {
+    "from_node": "carbohydrate",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a positive test result (Tollens', Fehling's, Benedict's) for a reducing sugar, which is a qualitative observation, not a chemical transformation to a new product node."
+  },
+  "587": {
+    "from_node": "carboxylic_acid",
+    "to_node": "amino_acid",
+    "firing_condition": "alpha_halo_substituted",
+    "skip": false,
+    "reasoning": "The starting material is an alpha-halocarboxylic acid, a subclass of carboxylic acid, and the product is an alpha-amino acid, a canonical node."
+  },
+  "588": {
+    "from_node": "carboxylic_acid",
+    "to_node": "NEW:phthalimide",
+    "firing_condition": "dicarboxylic_acid_with_adjacent_carboxyl_groups",
+    "skip": false,
+    "reasoning": "Phthalic acid (a dicarboxylic acid) reacts with excess ammonia and heat to form phthalimide, a specific cyclic imide used in the Gabriel synthesis."
+  },
+  "589": {
+    "from_node": "phthalimide_anion",
+    "to_node": "amino_acid",
+    "firing_condition": "gabriel_phthalimide",
+    "skip": false,
+    "reasoning": "The from_raw describes the phthalimide anion reacting with an alpha-halo ester, which is the key intermediate in the Gabriel synthesis, and the to_raw is the resulting alpha-amino acid after hydrolysis."
+  },
+  "590": {
+    "from_node": "amino_acid",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a stereochemical assignment (L/D) based on a Fischer projection, which is a classification or test result, not a chemical transformation."
+  },
+  "591": {
+    "from_node": "amino_acid",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description is a classification test for amino acid side chains, not a chemical transformation."
+  },
+  "592": {
+    "from_node": "carboxylic_acid",
+    "to_node": null,
+    "firing_condition": "alpha_electronegative_substituent",
+    "skip": false,
+    "reasoning": "This describes a property change (increased acidity) of a carboxylic acid due to an inductive effect, not a transformation to a new chemical species."
+  },
+  "593": {
+    "from_node": "alkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description is a qualitative ordering of inductive effects for alkyl groups, not a chemical transformation."
+  },
+  "594": {
+    "from_node": "alkyl_halide",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description is a qualitative ordering of inductive effects, not a chemical transformation."
+  },
+  "595": {
+    "from_node": "carbanion",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description refers to a qualitative rule for ranking acidity, not a chemical transformation into a new product."
+  },
+  "596": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a qualitative ordering of inductive effects, which is a property or observation, not a chemical transformation to a new compound."
+  },
+  "597": {
+    "from_node": "anhydride",
+    "to_node": "NEW:acyloxy_radical",
+    "firing_condition": "thermal_or_photolytic",
+    "skip": false,
+    "reasoning": "A diacyl peroxide is a specific type of anhydride (peroxy anhydride) that undergoes homolytic cleavage to yield acyloxy radicals, which are distinct intermediates not in the canonical list."
+  },
+  "599": {
+    "from_node": "NEW:p_pi_donor_system",
+    "to_node": "NEW:delocalized_resonance_structure",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description refers to a general electronic effect (resonance donation) rather than a specific functional group transformation between canonical nodes."
+  },
+  "600": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a conceptual representation of a molecule (resonance structures vs. hybrid), not a chemical transformation between distinct functional groups."
+  },
+  "601": {
+    "from_node": "diene_isolated",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a property (lack of resonance) of the starting material, not a chemical transformation, so this is not a valid reaction step."
+  },
+  "602": {
+    "from_node": "phenol",
+    "to_node": "NEW:phenolate_resonance_structures",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes the drawing of resonance structures for a phenolate-like system, which is a conceptual exercise rather than a synthetic reaction step."
+  },
+  "603": {
+    "from_node": "aniline",
+    "to_node": "aniline",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description details resonance structures and electron density distribution of aniline, which is a property or state of the same compound, not a chemical transformation to a different product."
+  },
+  "604": {
+    "from_node": "aldehyde",
+    "to_node": "aldehyde",
+    "firing_condition": "substituted_benzene_with_electron_withdrawing_group",
+    "skip": true,
+    "reasoning": "The description details resonance structures and electron density changes for benzaldehyde, which is a qualitative property observation, not a chemical transformation to a new product."
+  },
+  "605": {
+    "from_node": "nitro_compound",
+    "to_node": "NEW:resonance_structures",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes drawing resonance structures of nitrobenzene, which is a conceptual exercise and not a chemical reaction useful for synthesis planning."
+  },
+  "606": {
+    "from_node": "aldehyde",
+    "to_node": "NEW:conjugated_enal_resonance_forms",
+    "firing_condition": "conjugated_enal_system",
+    "skip": false,
+    "reasoning": "The from_raw describes prop-2-enal (acrolein), a conjugated enal, which is a specific subclass of aldehyde; the to_raw describes its two canonical resonance structures, representing a new, distinct chemical concept not in the canonical list."
+  },
+  "607": {
+    "from_node": "substituted_benzene",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a qualitative ordering of substituent effects for electrophilic aromatic substitution, not a chemical transformation into a new product."
+  },
+  "609": {
+    "from_node": "substituted_benzene",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The 'to_raw' describes a qualitative ranking of electron density, not a chemical transformation into a new product."
+  },
+  "610": {
+    "from_node": "nitrile",
+    "to_node": "NEW:cyano_arenium_ion",
+    "firing_condition": "aryl_nitrile_only",
+    "skip": false,
+    "reasoning": "The description details the formation of a resonance-stabilized arenium ion intermediate via -M withdrawal by the cyano group, which is a distinct reactive species not in the canonical list."
+  },
+  "611": {
+    "from_node": "sulfonate",
+    "to_node": "NEW:sulfonic_acid_resonance",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description details the resonance and electron-withdrawing effect of a benzenesulfonic acid group, which is a qualitative property observation, not a transformation to a new, synthetically useful compound."
+  },
+  "612": {
+    "from_node": "carbocation",
+    "to_node": "carbocation",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The transformation describes the selection of the most stable resonance structure for a carbocation based on octet rules, which is a conceptual normalization within the same canonical node."
+  },
+  "613": {
+    "from_node": null,
+    "to_node": null,
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a general rule for evaluating resonance structures, not a specific chemical transformation between functional groups."
+  },
+  "614": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description states a forbidden, non-existent canonical structure, which is equivalent to a 'no reaction' condition for synthesis planning."
+  },
+  "615": {
+    "from_node": "aniline",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The description describes the deactivated state of an aniline derivative (phenylammonium ion) and its lack of resonance, which is a property observation, not a chemical transformation."
+  },
+  "616": {
+    "from_node": "NEW:phenylborane",
+    "to_node": "NEW:borate_anion_resonance",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The transformation describes a resonance effect within a specific organoborane intermediate, not a standard functional group interconversion useful for multi-step synthesis."
+  },
+  "617": {
+    "from_node": "alkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes an analytical combustion procedure (Liebig's method) to measure carbon and hydrogen content, not a synthetic transformation."
+  },
+  "618": {
+    "from_node": "alkane",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a quantitative analysis (combustion analysis) for calculating elemental percentages, not a chemical transformation between functional groups."
+  },
+  "619": {
+    "from_node": "amine",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The Dumas method is a quantitative analytical technique for determining nitrogen content, not a synthetic transformation for building molecular graphs."
+  },
+  "620": {
+    "from_node": "NEW:nitrogen_gas",
+    "to_node": "NEW:nitrogen_percentage",
+    "firing_condition": "dumas_method",
+    "skip": true,
+    "reasoning": "This describes a quantitative analytical calculation for nitrogen content, not a chemical transformation between canonical functional groups."
+  },
+  "621": {
+    "from_node": null,
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "This describes a calculation for elemental composition, not a chemical transformation between functional groups."
+  },
+  "622": {
+    "from_node": "amino_acid",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The Xanthoproteic test is a qualitative colorimetric test for aromatic amino acids, resulting in a color change (yellow/orange) indicating a positive test, not a synthetically useful product."
+  },
+  "624": {
+    "from_node": "amino_acid",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The product 'Ruhemann's purple' is a specific dye formed in a qualitative color test (ninhydrin test), not a standard synthetic intermediate for multi-step synthesis."
+  },
+  "625": {
+    "from_node": "carboxylic_acid",
+    "to_node": "NEW:ninhydrin_amino_acid_adduct",
+    "firing_condition": "alpha-amino_acid",
+    "skip": false,
+    "reasoning": "The reaction is a specific colorimetric test between ninhydrin and alpha-amino acids (like proline/hydroxyproline) to form a colored adduct, which is a distinct chemical product not covered by the canonical list."
+  },
+  "628": {
+    "from_node": "alkene",
+    "to_node": "alcohol",
+    "firing_condition": "markovnikov_addition",
+    "skip": false,
+    "reasoning": "The reaction is the acid-catalyzed hydration of an alkene to form a Markovnikov alcohol."
+  },
+  "629": {
+    "from_node": "alkene",
+    "to_node": "alcohol",
+    "firing_condition": "hydroboration_oxidation",
+    "skip": false,
+    "reasoning": "Hydroboration-oxidation of an alkene yields an alcohol with anti-Markovnikov regioselectivity."
+  },
+  "630": {
+    "from_node": "carboxylic_acid",
+    "to_node": "alcohol",
+    "firing_condition": "reduction_LAH_BH3_H2_Ru",
+    "skip": false,
+    "reasoning": "The reaction is the reduction of a carboxylic acid to a primary alcohol, which is a standard transformation with specific reagent requirements."
+  },
+  "632": {
+    "from_node": "alcohol",
+    "to_node": "NEW:sodium_alkoxide",
+    "firing_condition": null,
+    "skip": false,
+    "reasoning": "The reaction describes the deprotonation of an O-H compound (alcohol, phenol, carboxylic acid) by sodium metal, with the primary example being the formation of a sodium alkoxide from an alcohol."
+  },
+  "633": {
+    "from_node": "alcohol",
+    "to_node": "NO_REACTION",
+    "firing_condition": "primary_or_secondary_alcohol",
+    "skip": true,
+    "reasoning": "The description is a qualitative color test (Ceric Ammonium Nitrate test) indicating the presence and subsequent oxidation of an alcohol, not a standard synthetic transformation."
+  },
+  "634": {
+    "from_node": "alcohol",
+    "to_node": "NO_REACTION",
+    "firing_condition": null,
+    "skip": true,
+    "reasoning": "The Victor Meyer test is a qualitative colorimetric test for classifying alcohols, and the outputs are color observations indicating the degree of the alcohol, not a transformation into a new, synthetically useful compound."
+  },
+  "635": {
+    "from_node": "nitro_compound",
+    "to_node": "NEW:nitrolic_acid",
+    "firing_condition": "primary_nitroalkane",
+    "skip": false,
+    "reasoning": "The reaction is specific to primary nitroalkanes with \u03b1-hydrogens reacting with nitrous acid to form a nitrolic acid, which is a distinct functional group not in the canonical list."
+  },
+  "637": {
+    "from_node": "alcohol",
+    "to_node": "ester",
+    "firing_condition": "primary_or_secondary_alcohol",
+    "skip": false,
+    "reasoning": "The reaction describes the acetylation of an alcohol with an acylating agent to form an acetate ester, which is a specific type of ester."
+  },
+  "639": {
+    "from_node": "alcohol",
+    "to_node": null,
+    "firing_condition": "temperature_dependent",
+    "skip": false,
+    "reasoning": "The reaction of an alcohol with concentrated sulfuric acid yields different products (alkene, ether, or alkyl hydrogen sulfate) depending on the temperature, so a single canonical 'to_node' cannot be assigned."
+  },
+  "644": {
+    "from_node": "carboxylic_acid",
+    "to_node": "polymer",
+    "firing_condition": "dicarboxylic_acid_diol_condensation",
+    "skip": false,
+    "reasoning": "The reaction is a condensation polymerization between a diol (ethane-1,2-diol) and a dicarboxylic acid (benzene-1,4-dicarboxylic acid) to form a polyester polymer."
+  },
+  "652": {
+    "from_node": "diol",
+    "to_node": "ketone",
+    "firing_condition": "vicinal_diol_acid_catalyzed",
+    "skip": false,
+    "reasoning": "The reaction describes the pinacol rearrangement of a vicinal diol to a ketone via a carbocation intermediate and a 1,2-shift."
+  },
+  "655": {
+    "from_node": "ketone",
+    "to_node": "carboxylic_acid",
+    "firing_condition": "alpha-diketone",
+    "skip": false,
+    "reasoning": "Benzil is an alpha-diketone (a type of ketone) which rearranges to a carboxylate salt (the salt of a carboxylic acid) under basic conditions."
+  }
+}

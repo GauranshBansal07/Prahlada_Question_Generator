@@ -878,6 +878,7 @@ def main():
                     archetype_code   = "I",
                     solver_trace     = st.get("attempted_solution", ""),
                     fragility_weight = None,
+                    path_edges       = selected_txs,
                 )
                 coverage.on_acceptance(
                     archetype = "I",
