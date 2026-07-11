@@ -708,7 +708,7 @@
         "CH₂Cl₂"
       ],
       "conditions": "RT; anhydrous CH₂Cl₂ solvent; PCC (pyridinium chlorochromate) or PDC. Mild oxidant: stops at aldehyde from primary alcohol. Does NOT oxidise to carboxylic acid. Secondary alcohol → ketone. Tertiary alcohol → no reaction. Alternative mild oxidants: Swern (oxalyl chloride/DMSO/Et₃N, –78°C), MnO₂ (allylic/benzylic only), Dess-Martin periodinane (DMP).",
-      "firing_condition": null,
+      "firing_condition": "primary_or_secondary_alcohol_only",
       "chapter": "Aldehydes & Ketones",
       "archetype": [
         "I"
@@ -2820,7 +2820,7 @@
         "E2"
       ],
       "conditions": "Reflux; alcoholic KOH (ethanolic KOH) or t-BuOK/t-BuOH; heat required; E2 mechanism. Anti-periplanar geometry required (H and X must be anti). Saytzeff product (more-substituted alkene) preferred with small bases (KOH/EtOH). Hofmann product preferred with bulky bases (t-BuOK). Tertiary > secondary > primary for E2 rate. Competition with SN2: polar aprotic → SN2; polar protic/base/heat → E2.",
-      "firing_condition": null,
+      "firing_condition": "anti_periplanar_H_required_for_E2",
       "chapter": "Alkyl Halides",
       "archetype": [
         "I",
@@ -3340,7 +3340,7 @@
         "dry ether"
       ],
       "conditions": "Anhydrous, inert atmosphere (N₂ or Ar); dry ether (diethyl ether) or dry THF solvent; Mg metal turnings; RT or gentle warming. Must exclude moisture strictly (Grignard reacts immediately with H₂O). Mg inserts into C-X bond: R-X + Mg(0) → R-Mg-X. Reactivity order: R-I > R-Br > R-Cl >> R-F. Vinyl and aryl halides require THF (higher bp) and sometimes I₂ activation of Mg surface.",
-      "firing_condition": null,
+      "firing_condition": "primary_or_secondary_halide_preferred",
       "chapter": "Organometallics & Grignard",
       "archetype": [
         "I"
@@ -3422,7 +3422,7 @@
         "DMSO"
       ],
       "conditions": "Reflux; DMSO or DMF solvent (polar aprotic); NaCN or KCN. SN2 mechanism: CN⁻ attacks back-face of primary/secondary C-X → R-CN (nitrile, inversion). Ambident nucleophile: C-attack (CN⁻) preferred in polar aprotic → nitrile. N-attack (isocyanide R-NC) minor product. Primary and secondary R-X only; tertiary → E2. Chain length increases by 1C. Product used for homologation.",
-      "firing_condition": null,
+      "firing_condition": "primary_or_secondary_halide_only_SN2",
       "chapter": "Alkyl Halides",
       "archetype": [
         "I"
@@ -4117,7 +4117,7 @@
         "0-5°C"
       ],
       "conditions": "0–5°C (CRITICAL: must maintain 0–5°C; >5°C → diazonium decomposes, PhN₂⁺ → phenol); aqueous HCl (or HBF₄); NaNO₂. Mechanism: HNO₂ (in situ from NaNO₂ + HCl) + ArNH₂ → ArN₂⁺Cl⁻ (diazonium salt). Primary aromatic amines only (aliphatic diazonium too unstable). Maintain cold strictly. ArN₂⁺ is electrophile for coupling; or undergoes Sandmeyer, Balz-Schiemann, Gattermann reactions.",
-      "firing_condition": null,
+      "firing_condition": "primary_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -4332,7 +4332,7 @@
         "NaNO2/HCl at 0-5°C"
       ],
       "conditions": "0–5°C (strict temperature control); aqueous HCl (2 equiv); NaNO₂ (1 equiv). Same as amine→diazonium entry. HNO₂ (in situ) + ArNH₂ → ArN₂⁺. ArN₂⁺BF₄⁻ (from HBF₄) is isolable solid (Balz-Schiemann precursor). Keep cold at all times during preparation and use.",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I",
@@ -5790,7 +5790,7 @@
         "H₂O (water as nucleophile)"
       ],
       "conditions": "Aqueous medium; aliphatic diazonium → instant N₂ loss even at 0°C (unlike aryl diazonium)",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I",
@@ -5826,7 +5826,7 @@
         "CuX (Sandmeyer)"
       ],
       "conditions": "Sandmeyer reaction: Step 1: CuX (CuCl, CuBr, CuCN) + ArN₂⁺ → ArX (Ar-Cl, Ar-Br, Ar-CN); RT to mild heat; aqueous or aqueous-acetone. Copper(I) acts as catalyst/reagent via single-electron mechanism. Balz-Schiemann: ArN₂⁺BF₄⁻ (from HBF₄) → heat dry → ArF + N₂ + BF₃ (for fluoride). Gattermann: Cu powder (not CuX) for Cl/Br (milder alternative to Sandmeyer).",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -5874,7 +5874,7 @@
         "ArOH or ArNH₂ (coupling)"
       ],
       "conditions": "0–5°C; alkaline or slightly acidic aqueous; electrophilic aromatic substitution (coupling). ArN₂⁺ (electrophile) + Ar'OH (phenol, coupling at para position, alkaline) or Ar'NH₂ (amine, coupling at para position, neutral/acidic). pH control critical: too acidic → protonates amine coupling partner (less nucleophilic). Product: azo dye Ar-N=N-Ar'. Used in azo dyes (Congo red, methyl orange, etc.).",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -5909,7 +5909,7 @@
         "alkaline coupling"
       ],
       "conditions": "0–5°C; alkaline aqueous (NaOH or Na₂CO₃, pH 9–10); coupling at para position of β-naphthol. Electrophilic aromatic substitution: ArN₂⁺ (electrophile) + β-naphthol (highly activated ring, coupling at C-1, para to OH) → azo dye. Alkaline pH keeps naphthol as phenoxide (more nucleophilic). Acidic → protonates coupling partner → slower. Product: intensely coloured orange-red azo compound.",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -5945,7 +5945,7 @@
         "CuCN"
       ],
       "conditions": "CuCN (copper cyanide) or NaCN/CuCN; RT to mild heat; aqueous. Sandmeyer reaction with cyanide. ArN₂⁺ + CuCN → ArCN + N₂. Mechanism: Cu(I) transfers CN• radical to Ar•. Product: benzonitrile (phenyl cyanide). Can also use Gattermann modification (Cu powder + HCN). Product used for further synthesis (hydrolysis → RCOOH; reduction → benzylamine).",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -5981,7 +5981,7 @@
         "heat"
       ],
       "conditions": "Aqueous acid; heat (steam distillation conditions); H₂O. Warm/boil: ArN₂⁺ + H₂O → [Ar⁺] → ArOH + N₂. Mechanism: ArSN1-like (phenyl cation or tight ion pair). Dilute H₂SO₄ (not HCl; Cl⁻ might compete). Product: phenol. Used industrially (cumene process preferred now). Warm the diazonium salt solution gently to avoid explosive decomposition.",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I",
@@ -6032,7 +6032,7 @@
         "H₂O"
       ],
       "conditions": "H₃PO₂ (hypophosphorous acid) + water; RT to mild heat. Mechanism: radical → Ar• + N₂ → Ar• + H (from H₃PO₂) → ArH. Alternatively: EtOH (also reductive, gives ArH). Removes amino group from aromatic ring with no substituent replacement (deamination). Useful for: install NH₂ as ortho/para director, then remove after synthesis.",
-      "firing_condition": null,
+      "firing_condition": "primary_aromatic_amine_only",
       "chapter": "Amines",
       "archetype": [
         "I"
@@ -6068,7 +6068,7 @@
         "-40 degrees C"
       ],
       "conditions": "HBr (1 equiv); low temperature (–40°C or 0°C); kinetic conditions. 1,2-addition product: kinetic control at low T. Mechanism: H⁺ adds to C-1 → allylic cation (stabilised by resonance C-2 and C-4) → Br⁻ adds to C-2 (1,2-product, closer resonance structure, faster, kinetic). Low T prevents equilibration. Product: 3-bromo-1-butene.",
-      "firing_condition": null,
+      "firing_condition": "scis_diene_conformation_required",
       "chapter": "Hydrocarbons",
       "archetype": [
         "I"
@@ -7435,7 +7435,7 @@
         "NaOH (aq, excess base)"
       ],
       "conditions": "Haloform reaction: X₂ (Cl₂, Br₂, or I₂) + NaOH (aq, excess); RT to mild heat. Step 1: base deprotonates α-H → enolate → halogenation → repeat ×3 → CX₃ group on methyl. Step 2: NaOH attacks CX₃-CO-R → CX₃⁻ + RCOO⁻ (tetrahedral intermediate → collapse). CX₃⁻ → CHX₃ (haloform). Positive haloform test (yellow CHI₃ precipitate with I₂/NaOH): methyl ketone, acetaldehyde, ethanol, secondary methyl alcohol (CH₃CHOH-R).",
-      "firing_condition": null,
+      "firing_condition": "methyl_ketone_only",
       "chapter": "Aldehydes & Ketones",
       "archetype": [
         "I",

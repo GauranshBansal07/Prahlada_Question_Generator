@@ -189,13 +189,15 @@ def edges_to_tx_format(edge_ids: list[str]) -> list[dict]:
     for eid in edge_ids:
         e = edge_map.get(eid, {})
         txs.append({
-            "from":             e.get("from", "?"),
-            "to":               e.get("to", "?"),
-            "reagents":         e.get("reagents", []),
-            "conditions":       e.get("conditions", ""),
-            "notes":            e.get("notes", ""),
-            "chapter":          e.get("chapter", "Hydrocarbons"),
-            "difficulty_notes": e.get("difficulty_notes", {}),
+            "from":              e.get("from", "?"),
+            "to":                e.get("to", "?"),
+            "reagents":          e.get("reagents", []),
+            "conditions":        e.get("conditions", ""),
+            "notes":             e.get("notes", ""),
+            "chapter":           e.get("chapter", "Hydrocarbons"),
+            "difficulty_notes":  e.get("difficulty_notes", {}),
+            "firing_condition":  e.get("firing_condition"),
+            "is_exception":      e.get("is_exception", False),
         })
     return txs
 
@@ -269,9 +271,24 @@ Return JSON:
 def generator(blackboard: Blackboard, selected_txs: list, chain_desc: str, attempt_num: int = 1) -> dict:
     tx_detail = json.dumps(selected_txs, indent=2)
 
-    # Build per-step difficulty guidance from edge difficulty_notes
+    # Build per-step guidance: firing conditions + difficulty notes
     diff_guidance_lines = []
     for i, tx in enumerate(selected_txs, 1):
+        fc = tx.get("firing_condition")
+        is_exc = tx.get("is_exception", False)
+        if fc:
+            diff_guidance_lines.append(
+                f"Step {i} ({tx['from']}→{tx['to']}) SUBSTRATE CONSTRAINT: "
+                f"{fc}. You MUST choose a starting material for this step that satisfies "
+                f"this constraint. Using the wrong substrate class makes the reaction "
+                f"mechanistically impossible or gives a completely different product."
+            )
+        if is_exc:
+            diff_guidance_lines.append(
+                f"Step {i} ({tx['from']}→{tx['to']}) IS AN EXCEPTION to the standard rule "
+                f"a student would apply. Make sure the question exploits this — the student "
+                f"must recognise the exception to get the right answer."
+            )
         dn = tx.get("difficulty_notes", {})
         if dn:
             traps = dn.get("common_traps", [])
